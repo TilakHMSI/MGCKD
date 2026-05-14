@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="14120.00"/>
+    <WithIsn val="Y"/>
+    <LastIsn val="51"/>
+    <LastIsnFolder val="0"/>
+  </Header>
+
+  <RightsRepository>
+    <Rights>
+      <Right id="1" name="CKD Parameters">
+        <PublicRight val="Y"/>
+        <Key val="CKDPRM"/>
+      </Right>
+      <Right id="2" name="Master Maintenance Menu">
+        <PublicRight val="Y"/>
+        <Key val="MSTMNU"/>
+      </Right>
+      <Right id="3" name="Parts Packing Menu">
+        <PublicRight val="Y"/>
+        <Key val="PPKMNU"/>
+      </Right>
+      <Right id="4" name="Packing Data Menu">
+        <PublicRight val="Y"/>
+        <Key val="PKDMNU"/>
+      </Right>
+      <Right id="5" name="Packing Plan Menu">
+        <PublicRight val="Y"/>
+        <Key val="PKPMNU"/>
+      </Right>
+      <Right id="6" name="Label Print Menu">
+        <PublicRight val="Y"/>
+        <Key val="LBPMNU"/>
+      </Right>
+      <Right id="7" name="Packing Completion Menu">
+        <PublicRight val="Y"/>
+        <Key val="PKCMNU"/>
+      </Right>
+      <Right id="8" name="SKID Menu">
+        <PublicRight val="Y"/>
+        <Key val="SKDMNU"/>
+      </Right>
+      <Right id="9" name="Reports Menu">
+        <PublicRight val="Y"/>
+        <Key val="REPMNU"/>
+      </Right>
+      <Right id="10" name="Container Master Modify">
+        <PublicRight val="Y"/>
+        <Key val="CNMMOD"/>
+      </Right>
+      <Right id="11" name="Case Master Modify">
+        <PublicRight val="Y"/>
+        <Key val="CSMMOD"/>
+      </Right>
+      <Right id="12" name="Carton Master Modify">
+        <PublicRight val="Y"/>
+        <Key val="CRMMOD"/>
+      </Right>
+      <Right id="13" name="Lot Master Modify">
+        <PublicRight val="Y"/>
+        <Key val="LTMMOD"/>
+      </Right>
+      <Right id="14" name="Packing Station Master Modify">
+        <PublicRight val="Y"/>
+        <Key val="PSMMOD"/>
+      </Right>
+      <Right id="15" name="Parts Packing Master Entry">
+        <PublicRight val="Y"/>
+        <Key val="PKMENT"/>
+      </Right>
+      <Right id="16" name="Packing Master Reorganize">
+        <PublicRight val="Y"/>
+        <Key val="PKMROR"/>
+      </Right>
+      <Right id="17" name="BOM Packing Master Validation">
+        <PublicRight val="Y"/>
+        <Key val="BMPKVL"/>
+      </Right>
+      <Right id="18" name="Lot (Pc) Create Delete">
+        <PublicRight val="Y"/>
+        <Key val="LTPCCD"/>
+      </Right>
+      <Right id="19" name="Packing Data Create Delete">
+        <PublicRight val="Y"/>
+        <Key val="PKDCCD"/>
+      </Right>
+      <Right id="20" name="Case Packing Schedule Entry">
+        <PublicRight val="Y"/>
+        <Key val="CSCENT"/>
+      </Right>
+      <Right id="21" name="Case Packing Approval Entry">
+        <PublicRight val="Y"/>
+        <Key val="CSAENT"/>
+      </Right>
+      <Right id="22" name="Picking List Print">
+        <PublicRight val="Y"/>
+        <Key val="PKLPRN"/>
+      </Right>
+      <Right id="23" name="Inspection Check List Print">
+        <PublicRight val="Y"/>
+        <Key val="INCPRN"/>
+      </Right>
+      <Right id="24" name="Required Carton Report">
+        <PublicRight val="Y"/>
+        <Key val="RQCRRP"/>
+      </Right>
+      <Right id="25" name="Packing Plan Print">
+        <PublicRight val="Y"/>
+        <Key val="PPLPRN"/>
+      </Right>
+      <Right id="26" name="Case Packing Plan Print">
+        <PublicRight val="Y"/>
+        <Key val="CSPLPR"/>
+      </Right>
+      <Right id="27" name="Carton Label Print">
+        <PublicRight val="Y"/>
+        <Key val="CRLPRN"/>
+      </Right>
+      <Right id="28" name="Case Label Print">
+        <PublicRight val="Y"/>
+        <Key val="CSLPRN"/>
+      </Right>
+      <Right id="29" name="Case Part List RePrint">
+        <PublicRight val="Y"/>
+        <Key val="CSPTRP"/>
+      </Right>
+      <Right id="30" name="Carton Packing">
+        <PublicRight val="Y"/>
+        <Key val="CRPKOF"/>
+      </Right>
+      <Right id="31" name="Carton to Case Packing">
+        <PublicRight val="Y"/>
+        <Key val="CRCSOF"/>
+      </Right>
+      <Right id="32" name="Case Packing">
+        <PublicRight val="Y"/>
+        <Key val="CSPKOF"/>
+      </Right>
+      <Right id="33" name="Case Carton Scanning Cancel">
+        <PublicRight val="Y"/>
+        <Key val="CSNCAN"/>
+      </Right>
+      <Right id="34" name="Carton Off Speical Approval">
+        <PublicRight val="Y"/>
+        <Key val="CRSPAP"/>
+      </Right>
+      <Right id="35" name="Carton Special Approval (Scan)">
+        <PublicRight val="Y"/>
+        <Key val="CRSASN"/>
+      </Right>
+      <Right id="36" name="SKID Master Entry">
+        <PublicRight val="Y"/>
+        <Key val="SKDMSE"/>
+      </Right>
+      <Right id="37" name="SKID Master Inquiry">
+        <PublicRight val="Y"/>
+        <Key val="SKDMSI"/>
+      </Right>
+      <Right id="38" name="SKID Status Change">
+        <PublicRight val="Y"/>
+        <Key val="SKDSCH"/>
+      </Right>
+      <Right id="39" name="Excise Engine Report">
+        <PublicRight val="Y"/>
+        <Key val="EXENGR"/>
+      </Right>
+      <Right id="40" name="Parts Requirement Planning">
+        <PublicRight val="Y"/>
+        <Key val="PTRQPL"/>
+      </Right>
+      <Right id="41" name="Packed Engine Inquiry">
+        <PublicRight val="Y"/>
+        <Key val="PKEGIN"/>
+      </Right>
+      <Right id="42" name="Carton Gross Weight Report">
+        <PublicRight val="Y"/>
+        <Key val="CARTGW"/>
+      </Right>
+      <Right id="43" name="Daily Result Report">
+        <PublicRight val="Y"/>
+        <Key val="DLYRRP"/>
+      </Right>
+      <Right id="44" name="Monthly Result Summary">
+        <PublicRight val="Y"/>
+        <Key val="MNRESS"/>
+      </Right>
+      <Right id="45" name="CKD Export Upload">
+        <PublicRight val="Y"/>
+        <Key val="CKDUPL"/>
+      </Right>
+      <Right id="46" name="Bangaldesh Scanning Menu">
+        <PublicRight val="Y"/>
+        <Key val="BANGSCAMNU"/>
+      </Right>
+      <Right id="47" name="Compare Frame/Engine">
+        <PublicRight val="Y"/>
+        <Key val="COMPFRENG"/>
+      </Right>
+      <Right id="48" name="Cancel Frame/Engine">
+        <PublicRight val="Y"/>
+        <Key val="CANFRENG"/>
+      </Right>
+      <Right id="49" name="Sp. Cancel Frame/Engine">
+        <PublicRight val="Y"/>
+        <Key val="SPCANFRENG"/>
+      </Right>
+      <Right id="50" name="Scanned Frame/Engine Report">
+        <PublicRight val="Y"/>
+        <Key val="SCANNEDRPT"/>
+      </Right>
+      <Right id="51" name="Cancel All Frame/Engine">
+        <PublicRight val="Y"/>
+        <Key val="CANALLFRM"/>
+      </Right>
+    </Rights>
+  </RightsRepository>
+
+</Application>

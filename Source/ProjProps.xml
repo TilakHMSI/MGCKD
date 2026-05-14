@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="14120.00"/>
+    <WithIsn val="Y"/>
+    <LastIsn val="0"/>
+  </Header>
+
+  <ProjectProperties>
+    <ProjectData>
+      <GUID val="{5C1972FA-6488-41AE-8D80-65E649E45861}"/>
+      <RemoteFlowMonitorRight comp="-1"/>
+      <NulArithmetic val="N"/>
+      <WindowSortBy val="R"/>
+      <_SystemPulldownMenu comp="-1" obj="6"/>
+      <_SystemContextMenu comp="-1" obj="7"/>
+      <ExposeComment val="N"/>
+      <ProjectName val="HondaCKD"/>
+    </ProjectData>
+    <WebClientData>
+      <OutputFolder val=".\output"/>
+      <SourceImagesFolder val=".\images"/>
+      <Theme val="Native"/>
+      <GenerateMetadataOnly val="N"/>
+      <MultiLingualSupport val="N"/>
+      <StartupProgramISN val="278"/>
+      <UseWorkspace val="N"/>
+    </WebClientData>
+  </ProjectProperties>
+
+</Application>

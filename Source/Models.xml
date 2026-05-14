@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="14120.00"/>
+    <WithIsn val="Y"/>
+    <LastIsn val="61"/>
+    <LastIsnFolder val="0"/>
+  </Header>
+
+  <ModelsRepository>
+    <Models>
+      <Object Public="V9 Compatible Default Table" id="1" name="V9 Compatible Default Table">
+        <PropertyList model="CTRL_GUI0_TABLE">
+          <BorderStyle id="64" val="1"/>
+          <LineDivider id="78" val="Y"/>
+          <ColumnDivider id="189" val="Y"/>
+          <TableInWindow id="190" val="Y"/>
+          <_WindowWidth id="241"/>
+          <RowHighlightStyle id="409" val="2"/>
+          <BottomPositionInterval id="411" val="2"/>
+          <V11TableInWindow id="535"/>
+        </PropertyList>
+      </Object>
+      <Object id="2" name="CODE (10)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="10"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="10"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="3" name="DESCRIPTION (30)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="30"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="30"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="4" name="LENGTH">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="7"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="7"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="5" name="HEIGHT">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="7"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="7"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="6" name="WIDTH">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="7"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="7"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="7" name="WEIGHT">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="7.3"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="3"/>
+          <_Whole id="182" val="7"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="8" name="LAST MODIFIED PROGRAM">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="10"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="10"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="9" name="LAST MODIFIED USER">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="10"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="10"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="10" name="LAST MODIFIED TERMINAL">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="4"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="4"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="11" name="DATE">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_DATE" id="1"/>
+          <Picture id="157" valUnicode="DD/MM/YYYY"/>
+          <NullAllowed id="166" val="Y"/>
+          <NullValue id="167" val="0"/>
+          <NullDefault id="169" val="Y"/>
+          <StoredAs id="173"/>
+        </PropertyList>
+      </Object>
+      <Object id="12" name="TIME">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_TIME" id="1"/>
+          <NullAllowed id="166" val="Y"/>
+          <NullDefault id="169" val="Y"/>
+          <StoredAs id="173"/>
+        </PropertyList>
+      </Object>
+      <Object id="13" name="MODEL CODE">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="11"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="11"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="14" name="MODEL TYPE">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="4"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="4"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="15" name="MODEL OPTION">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="3"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="3"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="16" name="QTY (7)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="7"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="7"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="17" name="ACTIVE FLAG">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Range id="98" valUnicode="A,D"/>
+          <Picture id="157" valUnicode="1"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="18" name="QTY (10)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="10"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="10"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="19" name="BUTTON 7">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="7"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="7"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="20" name="BUTTON 5">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="5"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="5"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="21" name="BUTTON 3">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="3"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="3"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="22" name="BUTTON 11">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="11"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="11"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="23" name="BUTTON 13">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="13"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="13"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="24" name="CONT NO. / SEC_CD">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="5"/>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="5"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="25" name="PC NO.">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="9"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="9"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="26" name="PART NO.">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="18"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="18"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="27" name="BASE PART NO.">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="15"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="15"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="28" name="FRAME MODEL CODE">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="11"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="11"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="29" name="LOT NO.">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="4"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="4"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="30" name="ACTION">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Range id="98" valUnicode="Addition, Delete, Inquiry"/>
+          <Picture id="157" valUnicode="U"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="31" name="CARTON STATION">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="20"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="32" name="SELECT FLAG">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Range id="98" valUnicode=" ,X"/>
+          <Picture id="157" valUnicode="U"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="33" name="PART WEIGTH">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="5.5"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="5"/>
+          <_Whole id="182" val="5"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="34" name="ENGINE NO.">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="U18"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="18"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="35" name="MENU NAME">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="50"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="50"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="36" name="PART LOCATION / PK_MAT">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="6"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="6"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="37" name="MONTH">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_DATE" id="1"/>
+          <Picture id="157" valUnicode="MM/YYYY"/>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <StoredAs id="173"/>
+        </PropertyList>
+      </Object>
+      <Object id="38" name="MENU POSITION">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="2"/>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="2"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="39" name="CHANGE FONT">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="3"/>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="3"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="40" name="MESSAGE">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="50"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="50"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="41" name="SKID NO">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="20"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="42" name="INVOICE NO.">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="20"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="43" name="BILL OF ENTRY">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="30"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="30"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="44" name="OK  NG FLAG">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Range id="98" valUnicode="OK,NG"/>
+          <Picture id="157" valUnicode="U"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="45" name="SKID STATUS">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Range id="98" valUnicode="1:Need Repair,2:Repaired,3:Scrapped,4:Need Replacement,5:Replaced"/>
+          <Picture id="157" valUnicode="U"/>
+          <NullAllowed id="166" val="Y"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="46" name="EditFields">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Font id="50" val="18"/>
+          <Color id="51" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="47" name="TableControl">
+        <PropertyList model="CTRL_GUI0_TABLE">
+          <LineDivider id="78" val="Y"/>
+          <ColumnDivider id="189" val="Y"/>
+          <AllowColumnResize id="191"/>
+          <MultiMarking id="196"/>
+          <AllowColumnReorder id="430"/>
+        </PropertyList>
+      </Object>
+      <Object id="48" name="TableTitle">
+        <PropertyList model="CTRL_GUI0_COLUMN">
+          <Font id="50" val="18"/>
+          <Color id="51" val="71"/>
+        </PropertyList>
+      </Object>
+      <Object id="49" name="TableEditBlue">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Font id="50" val="18"/>
+          <Color id="51" val="74"/>
+          <Style id="63" val="1"/>
+          <BorderStyle id="64" val="3"/>
+          <Border id="452"/>
+        </PropertyList>
+      </Object>
+      <Object id="50" name="TableEditRed">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Font id="50" val="18"/>
+          <Color id="51" val="75"/>
+          <Style id="63" val="1"/>
+          <BorderStyle id="64" val="3"/>
+          <Border id="452"/>
+        </PropertyList>
+      </Object>
+      <Object id="51" name="TableEditWhite">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Color id="51" val="6"/>
+          <Style id="63" val="1"/>
+          <BorderStyle id="64" val="3"/>
+          <Border id="452"/>
+        </PropertyList>
+      </Object>
+      <Object id="52" name="TableTitle1/71">
+        <PropertyList model="CTRL_GUI0_COLUMN">
+          <Font id="50" val="1"/>
+          <Color id="51" val="71"/>
+        </PropertyList>
+      </Object>
+      <Object id="53" name="TableEditGrey">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Color id="51" val="1"/>
+          <Style id="63" val="1"/>
+          <BorderStyle id="64" val="3"/>
+          <Border id="452"/>
+        </PropertyList>
+      </Object>
+      <Object id="54" name="TableEditGreyBorder">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Color id="51" val="1"/>
+          <Style id="63" val="4"/>
+          <BorderStyle id="64" val="3"/>
+          <Border id="452" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="55" name="TableEditYellow">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <Font id="50" val="18"/>
+          <Color id="51" val="73"/>
+          <Style id="63" val="1"/>
+          <BorderStyle id="64" val="3"/>
+          <Border id="452"/>
+        </PropertyList>
+      </Object>
+      <Object id="56" name="C50">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="50"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="50"/>
+          <_Flip id="194"/>
+          <RichClient id="453">
+            <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </RichClient>
+          <RichClientTable id="454">
+            <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+              <Border id="452" val="Y"/>
+            </PropertyList>
+          </RichClientTable>
+          <WebClient id="702">
+            <PropertyList model="CTRL_WEB_CLIENT_EDIT"/>
+          </WebClient>
+          <WebClientTable id="703">
+            <PropertyList model="CTRL_WEB_CLIENT_EDIT"/>
+          </WebClientTable>
+        </PropertyList>
+      </Object>
+      <Object id="57" name="Date">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_DATE" id="1"/>
+          <Picture id="157" valUnicode="DD/MM/YYYY"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="58" name="Time">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_TIME" id="1"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="59" name="LogicalF">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_LOGICAL" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="60" name="Alpha20">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <Size id="174" val="20"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="61" name="AlphaU10">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="U10"/>
+          <Size id="174" val="10"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+    </Models>
+  </ModelsRepository>
+
+</Application>
