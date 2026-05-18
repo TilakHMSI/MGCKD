@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDS001SelectPurchaseContra" ISN_2="1" LastIsn="2" id="243">
-          <LastModified _date="739749" _time="42292" date="13/05/2026" time="11:44:52"/>
+          <LastModified _date="739750" _time="69078" date="14/05/2026" time="19:11:18"/>
           <Public val="Prg_29_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -330,7 +330,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="11"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -369,7 +368,7 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
-                    <v>1</v>
+                    <v>15</v>
                   </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -430,10 +429,8 @@
             <Condition val="89"/>
             <Event>
               <EventType val="U"/>
-              <Parent val="32768"/>
               <PublicObject comp="-1" obj="1"/>
             </Event>
-            <TXT val="Ok_Button_v"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
@@ -463,7 +460,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="14" _last_test_id="14" id="1">
+          <FormEntry _last_isn="15" _last_test_id="15" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="345"/>
               <Height id="24" val="341"/>
@@ -476,16 +473,14 @@
               <_TabbingOrder id="318" val="2"/>
               <WindowType id="358" val="12"/>
             </PropertyList>
-            <Control _test_id="1" id="1">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <X id="21" val="263"/>
-                <Y id="22" val="3"/>
-                <Width id="23" val="75"/>
-                <Height id="24" val="13"/>
-                <Data Exp="9" id="43"/>
+            <Control _test_id="15" id="15">
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text Exp="9" id="19" valUnicode="Text"/>
+                <X id="21" val="106"/>
+                <Y id="22" val="1"/>
+                <Width id="23" val="23"/>
+                <Height id="24" val="15"/>
                 <ControlName id="46" val="Edit1"/>
-                <Visible id="61"/>
-                <Format id="82" valUnicode="40"/>
               </PropertyList>
             </Control>
             <Control _test_id="3" id="3">
@@ -584,22 +579,20 @@
                 <Visible id="61"/>
               </PropertyList>
             </Control>
-            <Control _test_id="12" id="12">
+            <Control PDOD="128" _test_id="12" id="12">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="9"/>
-                </Model>
                 <X id="21" val="209"/>
                 <Y id="22" val="309"/>
                 <Width id="23" val="61"/>
                 <Height id="24" val="23"/>
-                <Data FieldID="9" id="43"/>
+                <Data id="43"/>
                 <ControlName id="46" val="Ok_Button_v"/>
                 <Visible id="61"/>
+                <Format id="82" valUnicode="OK"/>
                 <ImageFile id="88" val="Button"/>
                 <RaiseEvent id="234">
-                  <EventType val="I"/>
-                  <InternalEventID val="34"/>
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="1"/>
                 </RaiseEvent>
               </PropertyList>
             </Control>
@@ -659,6 +652,11 @@
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
+        <EVNT DESC="Task_Ok" FORCE_EXIT="N" id="1">
+          <Event>
+            <EventType val="N"/>
+          </Event>
+        </EVNT>
         <Task MainProgram="N">
           <Header Description="Make Flag for All" ISN_2="2" LastIsn="2" id="243">
             <LastModified _date="739749" _time="40142" date="13/05/2026" time="11:09:02"/>
