@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDPM010LotMaster" ISN_2="2" LastIsn="19" id="299">
-          <LastModified _date="739743" _time="70086" date="07/05/2026" time="19:28:06"/>
+          <LastModified _date="739754" _time="61324" date="18/05/2026" time="17:02:04"/>
           <Public val="Prg_36_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -524,7 +524,7 @@
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="6">
-            <ExpSyntax val="'CNT_CODE like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}&amp;' OR '&amp;&#xD;&#xA;'CNT_DESC like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}"/>
+            <ExpSyntax val="'LOT_CODE like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}&amp;' OR '&amp;&#xD;&#xA;'LOT_DESC like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="8">

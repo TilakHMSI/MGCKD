@@ -13,8 +13,8 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="CKDM0030PackingMatMaster" ISN_2="14" LastIsn="49" id="185">
-          <LastModified _date="739749" _time="61172" date="13/05/2026" time="16:59:32"/>
+        <Header Description="CKDM0030PackingMatMaster" ISN_2="14" LastIsn="48" id="185">
+          <LastModified _date="739754" _time="44055" date="18/05/2026" time="12:14:15"/>
           <Public val="Prg_79_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -498,10 +498,10 @@
             </Control>
             <Control PDOD="128" _test_id="9" id="9">
               <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
-                <X id="21" val="54"/>
+                <X id="21" val="22"/>
                 <Y id="22" val="94"/>
-                <Width id="23" val="448"/>
-                <Height id="24" val="338"/>
+                <Width id="23" val="516"/>
+                <Height id="24" val="380"/>
                 <ControlName id="46" val="Sub1"/>
                 <Arguments id="126"/>
                 <ConnectTo id="156" val="2"/>
@@ -524,17 +524,17 @@
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="6">
-            <ExpSyntax val="'PK_TYP_CD like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}&amp;' OR '&amp;&#xD;&#xA;'PK_TYPE_DESC like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}"/>
+            <ExpSyntax val="'CAR_CODE like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}&amp;' OR '&amp;&#xD;&#xA;'CAR_DESC like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="8">
-            <ExpSyntax val="'PACKING MATERIAL MASTER'"/>
+            <ExpSyntax val="'CKDM0030 : PACKING MATERIAL MASTER'"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
         <Task MainProgram="N">
-          <Header Description="List" ISN_2="45" LastIsn="49" id="185">
-            <LastModified _date="739749" _time="61167" date="13/05/2026" time="16:59:27"/>
+          <Header Description="List" ISN_2="45" LastIsn="48" id="185">
+            <LastModified _date="739751" _time="37766" date="15/05/2026" time="10:29:26"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -542,7 +542,7 @@
               <ReturnValueAttr/>
               <ParametersAttributes/>
             </ReturnValue>
-            <SqlWhereExist val="N"/>
+            <SqlWhereExist val="Y"/>
             <TaskType val="W"/>
             <Interactive val="Y"/>
             <External val="N"/>
@@ -710,6 +710,14 @@
               <Direction val="V"/>
             </BOX>
           </Information>
+          <SQL_WHERE_U>
+            <TOKEN>
+              <CODE val="1"/>
+              <SqlWhereFlags val="1"/>
+              <Parent val="14"/>
+              <VAR_ISN val="5"/>
+            </TOKEN>
+          </SQL_WHERE_U>
           <TaskLogic>
             <LogicUnit id="2" propagate="78">
               <Level val="R"/>
@@ -2181,8 +2189,8 @@
             </Expression>
           </Expressions>
           <Task MainProgram="N">
-            <Header Description="PackingMatCM" ISN_2="46" LastIsn="49" id="185">
-              <LastModified _date="739749" _time="61172" date="13/05/2026" time="16:59:32"/>
+            <Header Description="PackingMatCM" ISN_2="46" LastIsn="48" id="185">
+              <LastModified _date="739754" _time="44055" date="18/05/2026" time="12:14:15"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -2408,6 +2416,11 @@
                       <Type val="V"/>
                       <ExposedToRoute val="N"/>
                       <IsParameter val="Y"/>
+                      <INT_DIT_INFO>
+                        <v>25</v>
+                        <v>4</v>
+                        <v>6</v>
+                      </INT_DIT_INFO>
                       <DIFF_UPDATE val="T"/>
                       <PartOfDataview val="N"/>
                       <Condition val="Y"/>
@@ -2732,6 +2745,29 @@
                   </LogicLine>
                 </LogicLines>
               </LogicUnit>
+              <LogicUnit id="7" propagate="78">
+                <Level val="R"/>
+                <Type val="P"/>
+                <Scope val="S"/>
+                <EngineDirective val="S"/>
+                <ShowMessage val="Y"/>
+                <Condition val="89"/>
+                <Event>
+                  <EventType val="S"/>
+                </Event>
+                <ExecuteOn_ val="O"/>
+                <LogicLines>
+                  <LogicLine>
+                    <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="17" FlowIsn="77" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                      <AppendToErrorLog val="N"/>
+                      <Disabled val="1"/>
+                      <Condition val="Y"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </STP>
+                  </LogicLine>
+                </LogicLines>
+              </LogicUnit>
               <LogicUnit id="3" propagate="78">
                 <Level val="C"/>
                 <Type val="P"/>
@@ -2928,6 +2964,7 @@
                     <ItemsList Exp="2" id="45" valUnicode="Select"/>
                     <ControlName id="46" val="TYPE"/>
                     <Visible id="61"/>
+                    <Enabled Exp="16" id="62"/>
                   </PropertyList>
                 </Control>
                 <Control _test_id="3" id="3">
@@ -2953,6 +2990,7 @@
                     <Data FieldID="6" id="43"/>
                     <ControlName id="46" val="CODE"/>
                     <Visible id="61"/>
+                    <Enabled Exp="16" id="62"/>
                     <Format id="82" valUnicode="U10"/>
                   </PropertyList>
                 </Control>
@@ -2979,6 +3017,7 @@
                     <Data FieldID="7" id="43"/>
                     <ControlName id="46" val="DESC"/>
                     <Visible id="61"/>
+                    <Enabled Exp="16" id="62"/>
                     <Format id="82" valUnicode="U30"/>
                   </PropertyList>
                 </Control>
@@ -3225,6 +3264,10 @@
                 <ExpSyntax val="{0,2}"/>
                 <ExpAttribute val="A"/>
               </Expression>
+              <Expression id="17">
+                <ExpSyntax val="'TYPE: '&amp;Trim({0,22})&amp;'- CODE :'&amp;Trim({0,23})"/>
+                <ExpAttribute val="A"/>
+              </Expression>
               <Expression id="2">
                 <ExpSyntax val="Trim ({0,1})"/>
                 <ExpAttribute val="A"/>
@@ -3277,12 +3320,16 @@
                 <ExpSyntax val="CndRange({0,24}&lt;>'C',{0,23})"/>
                 <ExpAttribute val="A"/>
               </Expression>
+              <Expression id="16">
+                <ExpSyntax val="{0,24}='C'"/>
+                <ExpAttribute val="B"/>
+              </Expression>
             </Expressions>
             <VarRangeInfo Mode="E" VarRangeVeeIsn="2" id="1"/>
             <VarRangeInfo Mode="E" VarRangeVeeIsn="6" id="2"/>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Delete" ISN_2="48" LastIsn="49" id="185">
+            <Header Description="Delete" ISN_2="48" LastIsn="48" id="185">
               <LastModified _date="739742" _time="68772" date="06/05/2026" time="19:06:12"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>

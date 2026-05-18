@@ -14,13 +14,17 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="VPRDS005OKNO" ISN_2="1" LastIsn="1" id="288">
-          <LastModified _date="739742" _time="41738" date="06/05/2026" time="11:35:38"/>
+          <LastModified _date="739754" _time="59369" date="18/05/2026" time="16:29:29"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
           <ReturnValue>
             <ReturnValueAttr/>
-            <ParametersAttributes/>
+            <TSK_PARAMS val="2"/>
+            <ParametersAttributes>
+              <Attr MgAttr="B"/>
+              <Attr MgAttr="A"/>
+            </ParametersAttributes>
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="W"/>
@@ -39,6 +43,7 @@
                 <CharSet id="172" val="1"/>
                 <StoredAs id="173" val="1"/>
                 <Definition id="175" val="2"/>
+                <PartOfDataview id="449"/>
               </PropertyList>
             </Column>
             <Column id="2" name="MESSAGE_P">
@@ -61,6 +66,7 @@
                 <Size id="174" val="80"/>
                 <Definition id="175" val="2"/>
                 <_Flip id="194"/>
+                <PartOfDataview id="449"/>
                 <RichClient id="453">
                   <PropertyList model="CTRL_RICH_CLIENT_EDIT">
                     <Border id="452" val="Y"/>
@@ -180,7 +186,7 @@
                   <Column val="1"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
+                  <IsParameter val="Y"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -192,7 +198,7 @@
                   <Column val="2"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
+                  <IsParameter val="Y"/>
                   <_DitIndexForToolkit val="1"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>

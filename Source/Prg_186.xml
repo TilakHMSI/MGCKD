@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDM0040PackingStationMast" ISN_2="1" LastIsn="2" id="186">
-          <LastModified _date="739743" _time="55366" date="07/05/2026" time="15:22:46"/>
+          <LastModified _date="739754" _time="44952" date="18/05/2026" time="12:29:12"/>
           <Public val="Prg_35_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -96,7 +96,7 @@
           <VarRange/>
           <TaskProperties>
             <SelectionTable val="N"/>
-            <ConfirmUpdate CNFU="Y"/>
+            <ConfirmUpdate CNFU="N"/>
             <ConfirmCancel val="N"/>
             <ErrorStrategy val="A"/>
             <LockingStrategy val="M"/>
@@ -183,7 +183,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="10"/>
+                  <_DitIndexForToolkit val="11"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -285,6 +285,70 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
+          <LogicUnit id="5" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <Parent val="32768"/>
+              <PublicObject comp="-1" obj="6"/>
+            </Event>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <CallTask FlowIsn="15">
+                  <OperationType val="T"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
+                  <TaskID comp="-1" obj="2"/>
+                  <Lock val="Y"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="13"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="16">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="295"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="11"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Expression val="12"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
           <LogicUnit id="4" propagate="78">
             <Level val="H"/>
             <Type val="U"/>
@@ -342,7 +406,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="12" _last_test_id="12" id="1">
+          <FormEntry _last_isn="13" _last_test_id="13" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="560"/>
               <Height id="24" val="219"/>
@@ -419,9 +483,25 @@
                 <Format id="82" valUnicode="40"/>
               </PropertyList>
             </Control>
+            <Control PDOD="128" _test_id="13" id="13">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="121"/>
+                <Y id="22" val="49"/>
+                <Width id="23" val="61"/>
+                <Height id="24" val="23"/>
+                <ControlName id="46" val="btnAdd"/>
+                <Visible id="61"/>
+                <Format id="82" valUnicode="Add"/>
+                <ImageFile id="88" val="Button"/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <Parent val="32768"/>
+                  <PublicObject comp="-1" obj="6"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
             <Control PDOD="128" _test_id="11" id="11">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <Model id="1"/>
                 <X id="21" val="496"/>
                 <Y id="22" val="50"/>
                 <Width id="23" val="61"/>
@@ -748,6 +828,18 @@
           </Expression>
           <Expression id="10">
             <ExpSyntax val="'M'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="11">
+            <ExpSyntax val="2"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="12">
+            <ExpSyntax val="'FALSE'LOG"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="13">
+            <ExpSyntax val="'C'"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>

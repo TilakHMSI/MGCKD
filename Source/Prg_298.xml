@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="COLOURCODEMASTER" ISN_2="4" LastIsn="29" id="298">
-          <LastModified _date="739749" _time="61322" date="13/05/2026" time="17:02:02"/>
+          <LastModified _date="739750" _time="63288" date="14/05/2026" time="17:34:48"/>
           <Public val="Prg_118_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -524,17 +524,17 @@
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="6">
-            <ExpSyntax val="'PK_TYP_CD like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}&amp;' OR '&amp;&#xD;&#xA;'PK_TYPE_DESC like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}"/>
+            <ExpSyntax val="'CECLC1 like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}&amp;' OR '&amp;&#xD;&#xA;'CECLC1 like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="8">
-            <ExpSyntax val="'PACKING TYPE MASTER View'"/>
+            <ExpSyntax val="'COLOUR CODE MASTER'"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
         <Task MainProgram="N">
           <Header Description="COLOURCODEMASTERList" ISN_2="27" LastIsn="29" id="298">
-            <LastModified _date="739743" _time="63510" date="07/05/2026" time="17:38:30"/>
+            <LastModified _date="739750" _time="62310" date="14/05/2026" time="17:18:30"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1211,7 +1211,7 @@
           </Task>
           <Task MainProgram="N">
             <Header Description="COLORCD_CM" ISN_2="29" LastIsn="29" id="298">
-              <LastModified _date="739749" _time="61322" date="13/05/2026" time="17:02:02"/>
+              <LastModified _date="739750" _time="63288" date="14/05/2026" time="17:34:48"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -1604,18 +1604,6 @@
                 <ExecuteOn_ val="O"/>
                 <LogicLines>
                   <LogicLine>
-                    <Update FlowIsn="123">
-                      <FieldID val="16"/>
-                      <WithValue val="21"/>
-                      <Incremental val="N"/>
-                      <ForcedUpdate val="Y"/>
-                      <Disabled val="1"/>
-                      <Condition Exp="22"/>
-                      <Modifier val="B"/>
-                      <Direction val="C"/>
-                    </Update>
-                  </LogicLine>
-                  <LogicLine>
                     <CallTask FlowIsn="38">
                       <OperationType val="P"/>
                       <Event>
@@ -1795,10 +1783,6 @@
                 <ExpSyntax val="{0,18}"/>
                 <ExpAttribute val="A"/>
               </Expression>
-              <Expression id="22">
-                <ExpSyntax val="{0,5}=''"/>
-                <ExpAttribute val="B"/>
-              </Expression>
               <Expression id="27">
                 <ExpSyntax val="NOT {0,23}"/>
                 <ExpAttribute val="B"/>
@@ -1823,16 +1807,8 @@
                 <ExpSyntax val="{0,18}='C'"/>
                 <ExpAttribute val="B"/>
               </Expression>
-              <Expression id="21">
-                <ExpSyntax val="'ENTER PACKING DESCRIPTION'"/>
-                <ExpAttribute val="A"/>
-              </Expression>
-              <Expression id="18">
-                <ExpSyntax val="Trim({0,16})&lt;>''"/>
-                <ExpAttribute val="B"/>
-              </Expression>
               <Expression id="19">
-                <ExpSyntax val="{0,17}"/>
+                <ExpSyntax val="CndRange({0,18}&lt;>'C',{0,17})"/>
                 <ExpAttribute val="A"/>
               </Expression>
               <Expression id="23">

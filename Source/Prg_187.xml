@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDPARTSMASTERView" ISN_2="16" LastIsn="39" id="187">
-          <LastModified _date="739743" _time="62962" date="07/05/2026" time="17:29:22"/>
+          <LastModified _date="739754" _time="53704" date="18/05/2026" time="14:55:04"/>
           <Public val="Prg_76_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -1523,8 +1523,8 @@
             </Expression>
           </Expressions>
           <Task MainProgram="N">
-            <Header Description="CKDPARTSMASTER_CM" ISN_2="37" LastIsn="37" id="187">
-              <LastModified _date="739743" _time="62933" date="07/05/2026" time="17:28:53"/>
+            <Header Description="CKDPARTSMASTER_CM" ISN_2="37" LastIsn="39" id="187">
+              <LastModified _date="739754" _time="53704" date="18/05/2026" time="14:55:04"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -1868,7 +1868,7 @@
                       <Type val="R"/>
                       <ExposedToRoute val="N"/>
                       <IsParameter val="N"/>
-                      <_DitIndexForToolkit val="10"/>
+                      <_DitIndexForToolkit val="11"/>
                       <DIFF_UPDATE val="T"/>
                       <Condition val="Y"/>
                       <Modifier val="S"/>
@@ -1881,7 +1881,7 @@
                       <Type val="R"/>
                       <ExposedToRoute val="N"/>
                       <IsParameter val="N"/>
-                      <_DitIndexForToolkit val="12"/>
+                      <_DitIndexForToolkit val="9"/>
                       <DIFF_UPDATE val="T"/>
                       <Condition val="Y"/>
                       <Modifier val="S"/>
@@ -2162,6 +2162,7 @@
                   <PublicObject comp="-1" obj="1"/>
                 </Event>
                 <TXT val="PK_MAT_TYPE"/>
+                <Disabled val="1"/>
                 <ExecuteOn_ val="O"/>
                 <LogicLines>
                   <LogicLine>
@@ -2182,6 +2183,7 @@
                       <SyncData val="N"/>
                       <IsRoute val="N"/>
                       <RetainFocus val="N"/>
+                      <Disabled val="1"/>
                       <Condition val="Y"/>
                       <Modifier val="B"/>
                       <Direction val="C"/>
@@ -2202,6 +2204,7 @@
                   <PublicObject comp="-1" obj="1"/>
                 </Event>
                 <TXT val="PK_MAT_CODE"/>
+                <Disabled val="1"/>
                 <ExecuteOn_ val="O"/>
                 <LogicLines>
                   <LogicLine>
@@ -2226,6 +2229,7 @@
                       <SyncData val="N"/>
                       <IsRoute val="N"/>
                       <RetainFocus val="N"/>
+                      <Disabled val="1"/>
                       <Condition val="Y"/>
                       <Modifier val="B"/>
                       <Direction val="C"/>
@@ -2301,7 +2305,7 @@
               </LogicUnit>
             </TaskLogic>
             <TaskForms>
-              <FormEntry _last_isn="19" _last_test_id="19" id="1">
+              <FormEntry _last_isn="20" _last_test_id="20" id="1">
                 <PropertyList model="FORM_WEB_CLIENT">
                   <X id="21"/>
                   <Y id="22"/>
@@ -2379,6 +2383,7 @@
                     <Data FieldID="3" id="43"/>
                     <ControlName id="46" val="BOMAB44_PT_NAM"/>
                     <Visible id="61"/>
+                    <Enabled Exp="8" id="62"/>
                   </PropertyList>
                 </Control>
                 <Control _test_id="5" id="5">
@@ -2419,6 +2424,18 @@
                     <Data FieldID="6" id="43"/>
                     <ControlName id="46" val="SECTION_MASTER_SEC_DESC"/>
                     <Visible id="61"/>
+                    <Enabled Exp="8" id="62"/>
+                  </PropertyList>
+                </Control>
+                <Control PDOD="192" _test_id="20" id="20">
+                  <PropertyList model="CTRL_WEB_CLIENT_CHECKBOX">
+                    <X id="21" val="480"/>
+                    <Y id="22" val="119"/>
+                    <Width id="23" val="23"/>
+                    <Height id="24" val="19"/>
+                    <Data FieldID="8" id="43"/>
+                    <Text id="45"/>
+                    <ControlName id="46" val="HW_YN"/>
                   </PropertyList>
                 </Control>
                 <Control _test_id="8" id="8">
@@ -2448,26 +2465,12 @@
                 </Control>
                 <Control _test_id="10" id="10">
                   <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                    <Text id="19" valUnicode="HARDWARE PART (Y/N):"/>
+                    <Text id="19" valUnicode="HARDWARE PART"/>
                     <X id="21" val="326"/>
                     <Y id="22" val="123"/>
                     <Width id="23" val="148"/>
                     <Height id="24" val="15"/>
                     <ControlName id="46" val="Label10"/>
-                    <Visible id="61"/>
-                  </PropertyList>
-                </Control>
-                <Control PDOD="192" _test_id="11" id="11">
-                  <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                    <Model ID="MODEL_WEB_CLIENT" id="1">
-                      <Var FieldID="8"/>
-                    </Model>
-                    <X id="21" val="476"/>
-                    <Y id="22" val="123"/>
-                    <Width id="23" val="30"/>
-                    <Height id="24" val="16"/>
-                    <Data FieldID="8" id="43"/>
-                    <ControlName id="46" val="HW_YN"/>
                     <Visible id="61"/>
                   </PropertyList>
                 </Control>
@@ -2510,6 +2513,7 @@
                     <Data FieldID="11" id="43"/>
                     <ControlName id="46" val="PK_TYPE_MAST_PK_TYPE_DESC"/>
                     <Visible Exp="8" id="61"/>
+                    <Enabled Exp="8" id="62"/>
                   </PropertyList>
                 </Control>
                 <Control _test_id="15" id="15">
@@ -2550,6 +2554,7 @@
                     <Data FieldID="15" id="43"/>
                     <ControlName id="46" val="PK_MAST_DESC"/>
                     <Visible Exp="8" id="61"/>
+                    <Enabled Exp="8" id="62"/>
                   </PropertyList>
                 </Control>
                 <Control PDOD="128" _test_id="18" id="18">

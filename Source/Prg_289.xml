@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="VPRDS012WARNING" ISN_2="1" LastIsn="1" id="289">
-          <LastModified _date="739742" _time="41740" date="06/05/2026" time="11:35:40"/>
+          <LastModified _date="739750" _time="62402" date="14/05/2026" time="17:20:02"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -137,10 +137,10 @@
             <LockingStrategy val="M"/>
             <CacheStrategy val="D"/>
             <ForceRecordSuffix val="N"/>
-            <TransactionMode val="D"/>
-            <TransactionBegin val="P"/>
+            <TransactionMode val="O"/>
+            <TransactionBegin val="N"/>
             <PreloadView val="N"/>
-            <AllowEmptyDataview val="N"/>
+            <AllowEmptyDataview val="Y"/>
             <KeepCreatedContext val="N"/>
           </TaskProperties>
           <SIDE_WIN>

@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDMN101MasterMaintMenu" ISN_2="1" LastIsn="1" id="173">
-          <LastModified _date="739743" _time="63816" date="07/05/2026" time="17:43:36"/>
+          <LastModified _date="739754" _time="61136" date="18/05/2026" time="16:58:56"/>
           <Public val="Prg_6_RIA"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -522,12 +522,13 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <Update FlowIsn="32">
-                  <FieldID val="3"/>
-                  <WithValue val="4"/>
+                <Update FlowIsn="77">
+                  <Parent val="32768"/>
+                  <FieldID val="1"/>
+                  <WithValue val="31"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
+                  <Condition Exp="32"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
@@ -1390,6 +1391,12 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
+                <Remark FlowIsn="76">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
                 <CallTask FlowIsn="73">
                   <OperationType val="P"/>
                   <Event>
@@ -1740,10 +1747,6 @@
             <ExpSyntax val="'CKDMN101 : Master Maintenance Menu'"/>
             <ExpAttribute val="A"/>
           </Expression>
-          <Expression id="4">
-            <ExpSyntax val="25"/>
-            <ExpAttribute val="N"/>
-          </Expression>
           <Expression id="5">
             <ExpSyntax val="KbPut ('Alt+Rght'KBD)"/>
             <ExpAttribute val="*"/>
@@ -1815,6 +1818,14 @@
           <Expression id="30">
             <ExpSyntax val="'SECTION MASTER'"/>
             <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="31">
+            <ExpSyntax val="'TRUE'LOG"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="32">
+            <ExpSyntax val="INIGet('[MAGIC_LOGICAL_NAMES]DEV')='D'"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
       </Task>
