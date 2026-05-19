@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDMN102PackingMasterMenu" ISN_2="1" LastIsn="1" id="174">
-          <LastModified _date="739749" _time="60972" date="13/05/2026" time="16:56:12"/>
+          <LastModified _date="739755" _time="50939" date="19/05/2026" time="14:08:59"/>
           <Public val="Prg_7_RIA"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -26,7 +26,7 @@
           <SqlWhereExist val="N"/>
           <TaskType val="W"/>
           <Interactive val="Y"/>
-          <External val="N"/>
+          <External val="Y"/>
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>

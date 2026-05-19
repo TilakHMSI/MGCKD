@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDZ008BrowsePCList" ISN_2="1" LastIsn="3" id="221">
-          <LastModified _date="739751" _time="43726" date="15/05/2026" time="12:08:46"/>
+          <LastModified _date="739755" _time="56976" date="19/05/2026" time="15:49:36"/>
           <Public val="Prg_21_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -480,8 +480,8 @@
                 <ColumnTitle id="139" valUnicode="Dist Name"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="2" PDOD="128" _test_id="6" id="6">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+            <Control ISN_FATHER="2" _test_id="6" id="6">
+              <PropertyList FLD_FLAGS="1" model="CTRL_WEB_CLIENT_EDIT">
                 <X id="21" val="9"/>
                 <Y id="22" val="57"/>
                 <Width id="23" val="60"/>
@@ -490,7 +490,6 @@
                 <Data FieldID="2" id="43"/>
                 <ControlName id="46" val="WRK_PCNO_WRK_PCNO_PCNO"/>
                 <Visible id="61"/>
-                <Format Exp="7" id="82" valUnicode="11"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="2" _test_id="7" id="7">
