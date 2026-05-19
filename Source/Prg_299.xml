@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDPM010LotMaster" ISN_2="2" LastIsn="19" id="299">
-          <LastModified _date="739754" _time="61324" date="18/05/2026" time="17:02:04"/>
+          <LastModified _date="739755" _time="47401" date="19/05/2026" time="13:10:01"/>
           <Public val="Prg_36_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -534,7 +534,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="LotMasterList" ISN_2="14" LastIsn="19" id="299">
-            <LastModified _date="739743" _time="70086" date="07/05/2026" time="19:28:06"/>
+            <LastModified _date="739755" _time="47401" date="19/05/2026" time="13:10:01"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -710,6 +710,11 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
+                    <INT_DIT_INFO>
+                      <v>20</v>
+                      <v>24</v>
+                      <v>25</v>
+                    </INT_DIT_INFO>
                     <_DitIndexForToolkit val="9"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -1058,13 +1063,35 @@
                   </CallTask>
                 </LogicLine>
                 <LogicLine>
+                  <RaiseEvent FlowIsn="46">
+                    <Event>
+                      <EventType val="I"/>
+                      <InternalEventID val="295"/>
+                    </Event>
+                    <Wait val="78"/>
+                    <Arguments>
+                      <Argument>
+                        <Expression val="11"/>
+                        <Skip val="N"/>
+                      </Argument>
+                      <Argument>
+                        <Expression val="12"/>
+                        <Skip val="N"/>
+                      </Argument>
+                    </Arguments>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </RaiseEvent>
+                </LogicLine>
+                <LogicLine>
                   <END_BLK FlowIsn="38"/>
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="24" _last_test_id="24" id="1">
+            <FormEntry _last_isn="25" _last_test_id="25" id="1">
               <PropertyList model="FORM_WEB_CLIENT">
                 <Width id="23" val="560"/>
                 <Height id="24" val="204"/>
@@ -1102,7 +1129,7 @@
                   <Visible id="61"/>
                   <LineDivider id="78" val="Y"/>
                   <TitleHeight id="79" val="20"/>
-                  <RowHeight id="80" val="54"/>
+                  <RowHeight id="80" val="80"/>
                   <Elements id="81" val="6"/>
                   <_WindowWidth id="241" val="521"/>
                   <LastDivider id="260" val="Y"/>
@@ -1234,7 +1261,7 @@
                   <ControlLayer id="25" val="6"/>
                   <Data id="43"/>
                   <ControlName id="46" val="btnEdit"/>
-                  <Visible Exp="9" id="61"/>
+                  <Visible Exp="16" id="61"/>
                   <Enabled id="62"/>
                   <Format id="82" valUnicode="Edit"/>
                   <ImageFile id="88" val="Button"/>
@@ -1253,7 +1280,7 @@
                   <Height id="24" val="23"/>
                   <ControlLayer id="25" val="6"/>
                   <ControlName id="46" val="btnDelete"/>
-                  <Visible id="61"/>
+                  <Visible Exp="16" id="61"/>
                   <Format id="82" valUnicode="Delete"/>
                   <ImageFile id="88" val="Button"/>
                   <RaiseEvent id="234">
@@ -1262,13 +1289,26 @@
                   </RaiseEvent>
                 </PropertyList>
               </Control>
+              <Control ISN_FATHER="7" PDOD="128" _test_id="25" id="25">
+                <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                  <X id="21" val="386"/>
+                  <Y id="22" val="108"/>
+                  <Width id="23" val="61"/>
+                  <Height id="24" val="22"/>
+                  <ControlLayer id="25" val="6"/>
+                  <ControlName id="46" val="btnCopy"/>
+                  <Visible Exp="16" id="61"/>
+                  <Format id="82" valUnicode="Copy"/>
+                  <RaiseEvent id="234">
+                    <EventType val="U"/>
+                    <Parent val="32768"/>
+                    <PublicObject comp="-1" obj="7"/>
+                  </RaiseEvent>
+                </PropertyList>
+              </Control>
             </FormEntry>
           </TaskForms>
           <Expressions>
-            <Expression id="9">
-              <ExpSyntax val="{32768,10}"/>
-              <ExpAttribute val="B"/>
-            </Expression>
             <Expression id="10">
               <ExpSyntax val="{0,4}"/>
               <ExpAttribute val="A"/>
@@ -1293,10 +1333,14 @@
               <ExpSyntax val="{0,13}"/>
               <ExpAttribute val="B"/>
             </Expression>
+            <Expression id="16">
+              <ExpSyntax val="Trim({0,2})&lt;>''"/>
+              <ExpAttribute val="B"/>
+            </Expression>
           </Expressions>
           <Task MainProgram="N">
             <Header Description="GetPassword" ISN_2="19" LastIsn="19" id="299">
-              <LastModified _date="739743" _time="69631" date="07/05/2026" time="19:20:31"/>
+              <LastModified _date="739755" _time="42271" date="19/05/2026" time="11:44:31"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -1395,7 +1439,7 @@
               <VarRange/>
               <TaskProperties>
                 <SelectionTable val="N"/>
-                <ConfirmUpdate CNFU="Y"/>
+                <ConfirmUpdate CNFU="N"/>
                 <ConfirmCancel val="N"/>
                 <ErrorStrategy val="A"/>
                 <LockingStrategy val="M"/>
@@ -1654,6 +1698,7 @@
                     <ControlName id="46" val="v_Get_pass"/>
                     <Visible id="61"/>
                     <PasswordEdit id="85" val="Y"/>
+                    <BindingLevel id="733" val="2"/>
                   </PropertyList>
                 </Control>
                 <Control PDOD="128" _test_id="3" id="3">

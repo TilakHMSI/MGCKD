@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDZ006BrowseFrameModelCod" ISN_2="1" LastIsn="1" id="197">
-          <LastModified _date="739743" _time="69958" date="07/05/2026" time="19:25:58"/>
+          <LastModified _date="739755" _time="39345" date="19/05/2026" time="10:55:45"/>
           <Public val="Prg_19_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -194,7 +194,7 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <Locate MIN="2"/>
-                  <_DitIndexForToolkit val="5"/>
+                  <_DitIndexForToolkit val="6"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -207,7 +207,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="6"/>
+                  <_DitIndexForToolkit val="7"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -289,7 +289,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="6" _last_test_id="6" id="1">
+          <FormEntry _last_isn="7" _last_test_id="7" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="230"/>
               <Height id="24" val="310"/>
@@ -312,6 +312,20 @@
                 <ControlName id="46" val="Edit1"/>
                 <Visible id="61"/>
                 <Format id="82" valUnicode="14"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="7" id="7">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="65"/>
+                <Y id="22" val="9"/>
+                <Width id="23" val="41"/>
+                <Height id="24" val="22"/>
+                <ControlName id="46" val="btnexit"/>
+                <Format id="82" valUnicode="Back"/>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="14"/>
+                </RaiseEvent>
               </PropertyList>
             </Control>
             <Control _test_id="2" id="2">

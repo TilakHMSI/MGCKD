@@ -13,8 +13,8 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="VPRDS012WARNING" ISN_2="1" LastIsn="1" id="289">
-          <LastModified _date="739755" _time="55454" date="19/05/2026" time="15:24:14"/>
+        <Header Description="VPRDS013SUCCESS" ISN_2="1" LastIsn="1" id="310">
+          <LastModified _date="739755" _time="54717" date="19/05/2026" time="15:11:57"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -201,7 +201,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
-                  <_DitIndexForToolkit val="4"/>
+                  <_DitIndexForToolkit val="3"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -214,7 +214,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="7"/>
+                  <_DitIndexForToolkit val="5"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -283,21 +283,11 @@
               <GridX id="38" val="1"/>
               <GridY id="39" val="2"/>
               <_Comment id="218"/>
-              <FormName id="311" valUnicode="VPRDS012WARNING"/>
+              <FormName id="311" valUnicode="VPRDS013SUCCESS"/>
               <_TabbingOrder id="318" val="2"/>
               <WindowType id="358" val="12"/>
               <ParkFirstOn id="743" valUnicode="btn_Close"/>
             </PropertyList>
-            <Control _test_id="1" id="1">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <X id="21" val="113"/>
-                <Y id="22" val="137"/>
-                <Width id="23" val="344"/>
-                <Height id="24" val="223"/>
-                <ControlName id="46" val="Label1"/>
-                <Visible id="61"/>
-              </PropertyList>
-            </Control>
             <Control _test_id="2" id="2">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="**UnSupported Control**"/>
@@ -309,9 +299,9 @@
                 <Visible id="61"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="1" _test_id="3" id="3">
+            <Control _test_id="3" id="3">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode=" WARNING"/>
+                <Text id="19" valUnicode="Success"/>
                 <X id="21" val="114"/>
                 <Y id="22" val="140"/>
                 <Width id="23" val="341"/>
@@ -320,7 +310,7 @@
                 <Visible id="61"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="1" _test_id="4" id="4">
+            <Control _test_id="4" id="4">
               <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="1"/>
@@ -337,7 +327,7 @@
                 <MultiLineEdit id="71" val="Y"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="1" _test_id="5" id="5">
+            <Control _test_id="5" id="5">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="Click or press return key to continue!"/>
                 <X id="21" val="225"/>
@@ -345,17 +335,6 @@
                 <Width id="23" val="126"/>
                 <Height id="24" val="11"/>
                 <ControlName id="46" val="Label5"/>
-                <Visible id="61"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="1" _test_id="6" id="6">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="**UnSupported Control**"/>
-                <X id="21" val="225"/>
-                <Y id="22" val="229"/>
-                <Width id="23" val="126"/>
-                <Height id="24"/>
-                <ControlName id="46" val="Label6"/>
                 <Visible id="61"/>
               </PropertyList>
             </Control>
@@ -375,17 +354,6 @@
                   <EventType val="I"/>
                   <InternalEventID val="13"/>
                 </RaiseEvent>
-              </PropertyList>
-            </Control>
-            <Control _test_id="7" id="8">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="**UnSupported Control**"/>
-                <X id="21" val="113"/>
-                <Y id="22" val="359"/>
-                <Width id="23" val="344"/>
-                <Height id="24"/>
-                <ControlName id="46" val="Label7"/>
-                <Visible id="61"/>
               </PropertyList>
             </Control>
           </FormEntry>

@@ -13,8 +13,8 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="LOTCOPY" ISN_2="1" LastIsn="8" id="198">
-          <LastModified _date="739749" _time="61386" date="13/05/2026" time="17:03:06"/>
+        <Header Description="LOTCOPY" ISN_2="1" LastIsn="7" id="198">
+          <LastModified _date="739755" _time="47372" date="19/05/2026" time="13:09:32"/>
           <Public val="Prg_75_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -34,7 +34,7 @@
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
         </Header>
-        <ItemIsn val="22"/>
+        <ItemIsn val="24"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="6"/>
@@ -192,6 +192,16 @@
                 <CharSet id="172" val="1"/>
                 <StoredAs id="173" val="1"/>
                 <Definition id="175" val="2"/>
+              </PropertyList>
+            </Column>
+            <Column id="16" name="ERRORMESSAGE">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="200"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="200"/>
+                <_Flip id="194"/>
+                <PartOfDataview id="449"/>
               </PropertyList>
             </Column>
           </Columns>
@@ -647,6 +657,19 @@
                   <Direction val="C"/>
                 </Select>
               </LogicLine>
+              <LogicLine>
+                <Select FieldID="23" FlowIsn="62" id="23">
+                  <Column val="16"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
             </LogicLines>
           </LogicUnit>
           <LogicUnit id="3" propagate="78">
@@ -695,6 +718,81 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
+                <Update FlowIsn="63">
+                  <FieldID val="23"/>
+                  <WithValue val="20"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="64">
+                  <FieldID val="23"/>
+                  <WithValue val="16"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition Exp="17"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="66">
+                  <FieldID val="23"/>
+                  <WithValue val="18"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition Exp="19"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="67">
+                  <FieldID val="23"/>
+                  <WithValue val="21"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition Exp="11"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="56">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
+                  <TaskID comp="-1" obj="289"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="23"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition Exp="22"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="57" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TitleTxt="Error" VR_DISP="B">
+                  <AppendToErrorLog val="Y"/>
+                  <Condition Exp="22"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
                 <CallTask FlowIsn="42">
                   <OperationType val="T"/>
                   <Event>
@@ -709,6 +807,18 @@
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="80">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="14"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -758,30 +868,6 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
-          <LogicUnit id="6" propagate="78">
-            <Level val="C"/>
-            <Type val="S"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="S"/>
-            </Event>
-            <TXT val="v_Lot_No_Copy_From"/>
-            <ExecuteOn_ val="O"/>
-            <LogicLines>
-              <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="16" FlowIsn="46" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TitleTxt="Error" VR_DISP="S">
-                  <AppendToErrorLog val="Y"/>
-                  <Disabled val="1"/>
-                  <Condition Exp="17"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </STP>
-              </LogicLine>
-            </LogicLines>
-          </LogicUnit>
           <LogicUnit id="7" propagate="78">
             <Level val="H"/>
             <Type val="U"/>
@@ -821,48 +907,6 @@
                 </CallTask>
               </LogicLine>
               <LogicLine>
-                <RaiseEvent FlowIsn="48">
-                  <Event>
-                    <EventType val="I"/>
-                    <InternalEventID val="63"/>
-                  </Event>
-                  <Wait val="78"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </RaiseEvent>
-              </LogicLine>
-              <LogicLine>
-                <Remark FlowIsn="49">
-                  <Type val="2"/>
-                  <Text val="Disabled for Web client new logic may be required"/>
-                </Remark>
-              </LogicLine>
-            </LogicLines>
-          </LogicUnit>
-          <LogicUnit id="8" propagate="78">
-            <Level val="C"/>
-            <Type val="S"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="S"/>
-            </Event>
-            <TXT val="v_Lot_No_Copy_To"/>
-            <ExecuteOn_ val="O"/>
-            <LogicLines>
-              <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="16" FlowIsn="50" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TitleTxt="Error" VR_DISP="S">
-                  <AppendToErrorLog val="Y"/>
-                  <Disabled val="1"/>
-                  <Condition Exp="17"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </STP>
-              </LogicLine>
-              <LogicLine>
                 <CallTask FlowIsn="51">
                   <OperationType val="T"/>
                   <Event>
@@ -887,31 +931,20 @@
                 </CallTask>
               </LogicLine>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="18" FlowIsn="52" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TitleTxt="Error" VR_DISP="S">
-                  <AppendToErrorLog val="Y"/>
-                  <Disabled val="1"/>
-                  <Condition Exp="19"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </STP>
+                <Remark FlowIsn="77">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
               </LogicLine>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="53" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TXT="Lot Already Exist," TitleTxt="Error" VR_DISP="S">
-                  <AppendToErrorLog val="Y"/>
-                  <Condition Exp="11"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </STP>
-              </LogicLine>
-              <LogicLine>
-                <Remark FlowIsn="54">
+                <Remark FlowIsn="49">
                   <Type val="2"/>
                   <Text val="Disabled for Web client new logic may be required"/>
                 </Remark>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
-          <LogicUnit id="9" propagate="78">
+          <LogicUnit id="8" propagate="78">
             <Level val="C"/>
             <Type val="S"/>
             <Scope val="S"/>
@@ -921,17 +954,14 @@
             <Event>
               <EventType val="S"/>
             </Event>
-            <TXT val="v_Copy"/>
+            <TXT val="v_Lot_No_Copy_To"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="18" FlowIsn="55" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TitleTxt="Error" VR_DISP="S">
-                  <AppendToErrorLog val="Y"/>
-                  <Disabled val="1"/>
-                  <Condition Exp="19"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </STP>
+                <Remark FlowIsn="54">
+                  <Type val="2"/>
+                  <Text val="Disabled for Web client new logic may be required"/>
+                </Remark>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -1063,6 +1093,7 @@
                 <Data FieldID="10" id="43"/>
                 <ControlName id="46" val="LOT_MAST_LOT_MDCD"/>
                 <Visible id="61"/>
+                <Enabled Exp="23" id="62"/>
               </PropertyList>
             </Control>
             <Control _test_id="9" id="9">
@@ -1114,6 +1145,7 @@
                 <Data FieldID="19" id="43"/>
                 <ControlName id="46" val="V_v_Model_To_Copy"/>
                 <Visible id="61"/>
+                <Enabled Exp="23" id="62"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="13" id="13">
@@ -1204,10 +1236,26 @@
             <ExpSyntax val="NOT({0,12})"/>
             <ExpAttribute val="B"/>
           </Expression>
+          <Expression id="20">
+            <ExpSyntax val="''"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="21">
+            <ExpSyntax val="'Lot Already Exist!!'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="22">
+            <ExpSyntax val="Trim({0,23})&lt;>''"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="23">
+            <ExpSyntax val="'FALSE'LOG"/>
+            <ExpAttribute val="B"/>
+          </Expression>
         </Expressions>
         <Task MainProgram="N">
-          <Header Description="NewLotMasterMaintenance" ISN_2="2" LastIsn="8" id="198">
-            <LastModified _date="739744" _time="33310" date="08/05/2026" time="09:15:10"/>
+          <Header Description="NewLotMasterMaintenance" ISN_2="2" LastIsn="7" id="198">
+            <LastModified _date="739755" _time="47173" date="19/05/2026" time="13:06:13"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1385,7 +1433,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="3"/>
+                    <_DitIndexForToolkit val="4"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1402,7 +1450,7 @@
                     <INT_RCMP_INFO>
                       <v>7</v>
                     </INT_RCMP_INFO>
-                    <_DitIndexForToolkit val="5"/>
+                    <_DitIndexForToolkit val="6"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1452,7 +1500,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="6"/>
+                    <_DitIndexForToolkit val="7"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1474,7 +1522,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="8"/>
+                    <_DitIndexForToolkit val="9"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1487,7 +1535,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="10"/>
+                    <_DitIndexForToolkit val="11"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1506,7 +1554,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="12"/>
+                    <_DitIndexForToolkit val="13"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1683,23 +1731,11 @@
                     <Direction val="C"/>
                   </RaiseEvent>
                 </LogicLine>
-                <LogicLine>
-                  <RaiseEvent FlowIsn="25">
-                    <Event>
-                      <EventType val="I"/>
-                      <InternalEventID val="63"/>
-                    </Event>
-                    <Wait val="78"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </RaiseEvent>
-                </LogicLine>
               </LogicLines>
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="12" _last_test_id="12" id="1">
+            <FormEntry _last_isn="13" _last_test_id="13" id="1">
               <PropertyList model="FORM_WEB_CLIENT">
                 <X id="21"/>
                 <Y id="22"/>
@@ -1720,6 +1756,21 @@
                   <Height id="24" val="26"/>
                   <ControlName id="46" val="Label1"/>
                   <Visible id="61"/>
+                </PropertyList>
+              </Control>
+              <Control PDOD="128" _test_id="13" id="13">
+                <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                  <X id="21" val="349"/>
+                  <Y id="22" val="42"/>
+                  <Width id="23" val="53"/>
+                  <Height id="24" val="28"/>
+                  <ControlName id="46" val="btnexit"/>
+                  <Visible id="61"/>
+                  <Format id="82" valUnicode="Exit"/>
+                  <RaiseEvent id="234">
+                    <EventType val="I"/>
+                    <InternalEventID val="14"/>
+                  </RaiseEvent>
                 </PropertyList>
               </Control>
               <Control _test_id="2" id="2">
@@ -1893,7 +1944,7 @@
             </Expression>
           </Expressions>
           <Task MainProgram="N">
-            <Header Description="Create New Lot In Master No. 6" ISN_2="3" LastIsn="8" id="198">
+            <Header Description="Create New Lot In Master No. 6" ISN_2="3" LastIsn="7" id="198">
               <LastModified _date="739743" _time="69076" date="07/05/2026" time="19:11:16"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -2642,7 +2693,7 @@
           </Task>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Browse - PPK_MAST" ISN_2="4" LastIsn="8" id="198">
+          <Header Description="Browse - PPK_MAST" ISN_2="4" LastIsn="7" id="198">
             <LastModified _date="739743" _time="69076" date="07/05/2026" time="19:11:16"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
@@ -3380,7 +3431,7 @@
           <VarRangeInfo Mode="F" VarRangeVeeIsn="2" id="3"/>
           <VarRangeInfo Mode="T" VarRangeVeeIsn="2" id="4"/>
           <Task MainProgram="N">
-            <Header Description="Create New Lot TransFile No. 8" ISN_2="5" LastIsn="8" id="198">
+            <Header Description="Create New Lot TransFile No. 8" ISN_2="5" LastIsn="7" id="198">
               <LastModified _date="739743" _time="69076" date="07/05/2026" time="19:11:16"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -4372,7 +4423,7 @@
             </Expressions>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Create Copy Of PM" ISN_2="6" LastIsn="8" id="198">
+            <Header Description="Create Copy Of PM" ISN_2="6" LastIsn="7" id="198">
               <LastModified _date="739743" _time="69076" date="07/05/2026" time="19:11:16"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -4721,7 +4772,7 @@
           </Task>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Delete Lot" ISN_2="7" LastIsn="8" id="198">
+          <Header Description="Delete Lot" ISN_2="7" LastIsn="7" id="198">
             <LastModified _date="739743" _time="69076" date="07/05/2026" time="19:11:16"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
