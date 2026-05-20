@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="PartUpdationByDCNChangeRp" ISN_2="1" LastIsn="6" id="217">
-          <LastModified _date="739748" _time="45487" date="12/05/2026" time="12:38:07"/>
+          <LastModified _date="739756" _time="61179" date="20/05/2026" time="16:59:39"/>
           <Public val="Prg_83_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -31,7 +31,7 @@
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
         </Header>
-        <ItemIsn val="7"/>
+        <ItemIsn val="12"/>
         <Resource>
           <Columns>
             <Column id="1" name="v. Range">
@@ -117,6 +117,54 @@
                 <CharSet id="172" val="1"/>
                 <StoredAs id="173" val="1"/>
                 <Definition id="175" val="2"/>
+              </PropertyList>
+            </Column>
+            <Column id="8" name="vFileName">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="150"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="150"/>
+                <_Flip id="194"/>
+                <PartOfDataview id="449"/>
+              </PropertyList>
+            </Column>
+            <Column id="9" name="vFilePath">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="1000"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="1000"/>
+                <_Flip id="194"/>
+                <PartOfDataview id="449"/>
+              </PropertyList>
+            </Column>
+            <Column id="10" name="vBlob">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="1"/>
+                <PartOfDataview id="449"/>
+              </PropertyList>
+            </Column>
+            <Column id="11" name="vBlob64base">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="1"/>
+                <PartOfDataview id="449"/>
+              </PropertyList>
+            </Column>
+            <Column id="12" name="ERRORMESSAGE">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="200"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="200"/>
+                <_Flip id="194"/>
+                <PartOfDataview id="449"/>
               </PropertyList>
             </Column>
           </Columns>
@@ -207,18 +255,18 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
+                    <v>8</v>
+                    <v>6</v>
+                    <v>9</v>
+                    <v>13</v>
                     <v>2</v>
                     <v>3</v>
                     <v>4</v>
+                    <v>12</v>
                     <v>5</v>
-                    <v>6</v>
-                    <v>7</v>
-                    <v>8</v>
-                    <v>9</v>
                     <v>10</v>
                     <v>11</v>
-                    <v>12</v>
-                    <v>13</v>
+                    <v>7</v>
                   </INT_DIT_INFO>
                   <_DitIndexForToolkit val="2"/>
                   <DIFF_UPDATE val="T"/>
@@ -240,7 +288,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="8"/>
+                  <_DitIndexForToolkit val="18"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -254,7 +302,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="14"/>
+                  <_DitIndexForToolkit val="10"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -274,7 +322,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="12"/>
+                  <_DitIndexForToolkit val="17"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -293,7 +341,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="9"/>
+                  <_DitIndexForToolkit val="7"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -312,7 +360,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="11"/>
+                  <_DitIndexForToolkit val="16"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -331,10 +379,77 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="10"/>
+                  <_DitIndexForToolkit val="9"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="8" FlowIsn="22" id="8">
+                  <Column val="8"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="5"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="9" FlowIsn="23" id="9">
+                  <Column val="9"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="10" FlowIsn="24" id="10">
+                  <Column val="10"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="11" FlowIsn="25" id="11">
+                  <Column val="11"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="6"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="12" FlowIsn="26" id="12">
+                  <Column val="12"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
                   <Direction val="C"/>
                 </Select>
               </LogicLine>
@@ -352,19 +467,42 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
-          <LogicUnit id="3" propagate="78">
-            <Level val="C"/>
-            <Type val="S"/>
-            <Scope val="S"/>
+          <LogicUnit id="4" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="T"/>
             <EngineDirective val="S"/>
             <ShowMessage val="Y"/>
             <Condition val="89"/>
             <Event>
-              <EventType val="S"/>
+              <EventType val="U"/>
+              <Parent val="32768"/>
+              <PublicObject comp="-1" obj="12"/>
             </Event>
-            <TXT val="v_LotNo"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
+              <LogicLine>
+                <Update FlowIsn="27">
+                  <FieldID val="8"/>
+                  <WithValue val="10"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="28">
+                  <FieldID val="9"/>
+                  <WithValue val="11"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
               <LogicLine>
                 <CallTask FlowIsn="17">
                   <OperationType val="T"/>
@@ -450,30 +588,60 @@
                   <Direction val="C"/>
                 </CallTask>
               </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="29">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="30">
+                  <FieldID val="10"/>
+                  <WithValue val="12"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="31">
+                  <FieldID val="11"/>
+                  <WithValue val="13"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
             </LogicLines>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="14" _last_test_id="14" id="1">
+          <FormEntry _last_isn="19" _last_test_id="19" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <X id="21"/>
-              <Width id="23" val="813"/>
-              <Height id="24" val="553"/>
+              <Width id="23" val="1091"/>
+              <Height id="24" val="586"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="PartUpdationByDCNChangeRp"/>
               <_TabbingOrder id="318" val="2"/>
               <WindowType id="358" val="12"/>
             </PropertyList>
-            <Control _test_id="1" id="1">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="&lt;&lt;   UPDATION REPORT   >>"/>
-                <X id="21" val="31"/>
-                <Y id="22" val="26"/>
-                <Width id="23" val="750"/>
-                <Height id="24" val="39"/>
-                <ControlName id="46" val="Label1"/>
+            <Control _test_id="15" id="15">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <X id="21" val="575"/>
+                <Y id="22" val="12"/>
+                <Width id="23" val="75"/>
+                <Height id="24" val="13"/>
+                <Data Exp="9" id="43"/>
+                <ControlName id="46" val="Edit2"/>
                 <Visible id="61"/>
+                <Format id="82" valUnicode="40"/>
+                <Attribute id="83" val="85"/>
               </PropertyList>
             </Control>
             <Control PDOD="192" _test_id="14" id="14">
@@ -482,9 +650,9 @@
                   <Var FieldID="1"/>
                 </Model>
                 <X id="21" val="59"/>
-                <Y id="22" val="156"/>
-                <Width id="23" val="695"/>
-                <Height id="24" val="33"/>
+                <Y id="22" val="53"/>
+                <Width id="23" val="325"/>
+                <Height id="24" val="136"/>
                 <Data FieldID="1" id="43"/>
                 <ItemsList id="45" valUnicode="BETWEEN DATES,MONTHWISE,DCN NO. WISE,PC NO. WISE,LOT NO. WISE"/>
                 <ControlName id="46" val="v_Range"/>
@@ -492,10 +660,119 @@
                 <ChoiceColumns id="67" val="5"/>
               </PropertyList>
             </Control>
+            <Control PDOD="128" _test_id="16" id="16">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="549"/>
+                <Y id="22" val="61"/>
+                <Width id="23" val="41"/>
+                <Height id="24" val="22"/>
+                <ControlName id="46" val="btnexit"/>
+                <Format id="82" valUnicode="Back"/>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="14"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="17" id="17">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="552"/>
+                <Y id="22" val="94"/>
+                <Width id="23" val="61"/>
+                <Height id="24" val="23"/>
+                <ControlName id="46" val="btnView"/>
+                <Visible id="61"/>
+                <Format id="82" valUnicode="View"/>
+                <ImageFile id="88" val="Button"/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <Parent val="32768"/>
+                  <PublicObject comp="-1" obj="12"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
+            <Control _test_id="19" id="19">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <Model ID="MODEL_WEB_CLIENT" id="1">
+                  <Var FieldID="8"/>
+                </Model>
+                <X id="21" val="508"/>
+                <Y id="22" val="164"/>
+                <Width id="23" val="56"/>
+                <Height id="24" val="20"/>
+                <Data FieldID="8" id="43"/>
+                <ControlName id="46" val="vFileName"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="18" id="18">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <X id="21" val="575"/>
+                <Y id="22" val="164"/>
+                <Width id="23" val="69"/>
+                <Height id="24" val="20"/>
+                <Data FieldID="11" id="43"/>
+                <ControlName id="46" val="vBlob64base"/>
+                <MultiLineEdit id="71" val="Y"/>
+                <PasswordEdit id="85"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="8" id="8">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <Model ID="MODEL_WEB_CLIENT" id="1">
+                  <Var FieldID="5"/>
+                </Model>
+                <X id="21" val="390"/>
+                <Y id="22" val="223"/>
+                <Width id="23" val="95"/>
+                <Height id="24" val="18"/>
+                <Data FieldID="5" id="43"/>
+                <ControlName id="46" val="v_DCN_No"/>
+                <Visible Exp="4" id="61"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="6" id="6">
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text id="19" valUnicode="ENTER MONTH:"/>
+                <X id="21" val="278"/>
+                <Y id="22" val="226"/>
+                <Width id="23" val="91"/>
+                <Height id="24" val="15"/>
+                <ControlName id="46" val="Label6"/>
+                <Visible Exp="3" id="61"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="9" id="9">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <Model ID="MODEL_WEB_CLIENT" id="1">
+                  <Var FieldID="7"/>
+                </Model>
+                <X id="21" val="443"/>
+                <Y id="22" val="256"/>
+                <Width id="23" val="81"/>
+                <Height id="24" val="18"/>
+                <Data FieldID="7" id="43"/>
+                <ControlName id="46" val="v_LotNo"/>
+                <Visible Exp="6" id="61"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="13" id="13">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <Model ID="MODEL_WEB_CLIENT" id="1">
+                  <Var FieldID="3"/>
+                </Model>
+                <X id="21" val="558"/>
+                <Y id="22" val="265"/>
+                <Width id="23" val="81"/>
+                <Height id="24" val="18"/>
+                <Data FieldID="3" id="43"/>
+                <ControlName id="46" val="v_DateT"/>
+                <Visible Exp="2" id="61"/>
+              </PropertyList>
+            </Control>
             <Control _test_id="2" id="2">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="ENTER FROM DATE:"/>
-                <X id="21" val="231"/>
+                <X id="21" val="135"/>
                 <Y id="22" val="268"/>
                 <Width id="23" val="119"/>
                 <Height id="24" val="15"/>
@@ -525,68 +802,26 @@
                 <Visible Exp="6" id="61"/>
               </PropertyList>
             </Control>
+            <Control _test_id="12" id="12">
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text id="19" valUnicode="TO:"/>
+                <X id="21" val="457"/>
+                <Y id="22" val="291"/>
+                <Width id="23" val="28"/>
+                <Height id="24" val="15"/>
+                <ControlName id="46" val="Label12"/>
+                <Visible Exp="2" id="61"/>
+              </PropertyList>
+            </Control>
             <Control _test_id="5" id="5">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="ENTER PC NO.:"/>
-                <X id="21" val="305"/>
-                <Y id="22" val="268"/>
+                <X id="21" val="255"/>
+                <Y id="22" val="309"/>
                 <Width id="23" val="98"/>
                 <Height id="24" val="15"/>
                 <ControlName id="46" val="Label5"/>
                 <Visible Exp="5" id="61"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="6" id="6">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="ENTER MONTH:"/>
-                <X id="21" val="315"/>
-                <Y id="22" val="268"/>
-                <Width id="23" val="91"/>
-                <Height id="24" val="15"/>
-                <ControlName id="46" val="Label6"/>
-                <Visible Exp="3" id="61"/>
-              </PropertyList>
-            </Control>
-            <Control PDOD="128" _test_id="7" id="7">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="2"/>
-                </Model>
-                <X id="21" val="351"/>
-                <Y id="22" val="268"/>
-                <Width id="23" val="81"/>
-                <Height id="24" val="18"/>
-                <Data FieldID="2" id="43"/>
-                <ControlName id="46" val="v_DateF"/>
-                <Visible Exp="2" id="61"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="8" id="8">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="5"/>
-                </Model>
-                <X id="21" val="398"/>
-                <Y id="22" val="268"/>
-                <Width id="23" val="95"/>
-                <Height id="24" val="18"/>
-                <Data FieldID="5" id="43"/>
-                <ControlName id="46" val="v_DCN_No"/>
-                <Visible Exp="4" id="61"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="9" id="9">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="7"/>
-                </Model>
-                <X id="21" val="404"/>
-                <Y id="22" val="268"/>
-                <Width id="23" val="81"/>
-                <Height id="24" val="18"/>
-                <Data FieldID="7" id="43"/>
-                <ControlName id="46" val="v_LotNo"/>
-                <Visible Exp="6" id="61"/>
               </PropertyList>
             </Control>
             <Control _test_id="10" id="10">
@@ -594,8 +829,8 @@
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="6"/>
                 </Model>
-                <X id="21" val="404"/>
-                <Y id="22" val="268"/>
+                <X id="21" val="411"/>
+                <Y id="22" val="309"/>
                 <Width id="23" val="74"/>
                 <Height id="24" val="18"/>
                 <Data FieldID="6" id="43"/>
@@ -608,8 +843,8 @@
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="4"/>
                 </Model>
-                <X id="21" val="408"/>
-                <Y id="22" val="268"/>
+                <X id="21" val="529"/>
+                <Y id="22" val="309"/>
                 <Width id="23" val="60"/>
                 <Height id="24" val="18"/>
                 <Data FieldID="4" id="43"/>
@@ -617,278 +852,18 @@
                 <Visible Exp="3" id="61"/>
               </PropertyList>
             </Control>
-            <Control _test_id="12" id="12">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="TO:"/>
-                <X id="21" val="443"/>
-                <Y id="22" val="268"/>
-                <Width id="23" val="28"/>
-                <Height id="24" val="15"/>
-                <ControlName id="46" val="Label12"/>
-                <Visible Exp="2" id="61"/>
-              </PropertyList>
-            </Control>
-            <Control PDOD="128" _test_id="13" id="13">
+            <Control PDOD="128" _test_id="7" id="7">
               <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="3"/>
-                </Model>
-                <X id="21" val="471"/>
-                <Y id="22" val="268"/>
-                <Width id="23" val="81"/>
-                <Height id="24" val="18"/>
-                <Data FieldID="3" id="43"/>
-                <ControlName id="46" val="v_DateT"/>
-                <Visible Exp="2" id="61"/>
-              </PropertyList>
-            </Control>
-          </FormEntry>
-        </TaskForms>
-        <TaskForms>
-          <FormEntry _last_isn="14" _last_test_id="14" id="2">
-            <PropertyList model="FORM_RICH_CLIENT">
-              <X id="21" val="1"/>
-              <Width id="23" val="650"/>
-              <Height id="24" val="340"/>
-              <_Comment id="218"/>
-              <FormName id="311" valUnicode="Part Updation By DCN Change Rp"/>
-              <_TabbingOrder id="318" val="2"/>
-              <WindowType id="358" val="6"/>
-              <PersistentFormState id="493"/>
-            </PropertyList>
-            <Control _test_id="1" id="1">
-              <PropertyList model="CTRL_RICH_CLIENT_LABEL">
-                <Text id="19" valUnicode="&lt;&lt;   UPDATION REPORT   >>"/>
-                <X id="21" val="25"/>
-                <Y id="22" val="16"/>
-                <Width id="23" val="600"/>
-                <Height id="24" val="24"/>
-                <Font id="50" val="28"/>
-                <Visible id="61"/>
-                <Style id="63" val="3"/>
-                <HorizontalAlignment id="65" val="2"/>
-                <_VerticalScroll id="73"/>
-                <_Orientation id="143"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="2" id="2">
-              <PropertyList model="CTRL_RICH_CLIENT_LABEL">
-                <Text id="19" valUnicode="ENTER FROM DATE:"/>
-                <X id="21" val="185"/>
-                <Y id="22" val="165"/>
-                <Width id="23" val="95"/>
-                <Height id="24" val="9"/>
-                <Font id="50" val="55"/>
-                <Visible Exp="2" id="61"/>
-                <Style id="63" val="7"/>
-                <_VerticalScroll id="73"/>
-                <_Orientation id="143"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="3" id="3">
-              <PropertyList model="CTRL_RICH_CLIENT_LABEL">
-                <Text id="19" valUnicode="ENTER DCN NO.:"/>
-                <X id="21" val="233"/>
-                <Y id="22" val="165"/>
-                <Width id="23" val="84"/>
-                <Height id="24" val="9"/>
-                <Font id="50" val="55"/>
-                <Visible Exp="4" id="61"/>
-                <Style id="63" val="7"/>
-                <_VerticalScroll id="73"/>
-                <_Orientation id="143"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="4" id="4">
-              <PropertyList model="CTRL_RICH_CLIENT_LABEL">
-                <Text id="19" valUnicode="ENTER LOT NO.:"/>
-                <X id="21" val="238"/>
-                <Y id="22" val="165"/>
-                <Width id="23" val="84"/>
-                <Height id="24" val="9"/>
-                <Font id="50" val="55"/>
-                <Visible Exp="6" id="61"/>
-                <Style id="63" val="7"/>
-                <_VerticalScroll id="73"/>
-                <_Orientation id="143"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="5" id="5">
-              <PropertyList model="CTRL_RICH_CLIENT_LABEL">
-                <Text id="19" valUnicode="ENTER PC NO.:"/>
-                <X id="21" val="244"/>
-                <Y id="22" val="165"/>
-                <Width id="23" val="78"/>
-                <Height id="24" val="9"/>
-                <Font id="50" val="55"/>
-                <Visible Exp="5" id="61"/>
-                <Style id="63" val="7"/>
-                <_VerticalScroll id="73"/>
-                <_Orientation id="143"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="6" id="6">
-              <PropertyList model="CTRL_RICH_CLIENT_LABEL">
-                <Text id="19" valUnicode="ENTER MONTH:"/>
-                <X id="21" val="252"/>
-                <Y id="22" val="165"/>
-                <Width id="23" val="73"/>
-                <Height id="24" val="9"/>
-                <Font id="50" val="55"/>
-                <Visible Exp="3" id="61"/>
-                <Style id="63" val="7"/>
-                <_VerticalScroll id="73"/>
-                <_Orientation id="143"/>
-              </PropertyList>
-            </Control>
-            <Control PDOD="128" _test_id="7" id="7">
-              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
-                <Model ID="MODEL_RICH_CLIENT" id="1">
                   <Var FieldID="2"/>
                 </Model>
-                <X id="21" val="281"/>
-                <Y id="22" val="165"/>
-                <Width id="23" val="65"/>
-                <Height id="24" val="11"/>
+                <X id="21" val="363"/>
+                <Y id="22" val="357"/>
+                <Width id="23" val="81"/>
+                <Height id="24" val="18"/>
                 <Data FieldID="2" id="43"/>
-                <ControlName id="46" val="v. DateF"/>
-                <Font id="50" val="55"/>
-                <Color id="51" val="5"/>
+                <ControlName id="46" val="v_DateF"/>
                 <Visible Exp="2" id="61"/>
-                <TabOrder id="314" val="2"/>
-                <AllowParking id="315" val="Y"/>
-                <AllowedDirection id="317" val="1"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="8" id="8">
-              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
-                <Model ID="MODEL_RICH_CLIENT" id="1">
-                  <Var FieldID="5"/>
-                </Model>
-                <X id="21" val="318"/>
-                <Y id="22" val="165"/>
-                <Width id="23" val="76"/>
-                <Height id="24" val="11"/>
-                <Data FieldID="5" id="43"/>
-                <ControlName id="46" val="v. DCN No."/>
-                <Font id="50" val="55"/>
-                <Color id="51" val="5"/>
-                <Visible Exp="4" id="61"/>
-                <TabOrder id="314" val="5"/>
-                <AllowParking id="315" val="Y"/>
-                <AllowedDirection id="317" val="1"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="9" id="9">
-              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
-                <Model ID="MODEL_RICH_CLIENT" id="1">
-                  <Var FieldID="7"/>
-                </Model>
-                <X id="21" val="323"/>
-                <Y id="22" val="165"/>
-                <Width id="23" val="65"/>
-                <Height id="24" val="11"/>
-                <Data FieldID="7" id="43"/>
-                <ControlName id="46" val="v. LotNo."/>
-                <Font id="50" val="55"/>
-                <Color id="51" val="5"/>
-                <Visible Exp="6" id="61"/>
-                <TabOrder id="314" val="7"/>
-                <AllowParking id="315" val="Y"/>
-                <AllowedDirection id="317" val="1"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="10" id="10">
-              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
-                <Model ID="MODEL_RICH_CLIENT" id="1">
-                  <Var FieldID="6"/>
-                </Model>
-                <X id="21" val="323"/>
-                <Y id="22" val="165"/>
-                <Width id="23" val="59"/>
-                <Height id="24" val="11"/>
-                <Data FieldID="6" id="43"/>
-                <ControlName id="46" val="v. PCNo"/>
-                <Font id="50" val="55"/>
-                <Color id="51" val="5"/>
-                <Visible Exp="5" id="61"/>
-                <TabOrder id="314" val="6"/>
-                <AllowParking id="315" val="Y"/>
-                <AllowedDirection id="317" val="1"/>
-              </PropertyList>
-            </Control>
-            <Control PDOD="128" _test_id="11" id="11">
-              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
-                <Model ID="MODEL_RICH_CLIENT" id="1">
-                  <Var FieldID="4"/>
-                </Model>
-                <X id="21" val="326"/>
-                <Y id="22" val="165"/>
-                <Width id="23" val="48"/>
-                <Height id="24" val="11"/>
-                <Data FieldID="4" id="43"/>
-                <ControlName id="46" val="v. Month"/>
-                <Font id="50" val="55"/>
-                <Color id="51" val="5"/>
-                <Visible Exp="3" id="61"/>
-                <TabOrder id="314" val="4"/>
-                <AllowParking id="315" val="Y"/>
-                <AllowedDirection id="317" val="1"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="12" id="12">
-              <PropertyList model="CTRL_RICH_CLIENT_LABEL">
-                <Text id="19" valUnicode="TO:"/>
-                <X id="21" val="354"/>
-                <Y id="22" val="165"/>
-                <Width id="23" val="22"/>
-                <Height id="24" val="9"/>
-                <Font id="50" val="55"/>
-                <Visible Exp="2" id="61"/>
-                <Style id="63" val="7"/>
-                <_VerticalScroll id="73"/>
-                <_Orientation id="143"/>
-              </PropertyList>
-            </Control>
-            <Control PDOD="128" _test_id="13" id="13">
-              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
-                <Model ID="MODEL_RICH_CLIENT" id="1">
-                  <Var FieldID="3"/>
-                </Model>
-                <X id="21" val="377"/>
-                <Y id="22" val="165"/>
-                <Width id="23" val="65"/>
-                <Height id="24" val="11"/>
-                <Data FieldID="3" id="43"/>
-                <ControlName id="46" val="v. DateT"/>
-                <Font id="50" val="55"/>
-                <Color id="51" val="5"/>
-                <Visible Exp="2" id="61"/>
-                <TabOrder id="314" val="3"/>
-                <AllowParking id="315" val="Y"/>
-                <AllowedDirection id="317" val="1"/>
-              </PropertyList>
-            </Control>
-            <Control PDOD="192" _test_id="14" id="14">
-              <PropertyList model="CTRL_RICH_CLIENT_RADIO">
-                <Model ID="MODEL_RICH_CLIENT" id="1">
-                  <Var FieldID="1"/>
-                </Model>
-                <X id="21" val="47"/>
-                <Y id="22" val="96"/>
-                <Width id="23" val="556"/>
-                <Height id="24" val="20"/>
-                <Data FieldID="1" id="43"/>
-                <ItemsList id="45" valUnicode="BETWEEN DATES,MONTHWISE,DCN NO. WISE,PC NO. WISE,LOT NO. WISE"/>
-                <ControlName id="46" val="v. Range"/>
-                <Font id="50" val="57"/>
-                <Color id="51" val="5"/>
-                <Visible id="61"/>
-                <ChoiceColumns id="67" val="5"/>
-                <Multiline id="71"/>
-                <TabOrder id="314" val="1"/>
-                <AllowParking id="315" val="Y"/>
-                <AllowedDirection id="317" val="1"/>
               </PropertyList>
             </Control>
           </FormEntry>
@@ -926,10 +901,30 @@
             <ExpSyntax val="BOM (Date ())"/>
             <ExpAttribute val="D"/>
           </Expression>
+          <Expression id="9">
+            <ExpSyntax val="'Part Updation By DCN Change Report'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="10">
+            <ExpSyntax val="Trim({32768,3025})&amp;'_'&amp;DStr(Date(),'DDMMYYY')&amp;TStr(Time(),'HHMMSS')&amp;'_CKD_PartUpdationByDCN.PDF'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="11">
+            <ExpSyntax val="Translate('%CKDREPORT%')&amp;Trim({0,8})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="12">
+            <ExpSyntax val="File2Blb(Translate('%CKDREPORT%')&amp;Trim({0,8}))"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="13">
+            <ExpSyntax val="BlobToBase64({0,10})"/>
+            <ExpAttribute val="O"/>
+          </Expression>
         </Expressions>
         <Task MainProgram="N">
           <Header Description="Get Report Between Dates" ISN_2="2" LastIsn="6" id="217">
-            <LastModified _date="739748" _time="45431" date="12/05/2026" time="12:37:11"/>
+            <LastModified _date="739756" _time="61098" date="20/05/2026" time="16:58:18"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -955,6 +950,7 @@
             </DB>
             <IO id="1">
               <Description val="Report"/>
+              <IOExpression val="8"/>
               <OpenPrintDialog val="N"/>
               <PaperSize val="68"/>
               <Format val="P"/>
@@ -963,8 +959,8 @@
               <MACH val="PR1/Usual/Landscape"/>
               <Copies val="1"/>
               <Orientation val="P"/>
-              <PrintPreview val="Y"/>
-              <PDF val="N"/>
+              <PrintPreview val="N"/>
+              <PDF val="Y"/>
               <PrintingAllowed val="Y"/>
               <ContentCopyingAllowed val="Y"/>
               <ChangesAllowed val="Y"/>
@@ -2226,13 +2222,17 @@
               <ExpSyntax val="'MODIFICATIOIN REPORT AGAINST DCN BETWEEN '&amp;DStr ({1,2},'DD/MM/YYYY')&amp;' AND '&amp;DStr ({1,3},'DD/MM/YYYY')"/>
               <ExpAttribute val="A"/>
             </Expression>
+            <Expression id="8">
+              <ExpSyntax val="Trim({1,9})"/>
+              <ExpAttribute val="A"/>
+            </Expression>
           </Expressions>
           <VarRangeInfo Mode="F" VarRangeVeeIsn="9" id="1"/>
           <VarRangeInfo Mode="T" VarRangeVeeIsn="9" id="2"/>
         </Task>
         <Task MainProgram="N">
           <Header Description="Get Report For Month" ISN_2="3" LastIsn="6" id="217">
-            <LastModified _date="739748" _time="45431" date="12/05/2026" time="12:37:11"/>
+            <LastModified _date="739756" _time="61122" date="20/05/2026" time="16:58:42"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -2258,6 +2258,7 @@
             </DB>
             <IO id="1">
               <Description val="Report"/>
+              <IOExpression val="8"/>
               <OpenPrintDialog val="N"/>
               <PaperSize val="68"/>
               <Format val="P"/>
@@ -2266,8 +2267,8 @@
               <MACH val="PR1/Usual/Landscape"/>
               <Copies val="1"/>
               <Orientation val="P"/>
-              <PrintPreview val="Y"/>
-              <PDF val="N"/>
+              <PrintPreview val="N"/>
+              <PDF val="Y"/>
               <PrintingAllowed val="Y"/>
               <ContentCopyingAllowed val="Y"/>
               <ChangesAllowed val="Y"/>
@@ -3529,13 +3530,17 @@
               <ExpSyntax val="EOM ({1,4})"/>
               <ExpAttribute val="D"/>
             </Expression>
+            <Expression id="8">
+              <ExpSyntax val="Trim({1,9})"/>
+              <ExpAttribute val="A"/>
+            </Expression>
           </Expressions>
           <VarRangeInfo Mode="F" VarRangeVeeIsn="9" id="1"/>
           <VarRangeInfo Mode="T" VarRangeVeeIsn="9" id="2"/>
         </Task>
         <Task MainProgram="N">
           <Header Description="Get Report against DCN" ISN_2="4" LastIsn="6" id="217">
-            <LastModified _date="739748" _time="45431" date="12/05/2026" time="12:37:11"/>
+            <LastModified _date="739756" _time="61138" date="20/05/2026" time="16:58:58"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -3561,6 +3566,7 @@
             </DB>
             <IO id="1">
               <Description val="Report"/>
+              <IOExpression val="7"/>
               <OpenPrintDialog val="N"/>
               <PaperSize val="68"/>
               <Format val="P"/>
@@ -3569,8 +3575,8 @@
               <MACH val="PR1/Usual/Landscape"/>
               <Copies val="1"/>
               <Orientation val="P"/>
-              <PrintPreview val="Y"/>
-              <PDF val="N"/>
+              <PrintPreview val="N"/>
+              <PDF val="Y"/>
               <PrintingAllowed val="Y"/>
               <ContentCopyingAllowed val="Y"/>
               <ChangesAllowed val="Y"/>
@@ -4781,13 +4787,17 @@
               <ExpSyntax val="{1,5}"/>
               <ExpAttribute val="A"/>
             </Expression>
+            <Expression id="7">
+              <ExpSyntax val="Trim({1,9})"/>
+              <ExpAttribute val="A"/>
+            </Expression>
           </Expressions>
           <VarRangeInfo Mode="F" VarRangeVeeIsn="5" id="1"/>
           <VarRangeInfo Mode="T" VarRangeVeeIsn="5" id="2"/>
         </Task>
         <Task MainProgram="N">
           <Header Description="Get Report Against PCNo" ISN_2="5" LastIsn="6" id="217">
-            <LastModified _date="739748" _time="45431" date="12/05/2026" time="12:37:11"/>
+            <LastModified _date="739756" _time="61164" date="20/05/2026" time="16:59:24"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -4813,6 +4823,7 @@
             </DB>
             <IO id="1">
               <Description val="Report"/>
+              <IOExpression val="7"/>
               <OpenPrintDialog val="N"/>
               <PaperSize val="68"/>
               <Format val="P"/>
@@ -4821,8 +4832,8 @@
               <MACH val="PR1/Usual/Landscape"/>
               <Copies val="1"/>
               <Orientation val="P"/>
-              <PrintPreview val="Y"/>
-              <PDF val="N"/>
+              <PrintPreview val="N"/>
+              <PDF val="Y"/>
               <PrintingAllowed val="Y"/>
               <ContentCopyingAllowed val="Y"/>
               <ChangesAllowed val="Y"/>
@@ -6033,13 +6044,17 @@
               <ExpSyntax val="Trim ({1,6})"/>
               <ExpAttribute val="A"/>
             </Expression>
+            <Expression id="7">
+              <ExpSyntax val="Trim({1,9})"/>
+              <ExpAttribute val="A"/>
+            </Expression>
           </Expressions>
           <VarRangeInfo Mode="F" VarRangeVeeIsn="1" id="1"/>
           <VarRangeInfo Mode="T" VarRangeVeeIsn="1" id="2"/>
         </Task>
         <Task MainProgram="N">
           <Header Description="Get Report Between Dates" ISN_2="6" LastIsn="6" id="217">
-            <LastModified _date="739748" _time="45431" date="12/05/2026" time="12:37:11"/>
+            <LastModified _date="739756" _time="61179" date="20/05/2026" time="16:59:39"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -6065,6 +6080,7 @@
             </DB>
             <IO id="1">
               <Description val="Report"/>
+              <IOExpression val="7"/>
               <OpenPrintDialog val="N"/>
               <PaperSize val="68"/>
               <Format val="P"/>
@@ -6073,8 +6089,8 @@
               <MACH val="PR1/Usual/Landscape"/>
               <Copies val="1"/>
               <Orientation val="P"/>
-              <PrintPreview val="Y"/>
-              <PDF val="N"/>
+              <PrintPreview val="N"/>
+              <PDF val="Y"/>
               <PrintingAllowed val="Y"/>
               <ContentCopyingAllowed val="Y"/>
               <ChangesAllowed val="Y"/>
@@ -7283,6 +7299,10 @@
             </Expression>
             <Expression id="6">
               <ExpSyntax val="{1,7}"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="7">
+              <ExpSyntax val="Trim({1,9})"/>
               <ExpAttribute val="A"/>
             </Expression>
           </Expressions>

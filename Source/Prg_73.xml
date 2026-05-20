@@ -14,13 +14,17 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDR0061 Print Monthly Result" ISN_2="1" LastIsn="1" id="73">
-          <LastModified _date="731791" _time="36047" date="29/07/2004" time="10:00:47"/>
+          <LastModified _date="739756" _time="58829" date="20/05/2026" time="16:20:29"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
           <ReturnValue>
             <ReturnValueAttr/>
-            <ParametersAttributes/>
+            <TSK_PARAMS val="2"/>
+            <ParametersAttributes>
+              <Attr MgAttr="D"/>
+              <Attr MgAttr="A"/>
+            </ParametersAttributes>
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="B"/>
@@ -29,7 +33,7 @@
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
         </Header>
-        <ItemIsn val="65"/>
+        <ItemIsn val="66"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="61"/>
@@ -47,7 +51,6 @@
             <Format val="L"/>
             <Media val="S"/>
             <Access val="W"/>
-            <Copies val="1"/>
             <Orientation val="P"/>
             <PrintPreview val="N"/>
             <PDF val="N"/>
@@ -84,6 +87,15 @@
                 <CharSet id="172" val="1"/>
                 <StoredAs id="173" val="1"/>
                 <Definition id="175" val="2"/>
+              </PropertyList>
+            </Column>
+            <Column id="2" name="pFilePath">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="1000"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="1000"/>
+                <_Flip id="194"/>
               </PropertyList>
             </Column>
           </Columns>
@@ -171,7 +183,19 @@
                   <Column val="1"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="66" FlowIsn="73" id="66">
+                  <Column val="2"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
