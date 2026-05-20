@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0100CartonSpecialApprov" ISN_2="1" LastIsn="3" id="259">
-          <LastModified _date="739749" _time="53924" date="13/05/2026" time="14:58:44"/>
+          <LastModified _date="739756" _time="64537" date="20/05/2026" time="17:55:37"/>
           <Public val="Prg_56_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -547,7 +547,7 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
-                    <v>2</v>
+                    <v>37</v>
                   </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -573,9 +573,6 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <INT_DIT_INFO>
-                    <v>13</v>
-                  </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -588,9 +585,6 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <INT_DIT_INFO>
-                    <v>20</v>
-                  </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -603,9 +597,6 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <INT_DIT_INFO>
-                    <v>22</v>
-                  </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -618,9 +609,6 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <INT_DIT_INFO>
-                    <v>24</v>
-                  </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1724,7 +1712,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="35"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -2142,10 +2129,8 @@
             <Condition val="89"/>
             <Event>
               <EventType val="U"/>
-              <Parent val="32768"/>
               <PublicObject comp="-1" obj="1"/>
             </Event>
-            <TXT val="Save_v"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
@@ -2644,7 +2629,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="36" _last_test_id="36" id="1">
+          <FormEntry _last_isn="37" _last_test_id="37" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="560"/>
               <Height id="24" val="481"/>
@@ -2669,16 +2654,14 @@
                 <ImageFile id="88" val="%CKDBMP%HONDALOGO.BMP"/>
               </PropertyList>
             </Control>
-            <Control _test_id="2" id="2">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <X id="21" val="481"/>
-                <Y id="22" val="5"/>
-                <Width id="23" val="75"/>
-                <Height id="24" val="13"/>
-                <Data Exp="48" id="43"/>
+            <Control _test_id="37" id="37">
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text Exp="48" id="19" valUnicode="Text"/>
+                <X id="21" val="189"/>
+                <Y id="22" val="14"/>
+                <Width id="23" val="23"/>
+                <Height id="24" val="15"/>
                 <ControlName id="46" val="Edit2"/>
-                <Visible id="61"/>
-                <Format id="82" valUnicode="40"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="3" id="3">
@@ -2747,8 +2730,8 @@
                 <Visible id="61"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="8" id="8">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+            <Control _test_id="8" id="8">
+              <PropertyList FLD_FLAGS="1" model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="12"/>
                 </Model>
@@ -2759,7 +2742,6 @@
                 <Data FieldID="12" id="43"/>
                 <ControlName id="46" val="PC_No_v"/>
                 <Visible id="61"/>
-                <Format Exp="52" id="82" valUnicode="11A"/>
                 <ShowZoomButton id="718" val="Y"/>
               </PropertyList>
             </Control>
@@ -2815,8 +2797,8 @@
                 <Visible id="61"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="13" id="13">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+            <Control PDOD="1" _test_id="13" id="13">
+              <PropertyList FLD_FLAGS="1" model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="24"/>
                 </Model>
@@ -2827,7 +2809,6 @@
                 <Data FieldID="24" id="43"/>
                 <ControlName id="46" val="Lot_No_v"/>
                 <Visible id="61"/>
-                <Format Exp="54" id="82" valUnicode="4A"/>
                 <ShowZoomButton id="718" val="Y"/>
               </PropertyList>
             </Control>
@@ -2913,8 +2894,8 @@
                 <Visible id="61"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="20" id="20">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+            <Control PDOD="1" _test_id="20" id="20">
+              <PropertyList FLD_FLAGS="1" model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="43"/>
                 </Model>
@@ -2925,7 +2906,6 @@
                 <Data FieldID="43" id="43"/>
                 <ControlName id="46" val="Container_No_v"/>
                 <Visible id="61"/>
-                <Format Exp="56" id="82" valUnicode="5A"/>
                 <ShowZoomButton id="718" val="Y"/>
               </PropertyList>
             </Control>
@@ -2940,8 +2920,8 @@
                 <Visible id="61"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="22" id="22">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+            <Control PDOD="1" _test_id="22" id="22">
+              <PropertyList FLD_FLAGS="1" model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="48"/>
                 </Model>
@@ -2952,7 +2932,6 @@
                 <Data FieldID="48" id="43"/>
                 <ControlName id="46" val="Case_No_v"/>
                 <Visible id="61"/>
-                <Format Exp="57" id="82" valUnicode="5A"/>
                 <ShowZoomButton id="718" val="Y"/>
               </PropertyList>
             </Control>
@@ -2967,8 +2946,8 @@
                 <Visible id="61"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="24" id="24">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+            <Control PDOD="1" _test_id="24" id="24">
+              <PropertyList FLD_FLAGS="1" model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="55"/>
                 </Model>
@@ -2979,7 +2958,6 @@
                 <Data FieldID="55" id="43"/>
                 <ControlName id="46" val="Carton_No_v"/>
                 <Visible id="61"/>
-                <Format Exp="58" id="82" valUnicode="5A"/>
                 <ShowZoomButton id="718" val="Y"/>
               </PropertyList>
             </Control>
@@ -3103,22 +3081,20 @@
                 <Visible id="61"/>
               </PropertyList>
             </Control>
-            <Control _test_id="35" id="35">
+            <Control PDOD="128" _test_id="35" id="35">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="77"/>
-                </Model>
                 <X id="21" val="388"/>
                 <Y id="22" val="388"/>
                 <Width id="23" val="61"/>
                 <Height id="24" val="23"/>
-                <Data FieldID="77" id="43"/>
+                <Data id="43"/>
                 <ControlName id="46" val="Save_v"/>
                 <Visible id="61"/>
+                <Format id="82" valUnicode="Save"/>
                 <ImageFile id="88" val="Button"/>
                 <RaiseEvent id="234">
-                  <EventType val="I"/>
-                  <InternalEventID val="34"/>
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="1"/>
                 </RaiseEvent>
               </PropertyList>
             </Control>
@@ -3434,6 +3410,11 @@
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
+        <EVNT DESC="Task_Save" FORCE_EXIT="N" id="1">
+          <Event>
+            <EventType val="N"/>
+          </Event>
+        </EVNT>
         <Task MainProgram="N">
           <Header Description="Update Limits" ISN_2="2" LastIsn="3" id="259">
             <LastModified _date="739749" _time="52807" date="13/05/2026" time="14:40:07"/>

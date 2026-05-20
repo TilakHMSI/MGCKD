@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDCaseTransferModule" ISN_2="1" LastIsn="12" id="261">
-          <LastModified _date="739749" _time="62181" date="13/05/2026" time="17:16:21"/>
+          <LastModified _date="739756" _time="62900" date="20/05/2026" time="17:28:20"/>
           <Public val="Prg_97_RIA_NonInteractive_NWrk"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -161,7 +161,7 @@
           </LogicUnit>
           <LogicUnit id="4" propagate="78">
             <Level val="R"/>
-            <Type val="S"/>
+            <Type val="P"/>
             <Scope val="S"/>
             <EngineDirective val="S"/>
             <ShowMessage val="Y"/>
@@ -210,7 +210,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="MainLoop" ISN_2="2" LastIsn="12" id="261">
-            <LastModified _date="739749" _time="55105" date="13/05/2026" time="15:18:25"/>
+            <LastModified _date="739756" _time="62900" date="20/05/2026" time="17:28:20"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -333,7 +333,7 @@
             </LogicUnit>
             <LogicUnit id="3" propagate="78">
               <Level val="R"/>
-              <Type val="S"/>
+              <Type val="P"/>
               <Scope val="S"/>
               <EngineDirective val="S"/>
               <ShowMessage val="Y"/>

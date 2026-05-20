@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDZ011BrowseCases" ISN_2="1" LastIsn="1" id="231">
-          <LastModified _date="739749" _time="61596" date="13/05/2026" time="17:06:36"/>
+          <LastModified _date="739756" _time="65557" date="20/05/2026" time="18:12:37"/>
           <Public val="Prg_24_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -325,7 +325,7 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <Locate MIN="5"/>
-                  <_DitIndexForToolkit val="3"/>
+                  <_DitIndexForToolkit val="5"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -338,7 +338,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="4"/>
+                  <_DitIndexForToolkit val="6"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -421,7 +421,7 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
-                    <v>1</v>
+                    <v>10</v>
                   </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -483,11 +483,11 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="8" _last_test_id="8" id="1">
+          <FormEntry _last_isn="10" _last_test_id="10" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <X id="21"/>
               <Y id="22"/>
-              <Width id="23" val="203"/>
+              <Width id="23" val="428"/>
               <Height id="24" val="307"/>
               <FormUnits id="33" val="4"/>
               <ShowGrid id="37"/>
@@ -498,18 +498,6 @@
               <_TabbingOrder id="318" val="2"/>
               <WindowType id="358" val="12"/>
             </PropertyList>
-            <Control _test_id="1" id="1">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <X id="21" val="121"/>
-                <Y id="22" val="3"/>
-                <Width id="23" val="75"/>
-                <Height id="24" val="13"/>
-                <Data Exp="10" id="43"/>
-                <ControlName id="46" val="Edit1"/>
-                <Visible id="61"/>
-                <Format id="82" valUnicode="14"/>
-              </PropertyList>
-            </Control>
             <Control _test_id="2" id="2">
               <PropertyList model="CTRL_WEB_CLIENT_TABLE">
                 <X id="21" val="5"/>
@@ -524,6 +512,30 @@
                 <Elements id="81" val="3"/>
                 <_WindowWidth id="241" val="193"/>
                 <LastDivider id="260" val="Y"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="2" PDOD="128" _test_id="3" id="3">
+              <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
+                <Width id="23" val="50"/>
+                <ControlLayer id="25" val="1"/>
+                <ControlName id="46" val="Column3"/>
+                <ColumnTitle id="139" valUnicode="Case No."/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="2" PDOD="128" _test_id="4" id="4">
+              <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
+                <Width id="23" val="60"/>
+                <ControlLayer id="25" val="2"/>
+                <ControlName id="46" val="Column4"/>
+                <ColumnTitle id="139" valUnicode="Case Type"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="2" PDOD="128" _test_id="5" id="5">
+              <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
+                <Width id="23" val="69"/>
+                <ControlLayer id="25" val="3"/>
+                <ControlName id="46" val="Column5"/>
+                <ColumnTitle id="139" valUnicode="Pack Approval"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="2" PDOD="128" _test_id="6" id="6">
@@ -565,28 +577,28 @@
                 <Format id="82" valUnicode="10"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="2" PDOD="128" _test_id="3" id="3">
-              <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
-                <Width id="23" val="50"/>
-                <ControlLayer id="25" val="1"/>
-                <ControlName id="46" val="Column3"/>
-                <ColumnTitle id="139" valUnicode="Case No."/>
+            <Control _test_id="10" id="10">
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text Exp="10" id="19" valUnicode="Text"/>
+                <X id="21" val="287"/>
+                <Y id="22" val="32"/>
+                <Width id="23" val="23"/>
+                <Height id="24" val="15"/>
+                <ControlName id="46" val="Edit1"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="2" PDOD="128" _test_id="4" id="4">
-              <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
-                <Width id="23" val="60"/>
-                <ControlLayer id="25" val="2"/>
-                <ControlName id="46" val="Column4"/>
-                <ColumnTitle id="139" valUnicode="Case Type"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="2" PDOD="128" _test_id="5" id="5">
-              <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
-                <Width id="23" val="69"/>
-                <ControlLayer id="25" val="3"/>
-                <ControlName id="46" val="Column5"/>
-                <ColumnTitle id="139" valUnicode="Pack Approval"/>
+            <Control PDOD="128" _test_id="9" id="9">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="293"/>
+                <Y id="22" val="95"/>
+                <Width id="23" val="41"/>
+                <Height id="24" val="22"/>
+                <ControlName id="46" val="btnexit"/>
+                <Format id="82" valUnicode="Back"/>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="14"/>
+                </RaiseEvent>
               </PropertyList>
             </Control>
           </FormEntry>

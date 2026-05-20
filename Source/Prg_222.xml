@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDZ009BrowsePCLot" ISN_2="1" LastIsn="1" id="222">
-          <LastModified _date="739748" _time="47202" date="12/05/2026" time="13:06:42"/>
+          <LastModified _date="739756" _time="65008" date="20/05/2026" time="18:03:28"/>
           <Public val="Prg_22_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -478,7 +478,7 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
-                    <v>1</v>
+                    <v>18</v>
                   </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="Y"/>
@@ -541,7 +541,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="17" _last_test_id="17" id="1">
+          <FormEntry _last_isn="18" _last_test_id="18" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <X id="21"/>
               <Y id="22"/>
@@ -570,16 +570,14 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control _test_id="1" id="1">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <X id="21" val="388"/>
-                <Y id="22" val="5"/>
-                <Width id="23" val="75"/>
-                <Height id="24" val="13"/>
-                <Data Exp="12" id="43"/>
+            <Control _test_id="18" id="18">
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text Exp="12" id="19" valUnicode="Text"/>
+                <X id="21" val="124"/>
+                <Y id="22" val="11"/>
+                <Width id="23" val="23"/>
+                <Height id="24" val="15"/>
                 <ControlName id="46" val="Edit1"/>
-                <Visible id="61"/>
-                <Format id="82" valUnicode="40"/>
               </PropertyList>
             </Control>
             <Control _test_id="2" id="2">
