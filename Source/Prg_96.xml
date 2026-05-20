@@ -14,14 +14,18 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="Case OFF Gate Pass  Printing" ISN_2="1" LastIsn="5" id="96">
-          <LastModified _date="735680" _time="49869" date="23/03/2015" time="13:51:09"/>
+          <LastModified _date="739756" _time="61251" date="20/05/2026" time="17:00:51"/>
           <Public val="CKDPO074 138"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
           <ReturnValue>
             <ReturnValueAttr/>
-            <ParametersAttributes/>
+            <TSK_PARAMS val="2"/>
+            <ParametersAttributes>
+              <Attr MgAttr="A"/>
+              <Attr MgAttr="A"/>
+            </ParametersAttributes>
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="B"/>
@@ -30,7 +34,7 @@
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
         </Header>
-        <ItemIsn val="9"/>
+        <ItemIsn val="10"/>
         <Resource>
           <Columns>
             <Column id="1" name="v_calledPRM">
@@ -42,6 +46,15 @@
                 <StoredAs id="173" val="1"/>
                 <Size id="174" val="17"/>
                 <Definition id="175" val="2"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="10" name="vFilePath">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="1000"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="1000"/>
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
@@ -225,11 +238,23 @@
                   <Column val="1"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
+                  <IsParameter val="Y"/>
                   <INT_RCMP_INFO>
                     <v>8</v>
                     <v>10</v>
                   </INT_RCMP_INFO>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="10" FlowIsn="21" id="10">
+                  <Column val="10"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -589,8 +614,8 @@
           </Expression>
         </Expressions>
         <Task MainProgram="N">
-          <Header Description="Case OFF" ISN_2="2" id="96">
-            <LastModified _date="735669" _time="54935" date="12/03/2015" time="15:15:35"/>
+          <Header Description="Case OFF" ISN_2="2" LastIsn="5" id="96">
+            <LastModified _date="739756" _time="61251" date="20/05/2026" time="17:00:51"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -607,6 +632,7 @@
           <Resource>
             <IO id="1">
               <Description val="grpah"/>
+              <IOExpression val="1"/>
               <OpenPrintDialog val="N"/>
               <PaperSize val="65"/>
               <Format val="P"/>
@@ -615,8 +641,8 @@
               <MACH val="PR1/Usual/Landscape"/>
               <Copies val="1"/>
               <Orientation val="P"/>
-              <PrintPreview val="Y"/>
-              <PDF val="N"/>
+              <PrintPreview val="N"/>
+              <PDF val="Y"/>
               <PrintingAllowed val="Y"/>
               <ContentCopyingAllowed val="Y"/>
               <ChangesAllowed val="Y"/>
@@ -746,8 +772,14 @@
               </PropertyList>
             </FormEntry>
           </TaskForms>
+          <Expressions>
+            <Expression id="1">
+              <ExpSyntax val="Trim({1,10})"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+          </Expressions>
           <Task MainProgram="N">
-            <Header Description="CKD_CASE_TransferHDR" ISN_2="3" id="96">
+            <Header Description="CKD_CASE_TransferHDR" ISN_2="3" LastIsn="5" id="96">
               <LastModified _date="735669" _time="54935" date="12/03/2015" time="15:15:35"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -2291,7 +2323,7 @@
             <VarRangeInfo Mode="F" VarRangeVeeIsn="1" id="1"/>
             <VarRangeInfo Mode="T" VarRangeVeeIsn="1" id="2"/>
             <Task MainProgram="N">
-              <Header Description="CKD_CASE_TransferDTL" ISN_2="4" id="96">
+              <Header Description="CKD_CASE_TransferDTL" ISN_2="4" LastIsn="5" id="96">
                 <LastModified _date="735669" _time="54935" date="12/03/2015" time="15:15:35"/>
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
@@ -4904,7 +4936,7 @@
               <VarRangeInfo Mode="F" VarRangeVeeIsn="2" id="2"/>
               <VarRangeInfo Mode="T" VarRangeVeeIsn="2" id="3"/>
               <Task MainProgram="N">
-                <Header Description="EMPTY LINE" ISN_2="5" id="96">
+                <Header Description="EMPTY LINE" ISN_2="5" LastIsn="5" id="96">
                   <LastModified _date="735669" _time="54939" date="12/03/2015" time="15:15:39"/>
                   <ExecutionRight comp="-1"/>
                   <Resident val="N"/>

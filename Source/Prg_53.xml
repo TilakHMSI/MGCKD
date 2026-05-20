@@ -14,14 +14,18 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0081 Case Part List" ISN_2="1" LastIsn="10" id="53">
-          <LastModified _date="739477" _time="78956" date="14/08/2025" time="21:55:56"/>
+          <LastModified _date="739756" _time="51436" date="20/05/2026" time="14:17:16"/>
           <Public val="Corrupt"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
           <ReturnValue>
             <ReturnValueAttr/>
-            <ParametersAttributes/>
+            <TSK_PARAMS val="2"/>
+            <ParametersAttributes>
+              <Attr MgAttr="A"/>
+              <Attr MgAttr="A"/>
+            </ParametersAttributes>
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="B"/>
@@ -30,7 +34,7 @@
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
         </Header>
-        <ItemIsn val="42"/>
+        <ItemIsn val="44"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="36"/>
@@ -98,6 +102,7 @@
           </DB>
           <IO id="1">
             <Description val="Case Header -grp"/>
+            <IOExpression val="26"/>
             <OpenPrintDialog val="N"/>
             <PaperSize val="65"/>
             <Format val="P"/>
@@ -106,8 +111,8 @@
             <MACH val="PR1/Usual/Landscape"/>
             <Copies val="1"/>
             <Orientation val="P"/>
-            <PrintPreview val="Y"/>
-            <PDF val="N"/>
+            <PrintPreview val="N"/>
+            <PDF val="Y"/>
             <PrintingAllowed val="Y"/>
             <ContentCopyingAllowed val="Y"/>
             <ChangesAllowed val="Y"/>
@@ -117,7 +122,7 @@
           </IO>
           <IO id="2">
             <Description val="Case Header -Txt"/>
-            <IOExpression val="1"/>
+            <IOExpression val="27"/>
             <OpenPrintDialog val="N"/>
             <PaperSize val="68"/>
             <Format val="L"/>
@@ -152,6 +157,24 @@
             <FlipLines val="N"/>
           </IO>
           <Columns>
+            <Column id="3" name="pFilePath1">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="1000"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="1000"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="4" name="pFilePath2">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="1000"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="1000"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
             <Column id="1" name="Frame_Model">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_LOGICAL" id="1"/>
@@ -247,6 +270,30 @@
                 </DATAVIEW_SRC>
               </LogicLine>
               <LogicLine>
+                <Select FieldID="43" FlowIsn="70" id="43">
+                  <Column val="3"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="44" FlowIsn="71" id="44">
+                  <Column val="4"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
                 <Select FieldID="1" FlowIsn="3" id="1">
                   <Column val="1"/>
                   <Type val="R"/>
@@ -265,6 +312,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
+                  <REAL_VNAME_TXT val="WRK_PKPL_PCNO"/>
                   <INT_RCMP_INFO>
                     <v>17</v>
                     <v>28</v>
@@ -282,6 +330,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
+                  <REAL_VNAME_TXT val="WRK_PKPL_LTNO"/>
                   <INT_RCMP_INFO>
                     <v>28</v>
                     <v>48</v>
@@ -341,7 +390,7 @@
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="10" Mode="R" SortType="15" VIEW="7" VIEWS="4">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="10" Mode="R" SortType="15" VIEW="9" VIEWS="4">
                   <DB comp="-1" obj="2"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -404,7 +453,7 @@
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="17" Key="1" Mode="R" SortType="20" VIEW="11" VIEWS="2">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="17" Key="1" Mode="R" SortType="20" VIEW="13" VIEWS="2">
                   <DB comp="-1" obj="31"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -447,7 +496,7 @@
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="22" Key="1" Mode="R" SortType="26" VIEW="13" VIEWS="3">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="22" Key="1" Mode="R" SortType="26" VIEW="15" VIEWS="3">
                   <DB comp="-1" obj="30"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -500,7 +549,7 @@
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="28" Key="1" Mode="R" SortType="35" VIEW="16" VIEWS="6">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="28" Key="1" Mode="R" SortType="35" VIEW="18" VIEWS="6">
                   <DB comp="-1" obj="9"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -601,7 +650,7 @@
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="37" Key="1" Mode="R" SortType="46" VIEW="22" VIEWS="8">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="37" Key="1" Mode="R" SortType="46" VIEW="24" VIEWS="8">
                   <DB comp="-1" obj="28"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -716,7 +765,7 @@
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="48" Key="1" Mode="R" SortType="54" VIEW="30" VIEWS="5">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="48" Key="1" Mode="R" SortType="54" VIEW="32" VIEWS="5">
                   <DB comp="-1" obj="11"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -789,7 +838,7 @@
                 <END_LINK FlowIsn="54"/>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FieldID="39" FlowIsn="55" Key="1" Mode="R" SortType="60" VIEW="35" VIEWS="4">
+                <LNK Direction="A" EVL_CND="R" FieldID="39" FlowIsn="55" Key="1" Mode="R" SortType="60" VIEW="37" VIEWS="4">
                   <DB comp="-1" obj="36"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -865,7 +914,7 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="62" Key="1" Mode="R" SortType="65" VIEW="40" VIEWS="2">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="62" Key="1" Mode="R" SortType="65" VIEW="42" VIEWS="2">
                   <DB comp="-1" obj="36"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -2488,11 +2537,19 @@
             <ExpSyntax val="Trim ({0,9})"/>
             <ExpAttribute val="A"/>
           </Expression>
+          <Expression id="26">
+            <ExpSyntax val="Trim({0,44})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="27">
+            <ExpSyntax val="Trim({0,43})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
         </Expressions>
         <VarRangeInfo Mode="F" VarRangeVeeIsn="1" id="1"/>
         <VarRangeInfo Mode="T" VarRangeVeeIsn="1" id="2"/>
         <Task MainProgram="N">
-          <Header Description="Delete Work" ISN_2="2" id="53">
+          <Header Description="Delete Work" ISN_2="2" LastIsn="10" id="53">
             <LastModified _date="731548" _time="39486" date="29/11/2003" time="10:58:06"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
@@ -2625,8 +2682,8 @@
           </TaskForms>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Create Work" ISN_2="3" id="53">
-            <LastModified _date="739392" _time="37883" date="21/05/2025" time="10:31:23"/>
+          <Header Description="Create Work" ISN_2="3" LastIsn="10" id="53">
+            <LastModified _date="739756" _time="51276" date="20/05/2026" time="14:14:36"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -4098,7 +4155,7 @@
           <VarRangeInfo Mode="F" VarRangeVeeIsn="4" id="7"/>
           <VarRangeInfo Mode="T" VarRangeVeeIsn="4" id="8"/>
           <Task MainProgram="N">
-            <Header Description="Create Part Work" ISN_2="4" id="53">
+            <Header Description="Create Part Work" ISN_2="4" LastIsn="10" id="53">
               <LastModified _date="739355" _time="31135" date="14/04/2025" time="08:38:55"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -4395,7 +4452,7 @@
             </Expressions>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Create Engine Work" ISN_2="5" id="53">
+            <Header Description="Create Engine Work" ISN_2="5" LastIsn="10" id="53">
               <LastModified _date="739392" _time="38531" date="21/05/2025" time="10:42:11"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -4970,7 +5027,7 @@
             <VarRangeInfo Mode="T" VarRangeVeeIsn="5" id="10"/>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Parts List" ISN_2="6" id="53">
+            <Header Description="Parts List" ISN_2="6" LastIsn="10" id="53">
               <LastModified _date="739477" _time="78450" date="14/08/2025" time="21:47:30"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -5957,7 +6014,7 @@
             <VarRangeInfo Mode="T" VarRangeVeeIsn="6" id="4"/>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Engine List" ISN_2="7" id="53">
+            <Header Description="Engine List" ISN_2="7" LastIsn="10" id="53">
               <LastModified _date="739477" _time="78956" date="14/08/2025" time="21:55:56"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -6920,7 +6977,7 @@
             <VarRangeInfo Mode="T" VarRangeVeeIsn="1" id="2"/>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Create Frame Work" ISN_2="8" id="53">
+            <Header Description="Create Frame Work" ISN_2="8" LastIsn="10" id="53">
               <LastModified _date="733552" _time="35716" date="25/05/2009" time="09:55:16"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -7327,7 +7384,7 @@
             <VarRangeInfo Mode="T" VarRangeVeeIsn="5" id="10"/>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Frame List" ISN_2="9" id="53">
+            <Header Description="Frame List" ISN_2="9" LastIsn="10" id="53">
               <LastModified _date="736381" _time="49464" date="21/02/2017" time="13:44:24"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -8339,7 +8396,7 @@
             <VarRangeInfo Mode="F" VarRangeVeeIsn="3" id="1"/>
             <VarRangeInfo Mode="T" VarRangeVeeIsn="3" id="2"/>
             <Task MainProgram="N">
-              <Header Description="Get Unit" ISN_2="10" id="53">
+              <Header Description="Get Unit" ISN_2="10" LastIsn="10" id="53">
                 <LastModified _date="733554" _time="33989" date="27/05/2009" time="09:26:29"/>
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
