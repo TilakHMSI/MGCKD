@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDR0060CKDMonthlyPackRep" ISN_2="1" LastIsn="14" id="216">
-          <LastModified _date="739756" _time="60540" date="20/05/2026" time="16:49:00"/>
+          <LastModified _date="739757" _time="60646" date="21/05/2026" time="16:50:46"/>
           <Public val="Prg_72_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -31,7 +31,7 @@
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
         </Header>
-        <ItemIsn val="9"/>
+        <ItemIsn val="10"/>
         <Resource>
           <Columns>
             <Column id="1" name="Program Name (v)">
@@ -854,7 +854,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="CKDR0061 Print Monthly Result" ISN_2="14" LastIsn="14" id="216">
-            <LastModified _date="739756" _time="59381" date="20/05/2026" time="16:29:41"/>
+            <LastModified _date="739757" _time="56328" date="21/05/2026" time="15:38:48"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -892,8 +892,8 @@
               <MACH val="Printer1"/>
               <Copies val="1"/>
               <Orientation val="L"/>
-              <PrintPreview val="Y"/>
-              <PDF val="N"/>
+              <PrintPreview val="N"/>
+              <PDF val="Y"/>
               <PrintingAllowed val="Y"/>
               <ContentCopyingAllowed val="Y"/>
               <ChangesAllowed val="Y"/>

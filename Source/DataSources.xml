@@ -16641,12 +16641,17 @@
   <Columns>
     <Column id="1" name="WRK_PCNO_PCNO">
       <PropertyList model="FIELD">
-        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="25"/>
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="20"/>
         <StoredAs id="173" val="1"/>
-        <Size id="174" val="9"/>
+        <Size id="174" val="20"/>
         <Definition id="175" val="2"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192"/>
         <_Flip id="194"/>
-        <_FieldPhysical PIC_U="9" Size="9" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="1" translate="1"/>
+        <_FieldPhysical PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="1" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
       </PropertyList>
     </Column>
     <Column id="2" name="WRK_PCNO_SLFL">
@@ -16673,7 +16678,7 @@
       <Primary val="N"/>
       <Segments>
         <Segment>
-          <Size val="9"/>
+          <Size val="20"/>
           <Column val="1"/>
           <Order val="A"/>
         </Segment>
@@ -16695,7 +16700,7 @@
           <Order val="A"/>
         </Segment>
         <Segment>
-          <Size val="9"/>
+          <Size val="20"/>
           <Column val="1"/>
           <Order val="A"/>
         </Segment>

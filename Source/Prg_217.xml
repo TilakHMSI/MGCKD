@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="PartUpdationByDCNChangeRp" ISN_2="1" LastIsn="6" id="217">
-          <LastModified _date="739756" _time="61179" date="20/05/2026" time="16:59:39"/>
+          <LastModified _date="739757" _time="60947" date="21/05/2026" time="16:55:47"/>
           <Public val="Prg_83_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -31,7 +31,7 @@
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
         </Header>
-        <ItemIsn val="12"/>
+        <ItemIsn val="13"/>
         <Resource>
           <Columns>
             <Column id="1" name="v. Range">
@@ -102,11 +102,11 @@
             <Column id="6" name="v. PCNo">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="9"/>
+                <Picture id="157" valUnicode="20"/>
                 <NullValue id="167"/>
                 <CharSet id="172" val="1"/>
                 <StoredAs id="173" val="1"/>
-                <Size id="174" val="9"/>
+                <Size id="174" val="20"/>
                 <Definition id="175" val="2"/>
                 <_Flip id="194"/>
               </PropertyList>
@@ -164,6 +164,17 @@
                 <StoredAs id="173" val="1"/>
                 <Size id="174" val="200"/>
                 <_Flip id="194"/>
+                <PartOfDataview id="449"/>
+              </PropertyList>
+            </Column>
+            <Column id="13" name="vCounter">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="8"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="8"/>
+                <_Negative id="192"/>
+                <_FieldStyle id="276" val="1"/>
                 <PartOfDataview id="449"/>
               </PropertyList>
             </Column>
@@ -454,6 +465,19 @@
                 </Select>
               </LogicLine>
               <LogicLine>
+                <Select FieldID="13" FlowIsn="39" id="13">
+                  <Column val="13"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
                 <Remark FlowIsn="15">
                   <Type val="2"/>
                   <Text val="----------------------------------------------------------------------"/>
@@ -481,6 +505,17 @@
             </Event>
             <ExecuteOn_ val="O"/>
             <LogicLines>
+              <LogicLine>
+                <Update FlowIsn="40">
+                  <FieldID val="13"/>
+                  <WithValue val="14"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
               <LogicLine>
                 <Update FlowIsn="27">
                   <FieldID val="8"/>
@@ -595,6 +630,13 @@
                 </Remark>
               </LogicLine>
               <LogicLine>
+                <BLOCK EndBlock="42" EndBlockSegment="43" FlowIsn="41" Type="I">
+                  <Condition Exp="15"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
                 <Update FlowIsn="30">
                   <FieldID val="10"/>
                   <WithValue val="12"/>
@@ -615,6 +657,39 @@
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="42" EndBlockSegment="42" FlowIsn="43" Type="E">
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="44">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
+                  <TaskID comp="-1" obj="289"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="16"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="42"/>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -920,6 +995,18 @@
           <Expression id="13">
             <ExpSyntax val="BlobToBase64({0,10})"/>
             <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="14">
+            <ExpSyntax val="0"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="15">
+            <ExpSyntax val="{0,13}>0"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="16">
+            <ExpSyntax val="'No Data Found'"/>
+            <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
         <Task MainProgram="N">

@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP120PCFrameDetails" ISN_2="1" LastIsn="3" id="211">
-          <LastModified _date="739755" _time="71370" date="19/05/2026" time="19:49:30"/>
+          <LastModified _date="739757" _time="61050" date="21/05/2026" time="16:57:30"/>
           <Public val="Prg_94_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -31,7 +31,7 @@
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
         </Header>
-        <ItemIsn val="33"/>
+        <ItemIsn val="34"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="2"/>
@@ -108,10 +108,14 @@
             </Column>
             <Column id="3" name="P/C No. (v)">
               <PropertyList model="FIELD">
-                <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="25"/>
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="20"/>
                 <CharSet id="172" val="1"/>
                 <StoredAs id="173" val="1"/>
+                <Size id="174" val="20"/>
                 <Definition id="175" val="2"/>
+                <_Flip id="194"/>
+                <_FieldStyle id="276" val="1"/>
               </PropertyList>
             </Column>
             <Column id="4" name="P/C No. Found (v)">
@@ -195,6 +199,17 @@
                 <StoredAs id="173" val="1"/>
                 <Size id="174" val="200"/>
                 <_Flip id="194"/>
+                <PartOfDataview id="449"/>
+              </PropertyList>
+            </Column>
+            <Column id="13" name="vCounter">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="8"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="8"/>
+                <_Negative id="192"/>
+                <_FieldStyle id="276" val="1"/>
                 <PartOfDataview id="449"/>
               </PropertyList>
             </Column>
@@ -403,6 +418,7 @@
                   </INT_RCMP_INFO>
                   <_DitIndexForToolkit val="10"/>
                   <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -806,6 +822,19 @@
                 </Select>
               </LogicLine>
               <LogicLine>
+                <Select FieldID="34" FlowIsn="122" id="34">
+                  <Column val="13"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
                 <Remark FlowIsn="51">
                   <Type val="2"/>
                   <Text val=" "/>
@@ -966,6 +995,17 @@
                 </BLOCK>
               </LogicLine>
               <LogicLine>
+                <Update FlowIsn="149">
+                  <FieldID val="34"/>
+                  <WithValue val="34"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
                 <Update FlowIsn="65">
                   <FieldID val="28"/>
                   <WithValue val="20"/>
@@ -1102,6 +1142,13 @@
                 </CallTask>
               </LogicLine>
               <LogicLine>
+                <BLOCK EndBlock="124" EndBlockSegment="125" FlowIsn="123" Type="I">
+                  <Condition Exp="32"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
                 <Update FlowIsn="103">
                   <FieldID val="31"/>
                   <WithValue val="30"/>
@@ -1122,6 +1169,45 @@
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="124" EndBlockSegment="124" FlowIsn="125" Type="E">
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="128">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
+                  <TaskID comp="-1" obj="289"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="33"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="124"/>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="126">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
               </LogicLine>
               <LogicLine>
                 <END_BLK FlowIsn="84"/>
@@ -1263,7 +1349,7 @@
                 <Data FieldID="7" id="43"/>
                 <ControlName id="46" val="PC_No_v"/>
                 <Visible id="61"/>
-                <Format Exp="18" id="82" valUnicode="11"/>
+                <Format Exp="18" id="82" valUnicode="20"/>
                 <ShowZoomButton id="718" val="Y"/>
               </PropertyList>
             </Control>
@@ -1468,7 +1554,7 @@
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="28">
-            <ExpSyntax val="Trim({32768,3025})&amp;'_'&amp;DStr(Date(),'DDMMYYY')&amp;TStr(Time(),'HHMMSS')&amp;'_CKDP120P_FrameDetails.TXT'"/>
+            <ExpSyntax val="Trim({32768,3025})&amp;'_'&amp;DStr(Date(),'DDMMYYY')&amp;TStr(Time(),'HHMMSS')&amp;'_CKDP120P_FrameDetails.Pdf'"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="29">
@@ -1482,6 +1568,18 @@
           <Expression id="31">
             <ExpSyntax val="BlobToBase64({0,31})"/>
             <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="32">
+            <ExpSyntax val="{0,34}>0"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="33">
+            <ExpSyntax val="'No Data Found'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="34">
+            <ExpSyntax val="0"/>
+            <ExpAttribute val="N"/>
           </Expression>
         </Expressions>
         <Task MainProgram="N">
@@ -1815,8 +1913,8 @@
           </Expressions>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Frame  Records" ISN_2="3" LastIsn="3" id="211">
-            <LastModified _date="739755" _time="70915" date="19/05/2026" time="19:41:55"/>
+          <Header Description="FrameRecords" ISN_2="3" LastIsn="3" id="211">
+            <LastModified _date="739757" _time="57293" date="21/05/2026" time="15:54:53"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1861,12 +1959,14 @@
               <IOExpression val="7"/>
               <OpenPrintDialog val="N"/>
               <PaperSize val="68"/>
-              <Format val="L"/>
-              <Media val="S"/>
+              <Format val="P"/>
+              <Media val="G"/>
               <Access val="W"/>
+              <MACH val="PR1/Usual/Landscape"/>
+              <Copies val="1"/>
               <Orientation val="P"/>
               <PrintPreview val="N"/>
-              <PDF val="N"/>
+              <PDF val="Y"/>
               <PrintingAllowed val="Y"/>
               <ContentCopyingAllowed val="Y"/>
               <ChangesAllowed val="Y"/>
@@ -2190,6 +2290,18 @@
                     <Direction val="C"/>
                   </FormIO>
                 </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="23">
+                    <Parent val="1"/>
+                    <FieldID val="34"/>
+                    <WithValue val="8"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
               </LogicLines>
             </LogicUnit>
           </TaskLogic>
@@ -2237,18 +2349,18 @@
           </TaskForms>
           <TaskForms>
             <FormEntry CLSS="1" _last_isn="1" _last_test_id="7" id="2">
-              <PropertyList model="FORM_TEXT">
+              <PropertyList model="FORM_GUI1">
                 <Area id="17" val="H"/>
-                <Width id="23" val="103"/>
-                <Height id="24" val="1"/>
+                <Width id="23" val="824"/>
+                <Height id="24" val="11"/>
                 <_Comment id="218"/>
                 <FormName id="311" valUnicode="Header"/>
               </PropertyList>
               <Control _test_id="1" id="1">
-                <PropertyList model="CTRL_TEXT_STATIC">
+                <PropertyList model="CTRL_GUI1_STATIC">
                   <Text id="19" valUnicode="S.NO.|MODEL CODE|MODEL NAME|FRAME TYPE.| FRAME NO."/>
-                  <Width id="23" val="68"/>
-                  <Height id="24" val="1"/>
+                  <Width id="23" val="544"/>
+                  <Height id="24" val="11"/>
                   <Visible id="61"/>
                   <_Orientation id="143"/>
                 </PropertyList>
@@ -2257,16 +2369,16 @@
           </TaskForms>
           <TaskForms>
             <FormEntry CLSS="1" _last_isn="9" _last_test_id="63" id="3">
-              <PropertyList model="FORM_TEXT">
-                <Width id="23" val="103"/>
-                <Height id="24" val="1"/>
+              <PropertyList model="FORM_GUI1">
+                <Width id="23" val="824"/>
+                <Height id="24" val="11"/>
                 <_Comment id="218"/>
                 <FormName id="311" valUnicode="Detail"/>
               </PropertyList>
               <Control PDOD="1" _test_id="1" id="1">
-                <PropertyList model="CTRL_TEXT_EDIT">
-                  <Width id="23" val="4"/>
-                  <Height id="24" val="1"/>
+                <PropertyList model="CTRL_GUI1_EDIT">
+                  <Width id="23" val="32"/>
+                  <Height id="24" val="11"/>
                   <Data Exp="8" id="43"/>
                   <Visible id="61"/>
                   <HorizontalAlignment id="65" val="3"/>
@@ -2277,66 +2389,66 @@
                 </PropertyList>
               </Control>
               <Control _test_id="2" id="2">
-                <PropertyList model="CTRL_TEXT_STATIC">
+                <PropertyList model="CTRL_GUI1_STATIC">
                   <Text id="19" valUnicode="|"/>
-                  <X id="21" val="4"/>
-                  <Width id="23" val="1"/>
-                  <Height id="24" val="1"/>
+                  <X id="21" val="32"/>
+                  <Width id="23" val="8"/>
+                  <Height id="24" val="11"/>
                   <Visible id="61"/>
                   <_Orientation id="143"/>
                 </PropertyList>
               </Control>
               <Control _test_id="3" id="3">
-                <PropertyList model="CTRL_TEXT_EDIT">
-                  <Model ID="MODEL_TEXTBASE" id="1">
+                <PropertyList model="CTRL_GUI1_EDIT">
+                  <Model ID="MODEL_GUI_NI" id="1">
                     <Var FieldID="10"/>
                   </Model>
-                  <X id="21" val="5"/>
-                  <Width id="23" val="11"/>
-                  <Height id="24" val="1"/>
+                  <X id="21" val="40"/>
+                  <Width id="23" val="88"/>
+                  <Height id="24" val="11"/>
                   <Data FieldID="10" id="43"/>
                   <Visible id="61"/>
                   <_Orientation id="143"/>
                 </PropertyList>
               </Control>
               <Control _test_id="4" id="4">
-                <PropertyList model="CTRL_TEXT_STATIC">
+                <PropertyList model="CTRL_GUI1_STATIC">
                   <Text id="19" valUnicode="|"/>
-                  <X id="21" val="16"/>
-                  <Width id="23" val="1"/>
-                  <Height id="24" val="1"/>
+                  <X id="21" val="128"/>
+                  <Width id="23" val="8"/>
+                  <Height id="24" val="11"/>
                   <Visible id="61"/>
                   <_Orientation id="143"/>
                 </PropertyList>
               </Control>
               <Control _test_id="5" id="5">
-                <PropertyList model="CTRL_TEXT_EDIT">
-                  <Model ID="MODEL_TEXTBASE" id="1">
+                <PropertyList model="CTRL_GUI1_EDIT">
+                  <Model ID="MODEL_GUI_NI" id="1">
                     <Var FieldID="12"/>
                   </Model>
-                  <X id="21" val="17"/>
-                  <Width id="23" val="18"/>
-                  <Height id="24" val="1"/>
+                  <X id="21" val="136"/>
+                  <Width id="23" val="144"/>
+                  <Height id="24" val="11"/>
                   <Data FieldID="12" id="43"/>
                   <Visible id="61"/>
                   <_Orientation id="143"/>
                 </PropertyList>
               </Control>
               <Control _test_id="6" id="6">
-                <PropertyList model="CTRL_TEXT_STATIC">
+                <PropertyList model="CTRL_GUI1_STATIC">
                   <Text id="19" valUnicode="|"/>
-                  <X id="21" val="35"/>
-                  <Width id="23" val="2"/>
-                  <Height id="24" val="1"/>
+                  <X id="21" val="280"/>
+                  <Width id="23" val="16"/>
+                  <Height id="24" val="11"/>
                   <Visible id="61"/>
                   <_Orientation id="143"/>
                 </PropertyList>
               </Control>
               <Control _test_id="7" id="7">
-                <PropertyList model="CTRL_TEXT_EDIT">
-                  <X id="21" val="37"/>
-                  <Width id="23" val="11"/>
-                  <Height id="24" val="1"/>
+                <PropertyList model="CTRL_GUI1_EDIT">
+                  <X id="21" val="296"/>
+                  <Width id="23" val="88"/>
+                  <Height id="24" val="11"/>
                   <Data Exp="9" id="43"/>
                   <Visible id="61"/>
                   <VerticalAlignment id="66" val="2"/>
@@ -2345,20 +2457,20 @@
                 </PropertyList>
               </Control>
               <Control _test_id="8" id="8">
-                <PropertyList model="CTRL_TEXT_STATIC">
+                <PropertyList model="CTRL_GUI1_STATIC">
                   <Text id="19" valUnicode="|"/>
-                  <X id="21" val="51"/>
-                  <Width id="23" val="1"/>
-                  <Height id="24" val="1"/>
+                  <X id="21" val="408"/>
+                  <Width id="23" val="8"/>
+                  <Height id="24" val="11"/>
                   <Visible id="61"/>
                   <_Orientation id="143"/>
                 </PropertyList>
               </Control>
               <Control _test_id="9" id="9">
-                <PropertyList model="CTRL_TEXT_EDIT">
-                  <X id="21" val="53"/>
-                  <Width id="23" val="7"/>
-                  <Height id="24" val="1"/>
+                <PropertyList model="CTRL_GUI1_EDIT">
+                  <X id="21" val="424"/>
+                  <Width id="23" val="56"/>
+                  <Height id="24" val="11"/>
                   <Data Exp="10" id="43"/>
                   <Visible id="61"/>
                   <VerticalAlignment id="66" val="2"/>
