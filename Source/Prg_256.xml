@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0090CartonCaseScanning" ISN_2="1" LastIsn="53" id="256">
-          <LastModified _date="739749" _time="62080" date="13/05/2026" time="17:14:40"/>
+          <LastModified _date="739757" _time="35343" date="21/05/2026" time="09:49:03"/>
           <Comment val="13 and 18 digit validation&#xD;&#xA;6th digit - validation"/>
           <Public val="Prg_54_RIA_C_MultiTaskInSub"/>
           <ExecutionRight comp="-1"/>
@@ -729,7 +729,7 @@
                     <v>30</v>
                     <v>41</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="11"/>
+                  <_DitIndexForToolkit val="9"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -760,7 +760,7 @@
                     <v>27</v>
                     <v>29</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="16"/>
+                  <_DitIndexForToolkit val="15"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -805,7 +805,7 @@
                     <v>255</v>
                     <v>273</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="22"/>
+                  <_DitIndexForToolkit val="21"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -849,7 +849,7 @@
                   <INT_DIT_INFO>
                     <v>31</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="35"/>
+                  <_DitIndexForToolkit val="34"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -915,7 +915,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="36"/>
+                  <_DitIndexForToolkit val="35"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1034,7 +1034,7 @@
                     <v>195</v>
                     <v>273</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="24"/>
+                  <_DitIndexForToolkit val="23"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1096,7 +1096,7 @@
                   <INT_DIT_INFO>
                     <v>34</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="38"/>
+                  <_DitIndexForToolkit val="37"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1112,7 +1112,7 @@
                   <INT_RCMP_INFO>
                     <v>53</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="40"/>
+                  <_DitIndexForToolkit val="39"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1129,7 +1129,7 @@
                   <INT_RCMP_INFO>
                     <v>53</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="41"/>
+                  <_DitIndexForToolkit val="40"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1257,7 +1257,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="39"/>
+                  <_DitIndexForToolkit val="38"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1358,7 +1358,7 @@
                     <v>195</v>
                     <v>273</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="26"/>
+                  <_DitIndexForToolkit val="25"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1459,7 +1459,7 @@
                     <v>195</v>
                     <v>273</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="28"/>
+                  <_DitIndexForToolkit val="27"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1581,7 +1581,7 @@
                     <v>159</v>
                     <v>273</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="30"/>
+                  <_DitIndexForToolkit val="29"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -2718,7 +2718,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="17"/>
+                  <_DitIndexForToolkit val="16"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -2808,7 +2808,7 @@
                   <INT_RCMP_INFO>
                     <v>214</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="31"/>
+                  <_DitIndexForToolkit val="30"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -3141,7 +3141,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="33"/>
+                  <_DitIndexForToolkit val="32"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -3161,7 +3161,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="18"/>
+                  <_DitIndexForToolkit val="17"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -3300,7 +3300,7 @@
                   <INT_RCMP_INFO>
                     <v>264</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="19"/>
+                  <_DitIndexForToolkit val="18"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -6922,6 +6922,22 @@
                 <Visible id="61"/>
               </PropertyList>
             </Control>
+            <Control PDOD="192" _test_id="40" id="40">
+              <PropertyList model="CTRL_WEB_CLIENT_RADIO">
+                <Model ID="MODEL_WEB_CLIENT" id="1">
+                  <Var FieldID="8"/>
+                </Model>
+                <X id="21" val="16"/>
+                <Y id="22" val="354"/>
+                <Width id="23" val="165"/>
+                <Height id="24" val="36"/>
+                <Data FieldID="8" id="43"/>
+                <ItemsList Exp="161" id="45" valUnicode="Addition, Cancel, Inquiry"/>
+                <ControlName id="46" val="Option_v"/>
+                <Visible id="61"/>
+                <ChoiceColumns id="67" val="3"/>
+              </PropertyList>
+            </Control>
             <Control _test_id="8" id="8">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <X id="21" val="196"/>
@@ -6930,32 +6946,6 @@
                 <Height id="24" val="42"/>
                 <ControlName id="46" val="Label8"/>
                 <Visible Exp="40" id="61"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="9" id="9">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <X id="21" val="16"/>
-                <Y id="22" val="364"/>
-                <Width id="23" val="175"/>
-                <Height id="24" val="36"/>
-                <ControlName id="46" val="Label9"/>
-                <Visible id="61"/>
-              </PropertyList>
-            </Control>
-            <Control PDOD="192" _test_id="40" id="40">
-              <PropertyList model="CTRL_WEB_CLIENT_RADIO">
-                <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="8"/>
-                </Model>
-                <X id="21" val="21"/>
-                <Y id="22" val="367"/>
-                <Width id="23" val="165"/>
-                <Height id="24" val="28"/>
-                <Data FieldID="8" id="43"/>
-                <ItemsList Exp="161" id="45" valUnicode="Addition, Cancel, Inquiry"/>
-                <ControlName id="46" val="Option_v"/>
-                <Visible id="61"/>
-                <ChoiceColumns id="67" val="3"/>
               </PropertyList>
             </Control>
             <Control _test_id="10" id="10">

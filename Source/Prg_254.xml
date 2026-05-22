@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CaseLabelPrintWithoutZeroWeight" ISN_2="1" LastIsn="24" id="254">
-          <LastModified _date="739756" _time="55268" date="20/05/2026" time="15:21:08"/>
+          <LastModified _date="739758" _time="49355" date="22/05/2026" time="13:42:35"/>
           <Public val="Prg_142_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -81,10 +81,10 @@
             <Column id="2" name="Program Name (v)">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="40"/>
+                <Picture id="157" valUnicode="255"/>
                 <CharSet id="172" val="1"/>
                 <StoredAs id="173" val="1"/>
-                <Size id="174" val="40"/>
+                <Size id="174" val="255"/>
                 <Definition id="175" val="2"/>
                 <_Flip id="194"/>
                 <_FieldStyle id="276" val="1"/>
@@ -1178,7 +1178,7 @@
         </TaskForms>
         <Expressions>
           <Expression id="1">
-            <ExpSyntax val="'CKDP0080'"/>
+            <ExpSyntax val="'CKDP0080 : CaseLabel Print Without Zero Weight'"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="2">
@@ -3343,7 +3343,7 @@
         </Task>
         <Task MainProgram="N">
           <Header Description="DatewiseCartonInquiry" ISN_2="8" LastIsn="24" id="254">
-            <LastModified _date="739756" _time="55268" date="20/05/2026" time="15:21:08"/>
+            <LastModified _date="739758" _time="43644" date="22/05/2026" time="12:07:24"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -4848,7 +4848,7 @@
                     <WithValue val="33"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
+                    <Condition Exp="20"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
@@ -4859,7 +4859,7 @@
                     <WithValue val="30"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
+                    <Condition Exp="20"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
@@ -4870,7 +4870,8 @@
                     <WithValue val="29"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
+                    <Disabled val="1"/>
+                    <Condition Exp="20"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
@@ -4881,7 +4882,8 @@
                     <WithValue val="34"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
+                    <Disabled val="1"/>
+                    <Condition Exp="20"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
@@ -4919,7 +4921,7 @@
                     <WithValue val="31"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
+                    <Condition Exp="20"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
@@ -4930,7 +4932,7 @@
                     <WithValue val="32"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
+                    <Condition Exp="20"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
@@ -4941,7 +4943,8 @@
                     <WithValue val="35"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
+                    <Disabled val="1"/>
+                    <Condition Exp="20"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
@@ -4952,7 +4955,8 @@
                     <WithValue val="36"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
+                    <Disabled val="1"/>
+                    <Condition Exp="20"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>

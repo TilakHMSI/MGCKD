@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0060PackingPlanPrint" ISN_2="1" LastIsn="22" id="246">
-          <LastModified _date="739754" _time="42134" date="18/05/2026" time="11:42:14"/>
+          <LastModified _date="739758" _time="41678" date="22/05/2026" time="11:34:38"/>
           <Public val="Prg_49_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -3987,7 +3987,7 @@
         </Task>
         <Task MainProgram="N">
           <Header Description="PackingPlanInquiry" ISN_2="11" LastIsn="22" id="246">
-            <LastModified _date="739751" _time="54536" date="15/05/2026" time="15:08:56"/>
+            <LastModified _date="739758" _time="41678" date="22/05/2026" time="11:34:38"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -5570,6 +5570,14 @@
                   </CallTask>
                 </LogicLine>
                 <LogicLine>
+                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="149" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                    <AppendToErrorLog val="N"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </STP>
+                </LogicLine>
+                <LogicLine>
                   <Update FlowIsn="117">
                     <FieldID val="54"/>
                     <WithValue val="35"/>
@@ -5618,6 +5626,7 @@
                       <InternalEventID val="14"/>
                     </Event>
                     <Wait val="78"/>
+                    <Disabled val="1"/>
                     <Condition val="Y"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>

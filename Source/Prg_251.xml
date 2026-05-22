@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0080CaseLabelPrint" ISN_2="1" LastIsn="24" id="251">
-          <LastModified _date="739756" _time="51468" date="20/05/2026" time="14:17:48"/>
+          <LastModified _date="739758" _time="46524" date="22/05/2026" time="12:55:24"/>
           <Public val="Prg_52_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -3317,7 +3317,7 @@
         </Task>
         <Task MainProgram="N">
           <Header Description="DatewiseCartonInquiry" ISN_2="8" LastIsn="24" id="251">
-            <LastModified _date="739756" _time="51468" date="20/05/2026" time="14:17:48"/>
+            <LastModified _date="739758" _time="46524" date="22/05/2026" time="12:55:24"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -4685,6 +4685,50 @@
               <ExecuteOn_ val="O"/>
               <LogicLines>
                 <LogicLine>
+                  <Update FlowIsn="210">
+                    <FieldID val="43"/>
+                    <WithValue val="38"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="211">
+                    <FieldID val="44"/>
+                    <WithValue val="38"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="212">
+                    <FieldID val="47"/>
+                    <WithValue val="38"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="213">
+                    <FieldID val="48"/>
+                    <WithValue val="38"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
                   <Update FlowIsn="88">
                     <FieldID val="40"/>
                     <WithValue val="16"/>
@@ -4796,7 +4840,7 @@
                     <WithValue val="33"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
+                    <Condition Exp="20"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
@@ -4807,7 +4851,7 @@
                     <WithValue val="30"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
+                    <Condition Exp="20"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
@@ -4818,7 +4862,7 @@
                     <WithValue val="34"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
+                    <Condition Exp="20"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
@@ -4829,7 +4873,7 @@
                     <WithValue val="35"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
+                    <Condition Exp="20"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
@@ -4867,7 +4911,7 @@
                     <WithValue val="31"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
+                    <Condition Exp="20"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
@@ -4878,7 +4922,7 @@
                     <WithValue val="32"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
+                    <Condition Exp="20"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
@@ -4889,7 +4933,7 @@
                     <WithValue val="36"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
+                    <Condition Exp="20"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
@@ -4900,7 +4944,7 @@
                     <WithValue val="37"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
+                    <Condition Exp="20"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
@@ -4924,6 +4968,50 @@
               <ExecuteOn_ val="O"/>
               <LogicLines>
                 <LogicLine>
+                  <Update FlowIsn="202">
+                    <FieldID val="43"/>
+                    <WithValue val="38"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="203">
+                    <FieldID val="44"/>
+                    <WithValue val="38"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="196">
+                    <FieldID val="43"/>
+                    <WithValue val="33"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="197">
+                    <FieldID val="44"/>
+                    <WithValue val="30"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
                   <CallTask FlowIsn="91">
                     <OperationType val="T"/>
                     <Event>
@@ -4939,6 +5027,28 @@
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </CallTask>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="198">
+                    <FieldID val="45"/>
+                    <WithValue val="31"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="199">
+                    <FieldID val="46"/>
+                    <WithValue val="32"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
@@ -5472,6 +5582,10 @@
               <ExpSyntax val="BlobToBase64({0,49})"/>
               <ExpAttribute val="O"/>
             </Expression>
+            <Expression id="38">
+              <ExpSyntax val="''"/>
+              <ExpAttribute val="A"/>
+            </Expression>
           </Expressions>
           <EVNT DESC="Task_PCSelect" FORCE_EXIT="N" id="1">
             <Event>
@@ -5510,7 +5624,7 @@
           </EVNT>
           <Task MainProgram="N">
             <Header Description="Case Engine List" ISN_2="9" LastIsn="24" id="251">
-              <LastModified _date="739749" _time="43950" date="13/05/2026" time="12:12:30"/>
+              <LastModified _date="739758" _time="42272" date="22/05/2026" time="11:44:32"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -5611,7 +5725,7 @@
               </IO>
               <IO id="2">
                 <Description val="Case Header -Txt"/>
-                <IOExpression val="2"/>
+                <IOExpression val="19"/>
                 <OpenPrintDialog val="N"/>
                 <PaperSize val="68"/>
                 <Format val="L"/>
@@ -6693,6 +6807,10 @@
               </Expression>
               <Expression id="2">
                 <ExpSyntax val="'c:\magic\temp\'&amp;{1,9}&amp;'.csv'"/>
+                <ExpAttribute val="A"/>
+              </Expression>
+              <Expression id="19">
+                <ExpSyntax val="Trim({8,44})"/>
                 <ExpAttribute val="A"/>
               </Expression>
               <Expression id="3">

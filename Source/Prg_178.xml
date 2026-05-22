@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDMN106CartonCaseScanMenu" ISN_2="1" LastIsn="1" id="178">
-          <LastModified _date="739749" _time="61088" date="13/05/2026" time="16:58:08"/>
+          <LastModified _date="739758" _time="49896" date="22/05/2026" time="13:51:36"/>
           <Public val="Prg_11"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -37,10 +37,10 @@
             <Column id="1" name="Program Name (v)">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="30"/>
+                <Picture id="157" valUnicode="255"/>
                 <CharSet id="172" val="1"/>
                 <StoredAs id="173" val="1"/>
-                <Size id="174" val="30"/>
+                <Size id="174" val="255"/>
                 <Definition id="175" val="2"/>
                 <_Flip id="194"/>
                 <_FieldStyle id="276" val="1"/>
@@ -979,7 +979,7 @@
                 <Data Exp="18" id="43"/>
                 <ControlName id="46" val="Edit2"/>
                 <Visible id="61"/>
-                <Format id="82" valUnicode="14"/>
+                <Format id="82" valUnicode="255"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="3" id="3">
