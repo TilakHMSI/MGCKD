@@ -14,13 +14,17 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0112 Case Pack Plan Print" ISN_2="1" LastIsn="1" id="59">
-          <LastModified _date="735710" _time="67394" date="22/04/2015" time="18:43:14"/>
+          <LastModified _date="739758" _time="41478" date="22/05/2026" time="11:31:18"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
           <ReturnValue>
             <ReturnValueAttr/>
-            <ParametersAttributes/>
+            <TSK_PARAMS val="2"/>
+            <ParametersAttributes>
+              <Attr MgAttr="A"/>
+              <Attr MgAttr="D"/>
+            </ParametersAttributes>
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="B"/>
@@ -29,7 +33,7 @@
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
         </Header>
-        <ItemIsn val="49"/>
+        <ItemIsn val="52"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="2"/>
@@ -105,6 +109,7 @@
           </DB>
           <IO id="1">
             <Description val="Carton Packing"/>
+            <IOExpression val="26"/>
             <OpenPrintDialog val="N"/>
             <PaperSize val="65"/>
             <Format val="P"/>
@@ -113,8 +118,8 @@
             <MACH val="Printer1"/>
             <Copies val="1"/>
             <Orientation val="P"/>
-            <PrintPreview val="Y"/>
-            <PDF val="N"/>
+            <PrintPreview val="N"/>
+            <PDF val="Y"/>
             <PrintingAllowed val="Y"/>
             <ContentCopyingAllowed val="Y"/>
             <ChangesAllowed val="Y"/>
@@ -123,6 +128,15 @@
             <FlipLines val="N"/>
           </IO>
           <Columns>
+            <Column id="3" name="pFilePath">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="1000"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="1000"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
             <Column id="1" name="Plan Date (p)">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_DATE" comp="-1" id="1" obj="11"/>
@@ -212,11 +226,23 @@
                 </DATAVIEW_SRC>
               </LogicLine>
               <LogicLine>
+                <Select FieldID="52" FlowIsn="84" id="52">
+                  <Column val="3"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
                 <Select FieldID="1" FlowIsn="3" id="1">
                   <Column val="1"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
+                  <IsParameter val="Y"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -230,7 +256,7 @@
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="5" Mode="R" SortType="10" VIEW="2" VIEWS="4">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="5" Mode="R" SortType="10" VIEW="3" VIEWS="4">
                   <DB comp="-1" obj="2"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -330,7 +356,7 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="15" Key="1" Mode="R" SortType="18" VIEW="8" VIEWS="2">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="15" Key="1" Mode="R" SortType="18" VIEW="9" VIEWS="2">
                   <DB comp="-1" obj="31"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -373,7 +399,7 @@
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="20" Key="1" Mode="R" SortType="24" VIEW="10" VIEWS="3">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="20" Key="1" Mode="R" SortType="24" VIEW="11" VIEWS="3">
                   <DB comp="-1" obj="30"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -443,7 +469,7 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="27" Key="1" Mode="R" SortType="33" VIEW="14" VIEWS="5">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="27" Key="1" Mode="R" SortType="33" VIEW="15" VIEWS="5">
                   <DB comp="-1" obj="9"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -523,7 +549,7 @@
                 <END_LINK FlowIsn="33"/>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="34" Key="1" Mode="R" SortType="43" VIEW="19" VIEWS="8">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="34" Key="1" Mode="R" SortType="43" VIEW="20" VIEWS="8">
                   <DB comp="-1" obj="28"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -720,7 +746,7 @@
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="52" Key="1" Mode="R" SortType="60" VIEW="32" VIEWS="7">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="52" Key="1" Mode="R" SortType="60" VIEW="33" VIEWS="7">
                   <DB comp="-1" obj="12"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -824,7 +850,7 @@
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="62" Key="1" Mode="R" SortType="67" VIEW="39" VIEWS="4">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="62" Key="1" Mode="R" SortType="67" VIEW="40" VIEWS="4">
                   <DB comp="-1" obj="10"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -908,7 +934,7 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="D" EVL_CND="R" FlowIsn="70" Key="1" Mode="R" SortType="76" VIEW="44" VIEWS="5">
+                <LNK Direction="D" EVL_CND="R" FlowIsn="70" Key="1" Mode="R" SortType="76" VIEW="45" VIEWS="5">
                   <DB comp="-1" obj="40"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -1916,6 +1942,10 @@
           <Expression id="25">
             <ExpSyntax val="{0,31}"/>
             <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="26">
+            <ExpSyntax val="Trim({0,52})"/>
+            <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
         <VarRangeInfo Mode="F" VarRangeVeeIsn="6" id="1"/>
