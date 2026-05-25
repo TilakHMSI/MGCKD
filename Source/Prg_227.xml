@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDQ0020PackingDataInquiry" ISN_2="1" LastIsn="6" id="227">
-          <LastModified _date="739748" _time="58937" date="12/05/2026" time="16:22:17"/>
+          <LastModified _date="739761" _time="54669" date="25/05/2026" time="15:11:09"/>
           <Public val="Prg_67_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -399,7 +399,7 @@
                     <v>39</v>
                     <v>61</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="13"/>
+                  <_DitIndexForToolkit val="12"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -443,7 +443,7 @@
                   <INT_DIT_INFO>
                     <v>8</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="10"/>
+                  <_DitIndexForToolkit val="9"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -509,7 +509,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="11"/>
+                  <_DitIndexForToolkit val="10"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -611,7 +611,7 @@
                     <v>39</v>
                     <v>61</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="15"/>
+                  <_DitIndexForToolkit val="14"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -668,7 +668,7 @@
                   <INT_DIT_INFO>
                     <v>15</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="17"/>
+                  <_DitIndexForToolkit val="16"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -684,7 +684,7 @@
                   <INT_RCMP_INFO>
                     <v>50</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="19"/>
+                  <_DitIndexForToolkit val="18"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -700,7 +700,7 @@
                   <INT_RCMP_INFO>
                     <v>50</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="20"/>
+                  <_DitIndexForToolkit val="19"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -852,7 +852,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="18"/>
+                  <_DitIndexForToolkit val="17"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -940,7 +940,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="21"/>
+                  <_DitIndexForToolkit val="20"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1597,16 +1597,6 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control _test_id="6" id="6">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <X id="21" val="9"/>
-                <Y id="22" val="57"/>
-                <Width id="23" val="543"/>
-                <Height id="24" val="63"/>
-                <ControlName id="46" val="Label6"/>
-                <Visible id="61"/>
-              </PropertyList>
-            </Control>
             <Control _test_id="7" id="7">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <X id="21" val="18"/>
@@ -1640,6 +1630,7 @@
                 <Data FieldID="10" id="43"/>
                 <ControlName id="46" val="KDPCHED_PH_DSCD"/>
                 <Visible id="61"/>
+                <Enabled Exp="42" id="62"/>
               </PropertyList>
             </Control>
             <Control _test_id="10" id="10">
@@ -1654,6 +1645,7 @@
                 <Data FieldID="14" id="43"/>
                 <ControlName id="46" val="DSTBMST_DS_DSENAM"/>
                 <Visible id="61"/>
+                <Enabled Exp="42" id="62"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="7" _test_id="11" id="11">
@@ -1733,6 +1725,7 @@
                 <Data FieldID="23" id="43"/>
                 <ControlName id="46" val="PKD_LTID_PKD_MDCD"/>
                 <Visible id="61"/>
+                <Enabled Exp="42" id="62"/>
               </PropertyList>
             </Control>
             <Control _test_id="17" id="17">
@@ -1747,6 +1740,7 @@
                 <Data FieldID="36" id="43"/>
                 <ControlName id="46" val="MTOCMST_MTMDN1"/>
                 <Visible id="61"/>
+                <Enabled Exp="42" id="62"/>
               </PropertyList>
             </Control>
             <Control _test_id="18" id="18">
@@ -1761,6 +1755,7 @@
                 <Data FieldID="24" id="43"/>
                 <ControlName id="46" val="PKD_LTID_PKD_MDTY"/>
                 <Visible id="61"/>
+                <Enabled Exp="42" id="62"/>
               </PropertyList>
             </Control>
             <Control _test_id="19" id="19">
@@ -1775,15 +1770,16 @@
                 <Data FieldID="25" id="43"/>
                 <ControlName id="46" val="PKD_LTID_PKD_MDOP"/>
                 <Visible id="61"/>
+                <Enabled Exp="42" id="62"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="6" PDOD="192" _test_id="20" id="20">
+            <Control PDOD="192" _test_id="20" id="20">
               <PropertyList model="CTRL_WEB_CLIENT_CHECKBOX">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="41"/>
                 </Model>
-                <X id="21" val="15"/>
-                <Y id="22" val="98"/>
+                <X id="21" val="560"/>
+                <Y id="22" val="85"/>
                 <Width id="23" val="74"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="41" id="43"/>
@@ -1961,6 +1957,10 @@
           <Expression id="41">
             <ExpSyntax val="'DisplayPackData'"/>
             <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="42">
+            <ExpSyntax val="'FALSE'LOG"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
         <Task MainProgram="N">
