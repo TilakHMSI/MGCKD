@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDZ013DisplayEngineNos" ISN_2="1" LastIsn="1" id="228">
-          <LastModified _date="739748" _time="58887" date="12/05/2026" time="16:21:27"/>
+          <LastModified _date="739761" _time="63423" date="25/05/2026" time="17:37:03"/>
           <Public val="Prg_26_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -308,7 +308,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="3"/>
+                  <_DitIndexForToolkit val="5"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -365,10 +365,10 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="4" _last_test_id="4" id="1">
+          <FormEntry _last_isn="5" _last_test_id="5" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
-              <Width id="23" val="120"/>
-              <Height id="24" val="307"/>
+              <Width id="23" val="268"/>
+              <Height id="24" val="372"/>
               <FormUnits id="33" val="4"/>
               <ShowGrid id="37"/>
               <GridX id="38" val="1"/>
@@ -390,10 +390,24 @@
                 <Format id="82" valUnicode="14"/>
               </PropertyList>
             </Control>
+            <Control PDOD="128" _test_id="5" id="5">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="51"/>
+                <Y id="22" val="31"/>
+                <Width id="23" val="41"/>
+                <Height id="24" val="22"/>
+                <ControlName id="46" val="btnexit"/>
+                <Format id="82" valUnicode="Back"/>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="14"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
             <Control _test_id="2" id="2">
               <PropertyList model="CTRL_WEB_CLIENT_TABLE">
                 <X id="21" val="4"/>
-                <Y id="22" val="20"/>
+                <Y id="22" val="70"/>
                 <Width id="23" val="111"/>
                 <Height id="24" val="283"/>
                 <ControlName id="46" val="Table2"/>
@@ -406,18 +420,6 @@
                 <LastDivider id="260" val="Y"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="2" _test_id="4" id="4">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <X id="21" val="6"/>
-                <Y id="22" val="42"/>
-                <Width id="23" val="95"/>
-                <Height id="24" val="13"/>
-                <ControlLayer id="25" val="1"/>
-                <Data FieldID="11" id="43"/>
-                <ControlName id="46" val="PEG_DATA_PEG_EGNO"/>
-                <Visible id="61"/>
-              </PropertyList>
-            </Control>
             <Control ISN_FATHER="2" PDOD="128" _test_id="3" id="3">
               <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
                 <Width id="23" val="96"/>
@@ -426,85 +428,16 @@
                 <ColumnTitle id="139" valUnicode="Engine Nos."/>
               </PropertyList>
             </Control>
-          </FormEntry>
-        </TaskForms>
-        <TaskForms>
-          <FormEntry _last_isn="4" _last_test_id="4" id="2">
-            <PropertyList model="FORM_RICH_CLIENT">
-              <Width id="23" val="96"/>
-              <Height id="24" val="189"/>
-              <MinimizeButton id="28"/>
-              <MaximizeButton id="29"/>
-              <ShowGrid id="37"/>
-              <GridX id="38" val="1"/>
-              <GridY id="39" val="1"/>
-              <Font id="50" val="18"/>
-              <BorderStyle id="64" val="1"/>
-              <_Comment id="218"/>
-              <FormName id="311" valUnicode="ENGINE LIST"/>
-              <_TabbingOrder id="318" val="2"/>
-              <WindowType id="358" val="6"/>
-              <PersistentFormState id="493"/>
-            </PropertyList>
-            <Control _test_id="1" id="1">
-              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
-                <X id="21" val="31"/>
-                <Y id="22" val="2"/>
-                <Width id="23" val="60"/>
-                <Height id="24" val="8"/>
-                <Data Exp="7" id="43"/>
-                <Font id="50" val="18"/>
-                <Color id="51" val="7"/>
-                <Visible id="61"/>
-                <_Style id="63" val="1"/>
-                <HorizontalAlignment id="65" val="3"/>
-                <Format id="82" valUnicode="14"/>
-                <TabOrder id="314" val="2"/>
-                <Border id="452"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="2" id="2">
-              <PropertyList model="CTRL_RICH_CLIENT_TABLE">
-                <X id="21" val="3"/>
-                <Y id="22" val="12"/>
-                <Width id="23" val="89"/>
-                <Height id="24" val="174"/>
-                <Visible id="61"/>
-                <LineDivider id="78" val="Y"/>
-                <_TitleHeight id="79" val="12"/>
-                <RowHeight id="80" val="13"/>
-                <Elements id="81" val="1"/>
-                <ColumnDivider id="189" val="Y"/>
-                <AllowColumnResize id="191"/>
-                <_WindowWidth id="241" val="89"/>
-                <_LastDivider id="260" val="Y"/>
-                <AllowColumnReorder id="430"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="2" PDOD="128" _test_id="3" id="3">
-              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
-                <Width id="23" val="77"/>
-                <ControlLayer id="25" val="1"/>
-                <Font id="50" val="18"/>
-                <Color id="51" val="71"/>
-                <ColumnTitle id="139" valUnicode="Engine Nos."/>
-              </PropertyList>
-            </Control>
             <Control ISN_FATHER="2" _test_id="4" id="4">
-              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
-                <X id="21" val="5"/>
-                <Y id="22" val="26"/>
-                <Width id="23" val="76"/>
-                <Height id="24" val="8"/>
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <X id="21" val="6"/>
+                <Y id="22" val="92"/>
+                <Width id="23" val="95"/>
+                <Height id="24" val="13"/>
                 <ControlLayer id="25" val="1"/>
                 <Data FieldID="11" id="43"/>
-                <Color id="51" val="6"/>
+                <ControlName id="46" val="PEG_DATA_PEG_EGNO"/>
                 <Visible id="61"/>
-                <_Style id="63" val="1"/>
-                <TabOrder id="314" val="1"/>
-                <AllowParking id="315" val="Y"/>
-                <AllowedDirection id="317" val="1"/>
-                <Border id="452"/>
               </PropertyList>
             </Control>
           </FormEntry>

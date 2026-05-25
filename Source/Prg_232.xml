@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0040CasePackingApproval" ISN_2="1" LastIsn="6" id="232">
-          <LastModified _date="739749" _time="60412" date="13/05/2026" time="16:46:52"/>
+          <LastModified _date="739761" _time="64832" date="25/05/2026" time="18:00:32"/>
           <Public val="Prg_47_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -356,7 +356,7 @@
                     <v>51</v>
                     <v>73</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="9"/>
+                  <_DitIndexForToolkit val="8"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -400,7 +400,7 @@
                   <INT_DIT_INFO>
                     <v>14</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="15"/>
+                  <_DitIndexForToolkit val="14"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -466,7 +466,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="16"/>
+                  <_DitIndexForToolkit val="15"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -720,7 +720,7 @@
                     <v>51</v>
                     <v>73</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="11"/>
+                  <_DitIndexForToolkit val="10"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -777,7 +777,7 @@
                   <INT_DIT_INFO>
                     <v>17</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="18"/>
+                  <_DitIndexForToolkit val="17"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -793,7 +793,7 @@
                   <INT_RCMP_INFO>
                     <v>62</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="20"/>
+                  <_DitIndexForToolkit val="19"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -809,7 +809,7 @@
                   <INT_RCMP_INFO>
                     <v>62</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="21"/>
+                  <_DitIndexForToolkit val="20"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -961,7 +961,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="19"/>
+                  <_DitIndexForToolkit val="18"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1048,7 +1048,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="13"/>
+                  <_DitIndexForToolkit val="12"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1633,7 +1633,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="22" _last_test_id="22" id="1">
+          <FormEntry _last_isn="24" _last_test_id="24" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="560"/>
               <Height id="24" val="481"/>
@@ -1708,24 +1708,18 @@
                 <Format id="82" valUnicode="40"/>
               </PropertyList>
             </Control>
-            <Control _test_id="6" id="6">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <X id="21" val="9"/>
-                <Y id="22" val="57"/>
-                <Width id="23" val="543"/>
-                <Height id="24" val="78"/>
-                <ControlName id="46" val="Label6"/>
-                <Visible id="61"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="7" id="7">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <X id="21" val="19"/>
-                <Y id="22" val="68"/>
-                <Width id="23" val="411"/>
-                <Height id="24" val="36"/>
-                <ControlName id="46" val="Label7"/>
-                <Visible id="61"/>
+            <Control PDOD="128" _test_id="24" id="24">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="477"/>
+                <Y id="22" val="53"/>
+                <Width id="23" val="41"/>
+                <Height id="24" val="22"/>
+                <ControlName id="46" val="btnexit"/>
+                <Format id="82" valUnicode="Back"/>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="14"/>
+                </RaiseEvent>
               </PropertyList>
             </Control>
             <Control _test_id="8" id="8">
@@ -1807,7 +1801,7 @@
                 <Visible id="61"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="6" _test_id="14" id="14">
+            <Control _test_id="14" id="14">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="Dist:"/>
                 <X id="21" val="19"/>
@@ -1818,7 +1812,7 @@
                 <Visible Exp="24" id="61"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="6" _test_id="15" id="15">
+            <Control _test_id="15" id="15">
               <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="7"/>
@@ -1830,9 +1824,10 @@
                 <Data FieldID="7" id="43"/>
                 <ControlName id="46" val="KDPCHED_PH_DSCD"/>
                 <Visible id="61"/>
+                <Enabled Exp="40" id="62"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="6" _test_id="16" id="16">
+            <Control _test_id="16" id="16">
               <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="11"/>
@@ -1844,6 +1839,7 @@
                 <Data FieldID="11" id="43"/>
                 <ControlName id="46" val="DSTBMST_DS_DSENAM"/>
                 <Visible id="61"/>
+                <Enabled Exp="40" id="62"/>
               </PropertyList>
             </Control>
             <Control _test_id="17" id="17">
@@ -1869,6 +1865,7 @@
                 <Data FieldID="30" id="43"/>
                 <ControlName id="46" val="PKD_LTID_PKD_MDCD"/>
                 <Visible id="61"/>
+                <Enabled Exp="40" id="62"/>
               </PropertyList>
             </Control>
             <Control _test_id="19" id="19">
@@ -1883,6 +1880,7 @@
                 <Data FieldID="43" id="43"/>
                 <ControlName id="46" val="MTOCMST_MTMDN1"/>
                 <Visible id="61"/>
+                <Enabled Exp="40" id="62"/>
               </PropertyList>
             </Control>
             <Control _test_id="20" id="20">
@@ -1897,6 +1895,7 @@
                 <Data FieldID="31" id="43"/>
                 <ControlName id="46" val="PKD_LTID_PKD_MDTY"/>
                 <Visible id="61"/>
+                <Enabled Exp="40" id="62"/>
               </PropertyList>
             </Control>
             <Control _test_id="21" id="21">
@@ -1911,6 +1910,7 @@
                 <Data FieldID="32" id="43"/>
                 <ControlName id="46" val="PKD_LTID_PKD_MDOP"/>
                 <Visible id="61"/>
+                <Enabled Exp="40" id="62"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="22" id="22">
@@ -2078,6 +2078,10 @@
           <Expression id="39">
             <ExpSyntax val="'DATE CANT BE ZERO'"/>
             <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="40">
+            <ExpSyntax val="'FALSE'LOG"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
         <Task MainProgram="N">
@@ -3135,7 +3139,7 @@
         </Task>
         <Task MainProgram="N">
           <Header Description="ScheduleApproval" ISN_2="5" LastIsn="6" id="232">
-            <LastModified _date="739749" _time="60412" date="13/05/2026" time="16:46:52"/>
+            <LastModified _date="739761" _time="64832" date="25/05/2026" time="18:00:32"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -3949,19 +3953,6 @@
                 <EventType val="S"/>
               </Event>
               <ExecuteOn_ val="O"/>
-              <LogicLines>
-                <LogicLine>
-                  <Update FlowIsn="62">
-                    <FieldID val="35"/>
-                    <WithValue val="7"/>
-                    <Incremental val="N"/>
-                    <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </Update>
-                </LogicLine>
-              </LogicLines>
             </LogicUnit>
             <LogicUnit id="5" propagate="78">
               <Level val="C"/>
@@ -4055,6 +4046,51 @@
                 </LogicLine>
                 <LogicLine>
                   <END_BLK FlowIsn="61"/>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+            <LogicUnit id="7" propagate="78">
+              <Level val="H"/>
+              <Type val="U"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="U"/>
+                <Parent val="32768"/>
+                <PublicObject comp="-1" obj="8"/>
+              </Event>
+              <ExecuteOn_ val="O"/>
+              <LogicLines>
+                <LogicLine>
+                  <Update FlowIsn="62">
+                    <FieldID val="35"/>
+                    <WithValue val="7"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <RaiseEvent FlowIsn="71">
+                    <Event>
+                      <EventType val="I"/>
+                      <InternalEventID val="293"/>
+                    </Event>
+                    <Wait val="78"/>
+                    <Arguments>
+                      <Argument>
+                        <Expression val="19"/>
+                        <Skip val="N"/>
+                      </Argument>
+                    </Arguments>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </RaiseEvent>
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
@@ -4306,14 +4342,14 @@
                   </Model>
                   <X id="21" val="506"/>
                   <Y id="22" val="33"/>
-                  <Width id="23" val="10"/>
+                  <Width id="23" val="15"/>
                   <Height id="24" val="16"/>
                   <ControlLayer id="25" val="9"/>
                   <Data FieldID="20" id="43"/>
                   <Text id="45"/>
                   <ControlName id="46" val="WRK_CSCH_CSAP"/>
-                  <Modifiable Exp="17" id="53"/>
                   <Visible id="61"/>
+                  <Enabled Exp="17" id="62"/>
                 </PropertyList>
               </Control>
               <Control ISN_FATHER="2" PDOD="128" _test_id="26" id="26">
@@ -4325,17 +4361,10 @@
                   <ControlLayer id="25" val="10"/>
                   <ControlName id="46" val="SaveRowEditing"/>
                   <Format id="82" valUnicode="Save"/>
-                  <Arguments id="126">
-                    <Arguments>
-                      <Argument>
-                        <Expression val="19"/>
-                        <Skip val="N"/>
-                      </Argument>
-                    </Arguments>
-                  </Arguments>
                   <RaiseEvent id="234">
-                    <EventType val="I"/>
-                    <InternalEventID val="293"/>
+                    <EventType val="U"/>
+                    <Parent val="32768"/>
+                    <PublicObject comp="-1" obj="8"/>
                   </RaiseEvent>
                 </PropertyList>
               </Control>
