@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDZ013BrowseSKID" ISN_2="1" LastIsn="1" id="257">
-          <LastModified _date="739749" _time="52684" date="13/05/2026" time="14:38:04"/>
+          <LastModified _date="739762" _time="56450" date="26/05/2026" time="15:40:50"/>
           <Public val="Prg_28_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -143,8 +143,8 @@
             <ForceRecordSuffix val="N"/>
             <TransactionMode val="O"/>
             <TransactionBegin val="N"/>
-            <PreloadView val="N"/>
-            <AllowEmptyDataview val="N"/>
+            <PreloadView val="Y"/>
+            <AllowEmptyDataview val="Y"/>
             <KeepCreatedContext val="N"/>
           </TaskProperties>
           <SIDE_WIN>
