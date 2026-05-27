@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="UpdateLotDCNUpdation" ISN_2="1" LastIsn="9" id="233">
-          <LastModified _date="739749" _time="60372" date="13/05/2026" time="16:46:12"/>
+          <LastModified _date="739762" _time="45827" date="26/05/2026" time="12:43:47"/>
           <Public val="Prg_81_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -205,7 +205,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="6"/>
+                  <_DitIndexForToolkit val="7"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -224,7 +224,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="8"/>
+                  <_DitIndexForToolkit val="9"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -243,7 +243,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="10"/>
+                  <_DitIndexForToolkit val="11"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -262,7 +262,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="12"/>
+                  <_DitIndexForToolkit val="13"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -302,7 +302,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="13"/>
+                  <_DitIndexForToolkit val="14"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -321,7 +321,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="14"/>
+                  <_DitIndexForToolkit val="15"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -444,6 +444,21 @@
             </Event>
             <TXT val="v_Remarks"/>
             <ExecuteOn_ val="O"/>
+          </LogicUnit>
+          <LogicUnit id="7" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="T"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <Parent val="32768"/>
+              <PublicObject comp="-1" obj="1"/>
+            </Event>
+            <TXT val="v_Update"/>
+            <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
                 <CallTask FlowIsn="22">
@@ -468,23 +483,6 @@
                   <Direction val="C"/>
                 </CallTask>
               </LogicLine>
-            </LogicLines>
-          </LogicUnit>
-          <LogicUnit id="7" propagate="78">
-            <Level val="H"/>
-            <Type val="U"/>
-            <Scope val="T"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="U"/>
-              <Parent val="32768"/>
-              <PublicObject comp="-1" obj="1"/>
-            </Event>
-            <TXT val="v_Update"/>
-            <ExecuteOn_ val="O"/>
-            <LogicLines>
               <LogicLine>
                 <CallTask FlowIsn="23">
                   <OperationType val="T"/>
@@ -506,7 +504,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="14" _last_test_id="14" id="1">
+          <FormEntry _last_isn="15" _last_test_id="15" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="783"/>
               <Height id="24" val="553"/>
@@ -563,6 +561,20 @@
                 <Height id="24" val="39"/>
                 <ControlName id="46" val="Label4"/>
                 <Visible id="61"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="15" id="15">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="673"/>
+                <Y id="22" val="147"/>
+                <Width id="23" val="41"/>
+                <Height id="24" val="22"/>
+                <ControlName id="46" val="btnexit"/>
+                <Format id="82" valUnicode="Back"/>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="14"/>
+                </RaiseEvent>
               </PropertyList>
             </Control>
             <Control _test_id="5" id="5">
@@ -729,7 +741,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="GetDCNNo" ISN_2="2" LastIsn="9" id="233">
-            <LastModified _date="739749" _time="38545" date="13/05/2026" time="10:42:25"/>
+            <LastModified _date="739762" _time="43517" date="26/05/2026" time="12:05:17"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="Y"/>
@@ -881,7 +893,7 @@
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Locate MIN="1"/>
-                    <_DitIndexForToolkit val="2"/>
+                    <_DitIndexForToolkit val="5"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -916,7 +928,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="3"/>
+                    <_DitIndexForToolkit val="6"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -953,7 +965,7 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="5" _last_test_id="5" id="1">
+            <FormEntry _last_isn="6" _last_test_id="6" id="1">
               <PropertyList model="FORM_WEB_CLIENT">
                 <X id="21"/>
                 <Y id="22"/>
@@ -965,12 +977,26 @@
                 <_TabbingOrder id="318" val="2"/>
                 <WindowType id="358" val="12"/>
               </PropertyList>
+              <Control PDOD="128" _test_id="6" id="6">
+                <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                  <X id="21" val="150"/>
+                  <Y id="22" val="13"/>
+                  <Width id="23" val="41"/>
+                  <Height id="24" val="22"/>
+                  <ControlName id="46" val="btnexit"/>
+                  <Format id="82" valUnicode="Back"/>
+                  <RaiseEvent id="234">
+                    <EventType val="I"/>
+                    <InternalEventID val="14"/>
+                  </RaiseEvent>
+                </PropertyList>
+              </Control>
               <Control _test_id="1" id="1">
                 <PropertyList model="CTRL_WEB_CLIENT_TABLE">
                   <X id="21" val="4"/>
-                  <Y id="22" val="13"/>
+                  <Y id="22" val="42"/>
                   <Width id="23" val="211"/>
-                  <Height id="24" val="333"/>
+                  <Height id="24" val="304"/>
                   <ControlName id="46" val="Table1"/>
                   <LineDivider id="78" val="Y"/>
                   <TitleHeight id="79" val="20"/>
@@ -978,30 +1004,6 @@
                   <Elements id="81" val="2"/>
                   <_WindowWidth id="241" val="211"/>
                   <LastDivider id="260" val="Y"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" _test_id="4" id="4">
-                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                  <X id="21" val="9"/>
-                  <Y id="22" val="36"/>
-                  <Width id="23" val="91"/>
-                  <Height id="24" val="15"/>
-                  <ControlLayer id="25" val="1"/>
-                  <Data FieldID="1" id="43"/>
-                  <ControlName id="46" val="V_DC_NO"/>
-                  <Visible id="61"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" _test_id="5" id="5">
-                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                  <X id="21" val="115"/>
-                  <Y id="22" val="36"/>
-                  <Width id="23" val="78"/>
-                  <Height id="24" val="15"/>
-                  <ControlLayer id="25" val="2"/>
-                  <Data FieldID="3" id="43"/>
-                  <ControlName id="46" val="V_v_Date"/>
-                  <Visible id="61"/>
                 </PropertyList>
               </Control>
               <Control ISN_FATHER="1" PDOD="128" _test_id="2" id="2">
@@ -1020,89 +1022,28 @@
                   <ColumnTitle id="139" valUnicode="FINISH DATE"/>
                 </PropertyList>
               </Control>
-            </FormEntry>
-          </TaskForms>
-          <TaskForms>
-            <FormEntry _last_isn="5" _last_test_id="5" id="2">
-              <PropertyList model="FORM_RICH_CLIENT">
-                <X id="21" val="441"/>
-                <Y id="22" val="99"/>
-                <Width id="23" val="174"/>
-                <Height id="24" val="215"/>
-                <_Comment id="218"/>
-                <FormName id="311" valUnicode="DCN No. List"/>
-                <_TabbingOrder id="318" val="2"/>
-                <WindowType id="358" val="6"/>
-                <PersistentFormState id="493"/>
-              </PropertyList>
-              <Control _test_id="1" id="1">
-                <PropertyList model="CTRL_RICH_CLIENT_TABLE">
-                  <X id="21" val="3"/>
-                  <Y id="22" val="8"/>
-                  <Width id="23" val="169"/>
-                  <Height id="24" val="205"/>
-                  <Color id="51" val="5"/>
-                  <LineDivider id="78" val="Y"/>
-                  <_TitleHeight id="79" val="12"/>
-                  <RowHeight id="80" val="11"/>
-                  <Elements id="81" val="2"/>
-                  <ColumnDivider id="189" val="Y"/>
-                  <AllowColumnResize id="191"/>
-                  <_WindowWidth id="241" val="169"/>
-                  <_LastDivider id="260" val="Y"/>
-                  <AllowColumnReorder id="430"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" PDOD="128" _test_id="2" id="2">
-                <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
-                  <Width id="23" val="79"/>
-                  <ControlLayer id="25" val="1"/>
-                  <Font id="50" val="18"/>
-                  <Color id="51" val="71"/>
-                  <ColumnTitle id="139" valUnicode="DC NO."/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" PDOD="128" _test_id="3" id="3">
-                <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
-                  <Width id="23" val="74"/>
-                  <ControlLayer id="25" val="2"/>
-                  <Font id="50" val="18"/>
-                  <Color id="51" val="71"/>
-                  <ColumnTitle id="139" valUnicode="FINISH DATE"/>
-                </PropertyList>
-              </Control>
               <Control ISN_FATHER="1" _test_id="4" id="4">
-                <PropertyList model="CTRL_RICH_CLIENT_EDIT">
-                  <X id="21" val="7"/>
-                  <Y id="22" val="22"/>
-                  <Width id="23" val="73"/>
-                  <Height id="24" val="9"/>
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <X id="21" val="9"/>
+                  <Y id="22" val="65"/>
+                  <Width id="23" val="91"/>
+                  <Height id="24" val="15"/>
                   <ControlLayer id="25" val="1"/>
                   <Data FieldID="1" id="43"/>
-                  <Color id="51" val="1"/>
+                  <ControlName id="46" val="V_DC_NO"/>
                   <Visible id="61"/>
-                  <_Style id="63" val="1"/>
-                  <TabOrder id="314" val="1"/>
-                  <AllowParking id="315" val="Y"/>
-                  <AllowedDirection id="317" val="1"/>
-                  <Border id="452"/>
                 </PropertyList>
               </Control>
               <Control ISN_FATHER="1" _test_id="5" id="5">
-                <PropertyList model="CTRL_RICH_CLIENT_EDIT">
-                  <X id="21" val="92"/>
-                  <Y id="22" val="22"/>
-                  <Width id="23" val="62"/>
-                  <Height id="24" val="9"/>
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <X id="21" val="115"/>
+                  <Y id="22" val="65"/>
+                  <Width id="23" val="78"/>
+                  <Height id="24" val="15"/>
                   <ControlLayer id="25" val="2"/>
                   <Data FieldID="3" id="43"/>
-                  <Color id="51" val="1"/>
+                  <ControlName id="46" val="V_v_Date"/>
                   <Visible id="61"/>
-                  <_Style id="63" val="1"/>
-                  <TabOrder id="314" val="2"/>
-                  <AllowParking id="315" val="Y"/>
-                  <AllowedDirection id="317" val="1"/>
-                  <Border id="452"/>
                 </PropertyList>
               </Control>
             </FormEntry>
@@ -1124,7 +1065,7 @@
         </Task>
         <Task MainProgram="N">
           <Header Description="SelectOlddistinctParts" ISN_2="3" LastIsn="9" id="233">
-            <LastModified _date="739749" _time="38549" date="13/05/2026" time="10:42:29"/>
+            <LastModified _date="739762" _time="45024" date="26/05/2026" time="12:30:24"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="Y"/>
@@ -1184,7 +1125,7 @@
               <TransactionMode val="D"/>
               <TransactionBegin val="P"/>
               <PreloadView val="N"/>
-              <AllowEmptyDataview val="N"/>
+              <AllowEmptyDataview val="Y"/>
               <KeepCreatedContext val="N"/>
             </TaskProperties>
             <SIDE_WIN>
@@ -1250,7 +1191,7 @@
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Locate MIN="2"/>
-                    <_DitIndexForToolkit val="2"/>
+                    <_DitIndexForToolkit val="4"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1287,7 +1228,7 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="3" _last_test_id="3" id="1">
+            <FormEntry _last_isn="4" _last_test_id="4" id="1">
               <PropertyList model="FORM_WEB_CLIENT">
                 <X id="21"/>
                 <Y id="22"/>
@@ -1298,12 +1239,26 @@
                 <_TabbingOrder id="318" val="2"/>
                 <WindowType id="358" val="12"/>
               </PropertyList>
+              <Control PDOD="128" _test_id="4" id="4">
+                <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                  <X id="21" val="127"/>
+                  <Y id="22" val="10"/>
+                  <Width id="23" val="41"/>
+                  <Height id="24" val="22"/>
+                  <ControlName id="46" val="btnexit"/>
+                  <Format id="82" valUnicode="Back"/>
+                  <RaiseEvent id="234">
+                    <EventType val="I"/>
+                    <InternalEventID val="14"/>
+                  </RaiseEvent>
+                </PropertyList>
+              </Control>
               <Control _test_id="1" id="1">
                 <PropertyList model="CTRL_WEB_CLIENT_TABLE">
                   <X id="21" val="5"/>
-                  <Y id="22" val="13"/>
+                  <Y id="22" val="38"/>
                   <Width id="23" val="163"/>
-                  <Height id="24" val="307"/>
+                  <Height id="24" val="282"/>
                   <ControlName id="46" val="Table1"/>
                   <LineDivider id="78" val="Y"/>
                   <TitleHeight id="79" val="18"/>
@@ -1311,18 +1266,6 @@
                   <Elements id="81" val="1"/>
                   <_WindowWidth id="241" val="163"/>
                   <LastDivider id="260" val="Y"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" _test_id="3" id="3">
-                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                  <X id="21" val="10"/>
-                  <Y id="22" val="34"/>
-                  <Width id="23" val="133"/>
-                  <Height id="24" val="15"/>
-                  <ControlLayer id="25" val="1"/>
-                  <Data FieldID="1" id="43"/>
-                  <ControlName id="46" val="V_PPK_PART"/>
-                  <Visible id="61"/>
                 </PropertyList>
               </Control>
               <Control ISN_FATHER="1" PDOD="128" _test_id="2" id="2">
@@ -1333,62 +1276,16 @@
                   <ColumnTitle id="139" valUnicode="OLD PART NO."/>
                 </PropertyList>
               </Control>
-            </FormEntry>
-          </TaskForms>
-          <TaskForms>
-            <FormEntry _last_isn="3" _last_test_id="3" id="2">
-              <PropertyList model="FORM_RICH_CLIENT">
-                <X id="21" val="473"/>
-                <Y id="22" val="112"/>
-                <Width id="23" val="140"/>
-                <_Comment id="218"/>
-                <FormName id="311" valUnicode="Select Old distinct Parts"/>
-                <_TabbingOrder id="318" val="2"/>
-                <WindowType id="358" val="6"/>
-                <PersistentFormState id="493"/>
-              </PropertyList>
-              <Control _test_id="1" id="1">
-                <PropertyList model="CTRL_RICH_CLIENT_TABLE">
-                  <X id="21" val="4"/>
-                  <Y id="22" val="8"/>
-                  <Width id="23" val="130"/>
-                  <Height id="24" val="189"/>
-                  <Color id="51" val="5"/>
-                  <LineDivider id="78" val="Y"/>
-                  <_TitleHeight id="79" val="11"/>
-                  <RowHeight id="80" val="12"/>
-                  <Elements id="81" val="1"/>
-                  <ColumnDivider id="189" val="Y"/>
-                  <AllowColumnResize id="191"/>
-                  <_WindowWidth id="241" val="130"/>
-                  <_LastDivider id="260" val="Y"/>
-                  <AllowColumnReorder id="430"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" PDOD="128" _test_id="2" id="2">
-                <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
-                  <Width id="23" val="114"/>
-                  <ControlLayer id="25" val="1"/>
-                  <Font id="50" val="18"/>
-                  <Color id="51" val="71"/>
-                  <ColumnTitle id="139" valUnicode="OLD PART NO."/>
-                </PropertyList>
-              </Control>
               <Control ISN_FATHER="1" _test_id="3" id="3">
-                <PropertyList model="CTRL_RICH_CLIENT_EDIT">
-                  <X id="21" val="8"/>
-                  <Y id="22" val="21"/>
-                  <Width id="23" val="106"/>
-                  <Height id="24" val="9"/>
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <X id="21" val="10"/>
+                  <Y id="22" val="59"/>
+                  <Width id="23" val="133"/>
+                  <Height id="24" val="15"/>
                   <ControlLayer id="25" val="1"/>
                   <Data FieldID="1" id="43"/>
-                  <Color id="51" val="1"/>
+                  <ControlName id="46" val="V_PPK_PART"/>
                   <Visible id="61"/>
-                  <_Style id="63" val="1"/>
-                  <TabOrder id="314" val="1"/>
-                  <AllowParking id="315" val="Y"/>
-                  <AllowedDirection id="317" val="1"/>
-                  <Border id="452"/>
                 </PropertyList>
               </Control>
             </FormEntry>
@@ -1406,7 +1303,7 @@
         </Task>
         <Task MainProgram="N">
           <Header Description="SelectNewPartNoFromDCN" ISN_2="4" LastIsn="9" id="233">
-            <LastModified _date="739749" _time="38555" date="13/05/2026" time="10:42:35"/>
+            <LastModified _date="739762" _time="45041" date="26/05/2026" time="12:30:41"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="Y"/>
@@ -1466,7 +1363,7 @@
               <TransactionMode val="D"/>
               <TransactionBegin val="P"/>
               <PreloadView val="N"/>
-              <AllowEmptyDataview val="N"/>
+              <AllowEmptyDataview val="Y"/>
               <KeepCreatedContext val="N"/>
             </TaskProperties>
             <SIDE_WIN>
@@ -1542,7 +1439,7 @@
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Locate MIN="3"/>
-                    <_DitIndexForToolkit val="2"/>
+                    <_DitIndexForToolkit val="4"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1579,7 +1476,7 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="3" _last_test_id="3" id="1">
+            <FormEntry _last_isn="4" _last_test_id="4" id="1">
               <PropertyList model="FORM_WEB_CLIENT">
                 <X id="21"/>
                 <Y id="22"/>
@@ -1590,12 +1487,26 @@
                 <_TabbingOrder id="318" val="2"/>
                 <WindowType id="358" val="12"/>
               </PropertyList>
+              <Control PDOD="128" _test_id="4" id="4">
+                <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                  <X id="21" val="124"/>
+                  <Y id="22" val="13"/>
+                  <Width id="23" val="41"/>
+                  <Height id="24" val="22"/>
+                  <ControlName id="46" val="btnexit"/>
+                  <Format id="82" valUnicode="Back"/>
+                  <RaiseEvent id="234">
+                    <EventType val="I"/>
+                    <InternalEventID val="14"/>
+                  </RaiseEvent>
+                </PropertyList>
+              </Control>
               <Control _test_id="1" id="1">
                 <PropertyList model="CTRL_WEB_CLIENT_TABLE">
                   <X id="21" val="5"/>
-                  <Y id="22" val="13"/>
+                  <Y id="22" val="52"/>
                   <Width id="23" val="163"/>
-                  <Height id="24" val="307"/>
+                  <Height id="24" val="268"/>
                   <ControlName id="46" val="Table1"/>
                   <LineDivider id="78" val="Y"/>
                   <TitleHeight id="79" val="18"/>
@@ -1603,18 +1514,6 @@
                   <Elements id="81" val="1"/>
                   <_WindowWidth id="241" val="163"/>
                   <LastDivider id="260" val="Y"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" _test_id="3" id="3">
-                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                  <X id="21" val="10"/>
-                  <Y id="22" val="34"/>
-                  <Width id="23" val="133"/>
-                  <Height id="24" val="15"/>
-                  <ControlLayer id="25" val="1"/>
-                  <Data FieldID="1" id="43"/>
-                  <ControlName id="46" val="V_PT_NO"/>
-                  <Visible id="61"/>
                 </PropertyList>
               </Control>
               <Control ISN_FATHER="1" PDOD="128" _test_id="2" id="2">
@@ -1625,62 +1524,16 @@
                   <ColumnTitle id="139" valUnicode="NEW PART NO."/>
                 </PropertyList>
               </Control>
-            </FormEntry>
-          </TaskForms>
-          <TaskForms>
-            <FormEntry _last_isn="3" _last_test_id="3" id="2">
-              <PropertyList model="FORM_RICH_CLIENT">
-                <X id="21" val="476"/>
-                <Y id="22" val="113"/>
-                <Width id="23" val="138"/>
-                <_Comment id="218"/>
-                <FormName id="311" valUnicode="Select New Part No From DCN"/>
-                <_TabbingOrder id="318" val="2"/>
-                <WindowType id="358" val="6"/>
-                <PersistentFormState id="493"/>
-              </PropertyList>
-              <Control _test_id="1" id="1">
-                <PropertyList model="CTRL_RICH_CLIENT_TABLE">
-                  <X id="21" val="4"/>
-                  <Y id="22" val="8"/>
-                  <Width id="23" val="130"/>
-                  <Height id="24" val="189"/>
-                  <Color id="51" val="5"/>
-                  <LineDivider id="78" val="Y"/>
-                  <_TitleHeight id="79" val="11"/>
-                  <RowHeight id="80" val="12"/>
-                  <Elements id="81" val="1"/>
-                  <ColumnDivider id="189" val="Y"/>
-                  <AllowColumnResize id="191"/>
-                  <_WindowWidth id="241" val="130"/>
-                  <_LastDivider id="260" val="Y"/>
-                  <AllowColumnReorder id="430"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" PDOD="128" _test_id="2" id="2">
-                <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
-                  <Width id="23" val="114"/>
-                  <ControlLayer id="25" val="1"/>
-                  <Font id="50" val="18"/>
-                  <Color id="51" val="71"/>
-                  <ColumnTitle id="139" valUnicode="NEW PART NO."/>
-                </PropertyList>
-              </Control>
               <Control ISN_FATHER="1" _test_id="3" id="3">
-                <PropertyList model="CTRL_RICH_CLIENT_EDIT">
-                  <X id="21" val="8"/>
-                  <Y id="22" val="21"/>
-                  <Width id="23" val="106"/>
-                  <Height id="24" val="9"/>
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <X id="21" val="10"/>
+                  <Y id="22" val="73"/>
+                  <Width id="23" val="133"/>
+                  <Height id="24" val="15"/>
                   <ControlLayer id="25" val="1"/>
                   <Data FieldID="1" id="43"/>
-                  <Color id="51" val="1"/>
+                  <ControlName id="46" val="V_PT_NO"/>
                   <Visible id="61"/>
-                  <_Style id="63" val="1"/>
-                  <TabOrder id="314" val="1"/>
-                  <AllowParking id="315" val="Y"/>
-                  <AllowedDirection id="317" val="1"/>
-                  <Border id="452"/>
                 </PropertyList>
               </Control>
             </FormEntry>

@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="SelectLotForDCNPartUpd" ISN_2="1" LastIsn="5" id="234">
-          <LastModified _date="739749" _time="61674" date="13/05/2026" time="17:07:54"/>
+          <LastModified _date="739762" _time="45357" date="26/05/2026" time="12:35:57"/>
           <Public val="Prg_90_RIA_NonInteractive_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -264,7 +264,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="SelectLots" ISN_2="2" LastIsn="5" id="234">
-            <LastModified _date="739749" _time="61674" date="13/05/2026" time="17:07:54"/>
+            <LastModified _date="739762" _time="45357" date="26/05/2026" time="12:35:57"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -398,7 +398,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="2"/>
+                    <_DitIndexForToolkit val="6"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -414,7 +414,7 @@
                     <INT_RCMP_INFO>
                       <v>5</v>
                     </INT_RCMP_INFO>
-                    <_DitIndexForToolkit val="3"/>
+                    <_DitIndexForToolkit val="7"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -446,7 +446,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="4"/>
+                    <_DitIndexForToolkit val="8"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -462,7 +462,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="5"/>
+                    <_DitIndexForToolkit val="9"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -542,22 +542,36 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="8" _last_test_id="8" id="1">
+            <FormEntry _last_isn="9" _last_test_id="9" id="1">
               <PropertyList model="FORM_WEB_CLIENT">
                 <X id="21"/>
                 <Y id="22"/>
                 <Width id="23" val="434"/>
-                <Height id="24" val="197"/>
+                <Height id="24" val="234"/>
                 <FormUnits id="33" val="4"/>
                 <_Comment id="218"/>
                 <FormName id="311" valUnicode="SelectLots"/>
                 <_TabbingOrder id="318" val="2"/>
                 <WindowType id="358" val="12"/>
               </PropertyList>
+              <Control PDOD="128" _test_id="9" id="9">
+                <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                  <X id="21" val="322"/>
+                  <Y id="22" val="13"/>
+                  <Width id="23" val="41"/>
+                  <Height id="24" val="22"/>
+                  <ControlName id="46" val="btnexit"/>
+                  <Format id="82" valUnicode="Back"/>
+                  <RaiseEvent id="234">
+                    <EventType val="I"/>
+                    <InternalEventID val="14"/>
+                  </RaiseEvent>
+                </PropertyList>
+              </Control>
               <Control _test_id="1" id="1">
                 <PropertyList model="CTRL_WEB_CLIENT_TABLE">
                   <X id="21" val="5"/>
-                  <Y id="22" val="13"/>
+                  <Y id="22" val="39"/>
                   <Width id="23" val="425"/>
                   <Height id="24" val="182"/>
                   <ControlName id="46" val="Table1"/>
@@ -567,55 +581,6 @@
                   <Elements id="81" val="3"/>
                   <_WindowWidth id="241" val="425"/>
                   <LastDivider id="260" val="Y"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" _test_id="5" id="5">
-                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                  <X id="21" val="8"/>
-                  <Y id="22" val="34"/>
-                  <Width id="23" val="73"/>
-                  <Height id="24" val="16"/>
-                  <ControlLayer id="25" val="1"/>
-                  <Data FieldID="1" id="43"/>
-                  <ControlName id="46" val="WRK_PCSEL_PCNO"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" _test_id="6" id="6">
-                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                  <X id="21" val="86"/>
-                  <Y id="22" val="34"/>
-                  <Width id="23" val="79"/>
-                  <Height id="24" val="16"/>
-                  <ControlLayer id="25" val="2"/>
-                  <Data FieldID="2" id="43"/>
-                  <ControlName id="46" val="WRK_PCSEL_LTNO"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" _test_id="7" id="7">
-                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                  <X id="21" val="173"/>
-                  <Y id="22" val="34"/>
-                  <Width id="23" val="219"/>
-                  <Height id="24" val="16"/>
-                  <ControlLayer id="25" val="3"/>
-                  <Data FieldID="4" id="43"/>
-                  <ControlName id="46" val="LOT_MAST_LOT_DESC"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" PDOD="192" _test_id="8" id="8">
-                <PropertyList model="CTRL_WEB_CLIENT_CHECKBOX">
-                  <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
-                    <Var FieldID="5"/>
-                  </Model>
-                  <X id="21" val="395"/>
-                  <Y id="22" val="34"/>
-                  <Width id="23" val="15"/>
-                  <Height id="24" val="15"/>
-                  <ControlLayer id="25" val="3"/>
-                  <Data FieldID="5" id="43"/>
-                  <Text id="45"/>
-                  <ControlName id="46" val="WRK_PCSEL_FLAG"/>
-                  <Visible id="61"/>
                 </PropertyList>
               </Control>
               <Control ISN_FATHER="1" PDOD="128" _test_id="2" id="2">
@@ -640,6 +605,55 @@
                   <ControlLayer id="25" val="3"/>
                   <ControlName id="46" val="Column4"/>
                   <ColumnTitle id="139" valUnicode="DESCRIPTION"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" _test_id="5" id="5">
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <X id="21" val="8"/>
+                  <Y id="22" val="60"/>
+                  <Width id="23" val="73"/>
+                  <Height id="24" val="16"/>
+                  <ControlLayer id="25" val="1"/>
+                  <Data FieldID="1" id="43"/>
+                  <ControlName id="46" val="WRK_PCSEL_PCNO"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" _test_id="6" id="6">
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <X id="21" val="86"/>
+                  <Y id="22" val="60"/>
+                  <Width id="23" val="79"/>
+                  <Height id="24" val="16"/>
+                  <ControlLayer id="25" val="2"/>
+                  <Data FieldID="2" id="43"/>
+                  <ControlName id="46" val="WRK_PCSEL_LTNO"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" _test_id="7" id="7">
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <X id="21" val="173"/>
+                  <Y id="22" val="60"/>
+                  <Width id="23" val="219"/>
+                  <Height id="24" val="16"/>
+                  <ControlLayer id="25" val="3"/>
+                  <Data FieldID="4" id="43"/>
+                  <ControlName id="46" val="LOT_MAST_LOT_DESC"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="192" _test_id="8" id="8">
+                <PropertyList model="CTRL_WEB_CLIENT_CHECKBOX">
+                  <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
+                    <Var FieldID="5"/>
+                  </Model>
+                  <X id="21" val="395"/>
+                  <Y id="22" val="60"/>
+                  <Width id="23" val="15"/>
+                  <Height id="24" val="15"/>
+                  <ControlLayer id="25" val="3"/>
+                  <Data FieldID="5" id="43"/>
+                  <Text id="45"/>
+                  <ControlName id="46" val="WRK_PCSEL_FLAG"/>
+                  <Visible id="61"/>
                 </PropertyList>
               </Control>
             </FormEntry>
