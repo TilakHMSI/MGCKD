@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="PACKINGTYPEMASTERView" ISN_2="4" LastIsn="30" id="184">
-          <LastModified _date="739743" _time="63254" date="07/05/2026" time="17:34:14"/>
+          <LastModified _date="739764" _time="43557" date="28/05/2026" time="12:05:57"/>
           <Public val="Prg_78_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -47,7 +47,7 @@
             <Column id="4" name="vSearch">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="20"/>
+                <Picture id="157" valUnicode="U20"/>
                 <CharSet id="172" val="1"/>
                 <StoredAs id="173" val="1"/>
                 <Size id="174" val="20"/>

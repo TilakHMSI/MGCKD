@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="PicklistForPartNo" ISN_2="15" LastIsn="18" id="296">
-          <LastModified _date="739743" _time="56058" date="07/05/2026" time="15:34:18"/>
+          <LastModified _date="739764" _time="44932" date="28/05/2026" time="12:28:52"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="Y"/>
@@ -195,7 +195,7 @@
                   <INT_RCMP_INFO>
                     <v>4</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="2"/>
+                  <_DitIndexForToolkit val="4"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -289,7 +289,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="3" _last_test_id="3" id="1">
+          <FormEntry _last_isn="4" _last_test_id="4" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <X id="21"/>
               <Y id="22"/>
@@ -304,31 +304,31 @@
               <_TabbingOrder id="318" val="1"/>
               <WindowType id="358" val="12"/>
             </PropertyList>
+            <Control PDOD="128" _test_id="4" id="4">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="81"/>
+                <Y id="22" val="12"/>
+                <Width id="23" val="41"/>
+                <Height id="24" val="22"/>
+                <ControlName id="46" val="btnexit"/>
+                <Format id="82" valUnicode="Back"/>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="14"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
             <Control _test_id="1" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_TABLE">
                 <X id="21" val="8"/>
-                <Y id="22" val="11"/>
+                <Y id="22" val="36"/>
                 <Width id="23" val="114"/>
-                <Height id="24" val="257"/>
+                <Height id="24" val="232"/>
                 <ControlName id="46" val="Table1"/>
                 <TitleHeight id="79" val="16"/>
                 <RowHeight id="80" val="18"/>
                 <Elements id="81" val="1"/>
                 <_WindowWidth id="241" val="114"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="1" _test_id="3" id="3">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
-                  <Var FieldID="1"/>
-                </Model>
-                <X id="21" val="11"/>
-                <Y id="22" val="33"/>
-                <Width id="23" val="93"/>
-                <Height id="24" val="15"/>
-                <ControlLayer id="25" val="1"/>
-                <Data FieldID="1" id="43"/>
-                <ControlName id="46" val="PT_NO"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="1" PDOD="128" _test_id="2" id="2">
@@ -337,6 +337,20 @@
                 <ControlLayer id="25" val="1"/>
                 <ControlName id="46" val="Column2"/>
                 <ColumnTitle id="139" valUnicode="PT_NO"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="1" _test_id="3" id="3">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
+                  <Var FieldID="1"/>
+                </Model>
+                <X id="21" val="11"/>
+                <Y id="22" val="58"/>
+                <Width id="23" val="93"/>
+                <Height id="24" val="15"/>
+                <ControlLayer id="25" val="1"/>
+                <Data FieldID="1" id="43"/>
+                <ControlName id="46" val="PT_NO"/>
               </PropertyList>
             </Control>
           </FormEntry>

@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDM0030PackingMatMaster" ISN_2="14" LastIsn="48" id="185">
-          <LastModified _date="739755" _time="56783" date="19/05/2026" time="15:46:23"/>
+          <LastModified _date="739764" _time="44293" date="28/05/2026" time="12:18:13"/>
           <Public val="Prg_79_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -47,7 +47,7 @@
             <Column id="4" name="vSearch">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="20"/>
+                <Picture id="157" valUnicode="U20"/>
                 <CharSet id="172" val="1"/>
                 <StoredAs id="173" val="1"/>
                 <Size id="174" val="20"/>
@@ -534,7 +534,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="List" ISN_2="45" LastIsn="48" id="185">
-            <LastModified _date="739755" _time="56783" date="19/05/2026" time="15:46:23"/>
+            <LastModified _date="739764" _time="44126" date="28/05/2026" time="12:15:26"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1653,7 +1653,7 @@
           </Expressions>
           <Task MainProgram="N">
             <Header Description="PackingMatCM" ISN_2="46" LastIsn="48" id="185">
-              <LastModified _date="739754" _time="44055" date="18/05/2026" time="12:14:15"/>
+              <LastModified _date="739764" _time="44293" date="28/05/2026" time="12:18:13"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -1792,19 +1792,19 @@
               <EndTaskCondition val="N"/>
               <SkipLockedRecords val="N"/>
               <EvaluateEndCondition val="B"/>
-              <InitialMode val="C"/>
+              <InitialMode Exp="18"/>
               <Locate Direction="A"/>
               <Range Direction="A"/>
-              <VarRange LastIsn="2"/>
+              <VarRange LastIsn="3"/>
               <TaskProperties>
                 <SelectionTable val="N"/>
-                <ConfirmUpdate CNFU="Y"/>
+                <ConfirmUpdate CNFU="N"/>
                 <ConfirmCancel val="N"/>
                 <ErrorStrategy val="A"/>
                 <LockingStrategy val="M"/>
                 <CacheStrategy val="D"/>
                 <ForceRecordSuffix val="N"/>
-                <TransactionMode val="D"/>
+                <TransactionMode val="N"/>
                 <TransactionBegin val="P"/>
                 <PreloadView val="N"/>
                 <AllowEmptyDataview val="N"/>
@@ -1813,7 +1813,7 @@
               <SIDE_WIN>
                 <AllowOptions val="Y"/>
                 <AllowQuery val="Y"/>
-                <AllowModify val="N"/>
+                <AllowModify val="Y"/>
                 <AllowCreate val="Y"/>
                 <AllowDelete val="N"/>
                 <AllowLocate val="Y"/>
@@ -2218,6 +2218,7 @@
                 <Event>
                   <EventType val="S"/>
                 </Event>
+                <Disabled val="1"/>
                 <ExecuteOn_ val="O"/>
                 <LogicLines>
                   <LogicLine>
@@ -2776,7 +2777,7 @@
                 <ExpAttribute val="*"/>
               </Expression>
               <Expression id="14">
-                <ExpSyntax val="CndRange({0,24}&lt;>'C',{0,22})"/>
+                <ExpSyntax val="CndRange({0,24}&lt;>'C' AND Trim({0,22})&lt;>'',{0,22})"/>
                 <ExpAttribute val="A"/>
               </Expression>
               <Expression id="15">
@@ -2787,9 +2788,13 @@
                 <ExpSyntax val="{0,24}='C'"/>
                 <ExpAttribute val="B"/>
               </Expression>
+              <Expression id="18">
+                <ExpSyntax val="{0,24}"/>
+                <ExpAttribute val="A"/>
+              </Expression>
             </Expressions>
-            <VarRangeInfo Mode="E" VarRangeVeeIsn="2" id="1"/>
             <VarRangeInfo Mode="E" VarRangeVeeIsn="6" id="2"/>
+            <VarRangeInfo Mode="E" VarRangeVeeIsn="2" id="3"/>
           </Task>
           <Task MainProgram="N">
             <Header Description="Delete" ISN_2="48" LastIsn="48" id="185">

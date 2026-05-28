@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CDKSECTIONMASTER" ISN_2="17" LastIsn="41" id="191">
-          <LastModified _date="739754" _time="54280" date="18/05/2026" time="15:04:40"/>
+          <LastModified _date="739764" _time="58626" date="28/05/2026" time="16:17:06"/>
           <Public val="Prg_77_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -47,7 +47,7 @@
             <Column id="4" name="vSearch">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="20"/>
+                <Picture id="157" valUnicode="U20"/>
                 <CharSet id="172" val="1"/>
                 <StoredAs id="173" val="1"/>
                 <Size id="174" val="20"/>
@@ -534,7 +534,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="SECTIONMASTERList" ISN_2="36" LastIsn="41" id="191">
-            <LastModified _date="739754" _time="54280" date="18/05/2026" time="15:04:40"/>
+            <LastModified _date="739764" _time="58626" date="28/05/2026" time="16:17:06"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1104,7 +1104,7 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="14" _last_test_id="14" id="1">
+            <FormEntry _last_isn="15" _last_test_id="15" id="1">
               <PropertyList model="FORM_WEB_CLIENT">
                 <Width id="23" val="781"/>
                 <Height id="24" val="579"/>
@@ -1165,7 +1165,7 @@
               </Control>
               <Control ISN_FATHER="3" PDOD="128" _test_id="6" id="6">
                 <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
-                  <Width id="23" val="54"/>
+                  <Width id="23" val="63"/>
                   <ControlLayer id="25" val="3"/>
                   <ControlName id="46" val="Column6"/>
                   <ColumnTitle id="139" valUnicode="REQ. PRN"/>
@@ -1205,23 +1205,21 @@
                   <Format id="82" valUnicode="U30"/>
                 </PropertyList>
               </Control>
-              <Control ISN_FATHER="3" PDOD="192" _test_id="9" id="9">
-                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                  <X id="21" val="432"/>
-                  <Y id="22" val="143"/>
-                  <Width id="23" val="30"/>
-                  <Height id="24" val="16"/>
+              <Control ISN_FATHER="3" PDOD="192" _test_id="15" id="15">
+                <PropertyList model="CTRL_WEB_CLIENT_CHECKBOX">
+                  <X id="21" val="425"/>
+                  <Y id="22" val="144"/>
+                  <Width id="23" val="20"/>
+                  <Height id="24" val="15"/>
                   <ControlLayer id="25" val="3"/>
                   <Data FieldID="3" id="43"/>
+                  <Text id="45"/>
                   <ControlName id="46" val="Reqprn"/>
-                  <Visible id="61"/>
-                  <MultiLineEdit id="71"/>
                 </PropertyList>
               </Control>
               <Control ISN_FATHER="3" PDOD="128" _test_id="11" id="11">
                 <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                  <Model id="1"/>
-                  <X id="21" val="479"/>
+                  <X id="21" val="488"/>
                   <Y id="22" val="144"/>
                   <Width id="23" val="105"/>
                   <Height id="24" val="28"/>
@@ -1240,8 +1238,7 @@
               </Control>
               <Control ISN_FATHER="3" PDOD="128" _test_id="12" id="12">
                 <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                  <Model id="1"/>
-                  <X id="21" val="479"/>
+                  <X id="21" val="488"/>
                   <Y id="22" val="176"/>
                   <Width id="23" val="105"/>
                   <Height id="24" val="28"/>
@@ -1299,7 +1296,7 @@
           </Expressions>
           <Task MainProgram="N">
             <Header Description="SECTIONMASTERCM" ISN_2="38" LastIsn="41" id="191">
-              <LastModified _date="739743" _time="61099" date="07/05/2026" time="16:58:19"/>
+              <LastModified _date="739763" _time="37761" date="27/05/2026" time="10:29:21"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -1318,7 +1315,7 @@
               <FormType val="M"/>
               <DotNetObjectExists val="N"/>
             </Header>
-            <ItemIsn val="8"/>
+            <ItemIsn val="9"/>
             <Resource>
               <DB id="1">
                 <DataObject comp="-1" obj="22"/>
@@ -1465,7 +1462,6 @@
                         <v>13</v>
                       </INT_RCMP_INFO>
                       <INT_DIT_INFO>
-                        <v>3</v>
                         <v>9</v>
                       </INT_DIT_INFO>
                       <DIFF_UPDATE val="T"/>
@@ -1489,7 +1485,34 @@
                     </Select>
                   </LogicLine>
                   <LogicLine>
+                    <LNK Direction="D" EVL_CND="R" FlowIsn="24" Key="1" Mode="R" SortType="25" VIEW="3" VIEWS="1">
+                      <DB comp="-1" obj="22"/>
+                      <Condition val="Y"/>
+                    </LNK>
+                  </LogicLine>
+                  <LogicLine>
+                    <Select FieldID="9" FlowIsn="26" id="9">
+                      <Column val="1"/>
+                      <Type val="R"/>
+                      <ExposedToRoute val="N"/>
+                      <IsParameter val="N"/>
+                      <REAL_VNAME_TXT val="Max SEC_CD"/>
+                      <INT_RCMP_INFO>
+                        <v>3</v>
+                      </INT_RCMP_INFO>
+                      <DIFF_UPDATE val="T"/>
+                      <PartOfDataview val="N"/>
+                      <Condition val="N"/>
+                      <Modifier val="S"/>
+                      <Direction val="C"/>
+                    </Select>
+                  </LogicLine>
+                  <LogicLine>
+                    <END_LINK FlowIsn="25"/>
+                  </LogicLine>
+                  <LogicLine>
                     <Select FieldID="1" FlowIsn="3" id="1">
+                      <ASS val="8"/>
                       <Column val="1"/>
                       <Type val="R"/>
                       <ExposedToRoute val="N"/>
@@ -1532,7 +1555,7 @@
                     </Select>
                   </LogicLine>
                   <LogicLine>
-                    <LNK Direction="A" EVL_CND="R" FlowIsn="13" Key="1" Mode="W" SortType="14" VIEW="6" VIEWS="2">
+                    <LNK Direction="A" EVL_CND="R" FlowIsn="13" Key="1" Mode="W" SortType="14" VIEW="7" VIEWS="2">
                       <DB comp="-1" obj="66"/>
                       <Condition Exp="5"/>
                     </LNK>
@@ -1683,7 +1706,7 @@
                     <Data FieldID="1" id="43"/>
                     <ControlName id="46" val="SEC_CD"/>
                     <Visible id="61"/>
-                    <Enabled Exp="7" id="62"/>
+                    <Enabled Exp="9" id="62"/>
                   </PropertyList>
                 </Control>
                 <Control _test_id="4" id="4">
@@ -1798,8 +1821,12 @@
                 <ExpSyntax val="{0,5}&lt;>'C'"/>
                 <ExpAttribute val="B"/>
               </Expression>
-              <Expression id="7">
-                <ExpSyntax val="{0,5}='C'"/>
+              <Expression id="8">
+                <ExpSyntax val="{0,9}+1"/>
+                <ExpAttribute val="N"/>
+              </Expression>
+              <Expression id="9">
+                <ExpSyntax val="'FALSE'LOG"/>
                 <ExpAttribute val="B"/>
               </Expression>
             </Expressions>

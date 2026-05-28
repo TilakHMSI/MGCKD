@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="HardwareChecklistPrint" ISN_2="1" LastIsn="4" id="218">
-          <LastModified _date="739757" _time="60956" date="21/05/2026" time="16:55:56"/>
+          <LastModified _date="739763" _time="63149" date="27/05/2026" time="17:32:29"/>
           <Public val="Prg_84_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -783,7 +783,7 @@
                   <Lock val="N"/>
                   <Arguments>
                     <Argument>
-                      <Expression val="14"/>
+                      <Variable val="24"/>
                       <Skip val="N"/>
                     </Argument>
                   </Arguments>
@@ -987,7 +987,7 @@
                   <Lock val="N"/>
                   <Arguments>
                     <Argument>
-                      <Expression val="14"/>
+                      <Variable val="24"/>
                       <Skip val="N"/>
                     </Argument>
                   </Arguments>

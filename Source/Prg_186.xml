@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDM0040PackingStationMast" ISN_2="1" LastIsn="2" id="186">
-          <LastModified _date="739754" _time="44952" date="18/05/2026" time="12:29:12"/>
+          <LastModified _date="739763" _time="37552" date="27/05/2026" time="10:25:52"/>
           <Public val="Prg_35_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -44,10 +44,14 @@
           <Columns>
             <Column id="1" name="Program Name (v)">
               <PropertyList model="FIELD">
-                <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="8"/>
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="40"/>
                 <CharSet id="172" val="1"/>
                 <StoredAs id="173" val="1"/>
+                <Size id="174" val="40"/>
                 <Definition id="175" val="2"/>
+                <_Flip id="194"/>
+                <_FieldStyle id="276" val="1"/>
               </PropertyList>
             </Column>
             <Column id="2" name="Modify Button (v)">
@@ -166,6 +170,7 @@
                     <v>2</v>
                   </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -845,7 +850,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="Entry" ISN_2="2" LastIsn="2" id="186">
-            <LastModified _date="739743" _time="55288" date="07/05/2026" time="15:21:28"/>
+            <LastModified _date="739763" _time="37552" date="27/05/2026" time="10:25:52"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1194,32 +1199,6 @@
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
-            <LogicUnit id="3" propagate="78">
-              <Level val="T"/>
-              <Type val="S"/>
-              <Scope val="S"/>
-              <EngineDirective val="S"/>
-              <ShowMessage val="Y"/>
-              <Condition val="89"/>
-              <Event>
-                <EventType val="S"/>
-              </Event>
-              <ExecuteOn_ val="O"/>
-              <LogicLines>
-                <LogicLine>
-                  <Update FlowIsn="19">
-                    <Parent val="1"/>
-                    <FieldID val="5"/>
-                    <WithValue val="13"/>
-                    <Incremental val="N"/>
-                    <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </Update>
-                </LogicLine>
-              </LogicLines>
-            </LogicUnit>
             <LogicUnit id="4" propagate="78">
               <Level val="R"/>
               <Type val="S"/>
@@ -1395,7 +1374,7 @@
                   <Data Exp="14" id="43"/>
                   <ControlName id="46" val="Edit2"/>
                   <Visible id="61"/>
-                  <Format id="82" valUnicode="14"/>
+                  <Format id="82" valUnicode="40"/>
                 </PropertyList>
               </Control>
               <Control PDOD="128" _test_id="3" id="3">
@@ -1537,10 +1516,6 @@
             <Expression id="12">
               <ExpSyntax val="Time ()"/>
               <ExpAttribute val="T"/>
-            </Expression>
-            <Expression id="13">
-              <ExpSyntax val="'TRUE'LOG"/>
-              <ExpAttribute val="B"/>
             </Expression>
             <Expression id="14">
               <ExpSyntax val="'PGM='&amp;Trim ({1,1})"/>
