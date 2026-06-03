@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDZ013DisplayEngineNos" ISN_2="1" LastIsn="1" id="228">
-          <LastModified _date="739761" _time="63423" date="25/05/2026" time="17:37:03"/>
+          <LastModified _date="739770" _time="63736" date="03/06/2026" time="17:42:16"/>
           <Public val="Prg_26_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -117,10 +117,10 @@
             <LockingStrategy val="M"/>
             <CacheStrategy val="D"/>
             <ForceRecordSuffix val="N"/>
-            <TransactionMode val="D"/>
+            <TransactionMode val="N"/>
             <TransactionBegin val="P"/>
             <PreloadView val="N"/>
-            <AllowEmptyDataview val="N"/>
+            <AllowEmptyDataview val="Y"/>
             <KeepCreatedContext val="N"/>
           </TaskProperties>
           <SIDE_WIN>

@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDR0030FrameInquiry" ISN_2="1" LastIsn="4" id="220">
-          <LastModified _date="739757" _time="61156" date="21/05/2026" time="16:59:16"/>
+          <LastModified _date="739765" _time="52807" date="29/05/2026" time="14:40:07"/>
           <Public val="Prg_93_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -1663,7 +1663,7 @@
             <ExpAttribute val="N"/>
           </Expression>
           <Expression id="2">
-            <ExpSyntax val="'CKDR0020 : Frame Inquiry'"/>
+            <ExpSyntax val="'CKDR0030 : Frame Inquiry'"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="3">

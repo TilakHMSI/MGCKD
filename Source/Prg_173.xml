@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDMN101MasterMaintMenu" ISN_2="1" LastIsn="1" id="173">
-          <LastModified _date="739754" _time="61136" date="18/05/2026" time="16:58:56"/>
+          <LastModified _date="739765" _time="55922" date="29/05/2026" time="15:32:02"/>
           <Public val="Prg_6_RIA"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -1491,7 +1491,7 @@
                 <Data Exp="15" id="43"/>
                 <ControlName id="46" val="Edit2"/>
                 <Visible id="61"/>
-                <Format id="82" valUnicode="30"/>
+                <Format id="82" valUnicode="40"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="3" id="3">
