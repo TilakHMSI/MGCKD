@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="UpdateLotDCNUpdation" ISN_2="1" LastIsn="9" id="233">
-          <LastModified _date="739762" _time="45827" date="26/05/2026" time="12:43:47"/>
+          <LastModified _date="739771" _time="68724" date="04/06/2026" time="19:05:24"/>
           <Public val="Prg_81_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -347,12 +347,18 @@
             <LogicLines>
               <LogicLine>
                 <CallTask FlowIsn="16">
-                  <OperationType val="T"/>
+                  <OperationType val="P"/>
                   <Event>
                     <EventType val="N"/>
                   </Event>
-                  <TaskID comp="-1" obj="2"/>
-                  <Lock val="Y"/>
+                  <TaskID comp="-1" obj="314"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="1"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
                   <Wait val="Y"/>
                   <SyncData val="N"/>
                   <IsRoute val="N"/>
@@ -741,7 +747,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="GetDCNNo" ISN_2="2" LastIsn="9" id="233">
-            <LastModified _date="739762" _time="43517" date="26/05/2026" time="12:05:17"/>
+            <LastModified _date="739771" _time="67245" date="04/06/2026" time="18:40:45"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="Y"/>
@@ -858,7 +864,7 @@
             </BOX>
           </Information>
           <SQL_FORM DB="BOM" RESTAB="Memory">
-            <SQL_STMT_U val="select dc_no,DC_FDT from bomag1 WHERE DC_FDT&lt;>'00000000'"/>
+            <SQL_STMT_U val="select dc_no,DC_FDT from bomag1 WHERE DC_FDT&lt;>'00000000' and KDPM_PCNO like :1"/>
             <OUTARG>
               <Arguments>
                 <Argument Variable="1"/>
