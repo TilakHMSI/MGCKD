@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0090CartonCaseScanning" ISN_2="1" LastIsn="53" id="256">
-          <LastModified _date="739772" _time="58682" date="05/06/2026" time="16:18:02"/>
+          <LastModified _date="739772" _time="60323" date="05/06/2026" time="16:45:23"/>
           <Comment val="13 and 18 digit validation&#xD;&#xA;6th digit - validation"/>
           <Public val="Prg_54_RIA_C_MultiTaskInSub"/>
           <ExecutionRight comp="-1"/>
@@ -21461,7 +21461,7 @@
         </Task>
         <Task MainProgram="N">
           <Header Description="Cacnel Carton Packing Off" ISN_2="19" LastIsn="53" id="256">
-            <LastModified _date="739772" _time="38034" date="05/06/2026" time="10:33:54"/>
+            <LastModified _date="739772" _time="60323" date="05/06/2026" time="16:45:23"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -22182,14 +22182,6 @@
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
-                </LogicLine>
-                <LogicLine>
-                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="16" FlowIsn="56" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
-                    <AppendToErrorLog val="N"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </STP>
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
