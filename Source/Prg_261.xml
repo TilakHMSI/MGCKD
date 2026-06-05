@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDCaseTransferModule" ISN_2="1" LastIsn="12" id="261">
-          <LastModified _date="739756" _time="62900" date="20/05/2026" time="17:28:20"/>
+          <LastModified _date="739772" _time="59783" date="05/06/2026" time="16:36:23"/>
           <Public val="Prg_97_RIA_NonInteractive_NWrk"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -210,7 +210,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="MainLoop" ISN_2="2" LastIsn="12" id="261">
-            <LastModified _date="739756" _time="62900" date="20/05/2026" time="17:28:20"/>
+            <LastModified _date="739772" _time="59783" date="05/06/2026" time="16:36:23"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -248,7 +248,7 @@
               <CLS val="A"/>
             </Sort>
             <ForceRecordDelete DEL="N"/>
-            <EndTaskCondition Exp="2"/>
+            <EndTaskCondition val="N"/>
             <SkipLockedRecords val="N"/>
             <EvaluateEndCondition val="B"/>
             <InitialMode val="E"/>
