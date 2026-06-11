@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDPM020PartsPackingMaster" ISN_2="1" LastIsn="19" id="199">
-          <LastModified _date="739777" _time="66766" date="10/06/2026" time="18:32:46"/>
+          <LastModified _date="739777" _time="69949" date="10/06/2026" time="19:25:49"/>
           <Public val="Prg_37_RIA_C_Web_Incomplete"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -1006,7 +1006,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="ContainerDetails" ISN_2="2" LastIsn="19" id="199">
-            <LastModified _date="739777" _time="66721" date="10/06/2026" time="18:32:01"/>
+            <LastModified _date="739777" _time="69936" date="10/06/2026" time="19:25:36"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1421,6 +1421,34 @@
                     <RetainFocus val="N"/>
                     <Condition Exp="18"/>
                     <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </CallTask>
+                </LogicLine>
+                <LogicLine>
+                  <CallTask FlowIsn="64">
+                    <OperationType val="P"/>
+                    <Event>
+                      <EventType val="N"/>
+                    </Event>
+                    <TaskID comp="-1" obj="200"/>
+                    <Lock val="N"/>
+                    <Arguments>
+                      <Argument>
+                        <Parent val="1"/>
+                        <Variable val="7"/>
+                        <Skip val="N"/>
+                      </Argument>
+                      <Argument>
+                        <Expression val="28"/>
+                        <Skip val="N"/>
+                      </Argument>
+                    </Arguments>
+                    <Wait val="Y"/>
+                    <SyncData val="N"/>
+                    <IsRoute val="N"/>
+                    <RetainFocus val="N"/>
+                    <Condition Exp="18"/>
+                    <Modifier val="S"/>
                     <Direction val="C"/>
                   </CallTask>
                 </LogicLine>
@@ -2185,6 +2213,10 @@
             </Expression>
             <Expression id="27">
               <ExpSyntax val="'CONTAINER CODE CANT BE BLANK'"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="28">
+              <ExpSyntax val="'B'"/>
               <ExpAttribute val="A"/>
             </Expression>
           </Expressions>
@@ -11559,7 +11591,7 @@
           </Task>
           <Task MainProgram="N">
             <Header Description="Work >> Master" ISN_2="11" LastIsn="19" id="199">
-              <LastModified _date="739743" _time="70392" date="07/05/2026" time="19:33:12"/>
+              <LastModified _date="739777" _time="69949" date="10/06/2026" time="19:25:49"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -12745,23 +12777,8 @@
                       <Wait val="Y"/>
                       <SyncData val="N"/>
                       <RetainFocus val="N"/>
+                      <Disabled val="1"/>
                       <Condition val="Y"/>
-                      <Modifier val="B"/>
-                      <Direction val="C"/>
-                    </CallTask>
-                  </LogicLine>
-                  <LogicLine>
-                    <CallTask FlowIsn="83">
-                      <OperationType val="T"/>
-                      <Event>
-                        <EventType val="N"/>
-                      </Event>
-                      <TaskID comp="-1" obj="15"/>
-                      <Lock val="N"/>
-                      <Wait val="Y"/>
-                      <SyncData val="N"/>
-                      <RetainFocus val="N"/>
-                      <Condition val="N"/>
                       <Modifier val="B"/>
                       <Direction val="C"/>
                     </CallTask>
