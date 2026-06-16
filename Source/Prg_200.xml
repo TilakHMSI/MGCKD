@@ -14,14 +14,18 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDPM030PackingMasterReorga" ISN_2="1" LastIsn="3" id="200">
-          <LastModified _date="739755" _time="55029" date="19/05/2026" time="15:17:09"/>
+          <LastModified _date="739777" _time="69901" date="10/06/2026" time="19:25:01"/>
           <Public val="Prg_42_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
           <ReturnValue>
             <ReturnValueAttr/>
-            <ParametersAttributes/>
+            <TSK_PARAMS val="2"/>
+            <ParametersAttributes>
+              <Attr MgAttr="A"/>
+              <Attr MgAttr="A"/>
+            </ParametersAttributes>
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="W"/>
@@ -42,7 +46,16 @@
             <IdentifyRowModifications val="84"/>
           </DB>
           <Columns>
-            <Column id="1" name="Execute Param (p)">
+            <Column id="2" name="pLotId">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="2"/>
+                <CharSet id="172" val="1"/>
+                <StoredAs id="173" val="1"/>
+                <Definition id="175" val="2"/>
+                <PartOfDataview id="449"/>
+              </PropertyList>
+            </Column>
+            <Column id="1" name="pExecuteParam">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="U"/>
@@ -52,14 +65,7 @@
                 <Size id="174" val="1"/>
                 <Definition id="175" val="2"/>
                 <_Flip id="194"/>
-              </PropertyList>
-            </Column>
-            <Column id="2" name="Lot Id (p)">
-              <PropertyList model="FIELD">
-                <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="2"/>
-                <CharSet id="172" val="1"/>
-                <StoredAs id="173" val="1"/>
-                <Definition id="175" val="2"/>
+                <PartOfDataview id="449"/>
               </PropertyList>
             </Column>
             <Column id="3" name="Program Name (v)">
@@ -202,11 +208,11 @@
                 </DATAVIEW_SRC>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="1" FlowIsn="3" id="1">
-                  <Column val="1"/>
+                <Select FieldID="2" FlowIsn="4" id="2">
+                  <Column val="2"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
+                  <IsParameter val="Y"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -214,11 +220,11 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="2" FlowIsn="4" id="2">
-                  <Column val="2"/>
+                <Select FieldID="1" FlowIsn="3" id="1">
+                  <Column val="1"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
+                  <IsParameter val="Y"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -444,12 +450,10 @@
             <Event>
               <EventType val="S"/>
             </Event>
-            <Disabled val="1"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
                 <BLOCK EndBlock="28" EndBlockSegment="28" FlowIsn="24" Type="I">
-                  <Disabled val="1"/>
                   <Condition Exp="12"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -461,7 +465,6 @@
                   <WithValue val="13"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -479,7 +482,6 @@
                   <SyncData val="N"/>
                   <IsRoute val="N"/>
                   <RetainFocus val="N"/>
-                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -497,16 +499,13 @@
                   <SyncData val="N"/>
                   <IsRoute val="N"/>
                   <RetainFocus val="N"/>
-                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </CallTask>
               </LogicLine>
               <LogicLine>
-                <END_BLK FlowIsn="28">
-                  <Disabled val="1"/>
-                </END_BLK>
+                <END_BLK FlowIsn="28"/>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
