@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDMN106CartonCaseScanMenu" ISN_2="1" LastIsn="1" id="178">
-          <LastModified _date="739758" _time="49896" date="22/05/2026" time="13:51:36"/>
+          <LastModified _date="739773" _time="40383" date="06/06/2026" time="11:13:03"/>
           <Public val="Prg_11"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -844,7 +844,7 @@
                   <Event>
                     <EventType val="N"/>
                   </Event>
-                  <TaskID comp="-1" obj="261"/>
+                  <TaskID comp="-1" obj="317"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
                   <SyncData val="N"/>

@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="StockTransferMain" ISN_2="2" LastIsn="35" id="317">
-          <LastModified _date="739772" _time="60260" date="05/06/2026" time="16:44:20"/>
+          <LastModified _date="739773" _time="41406" date="06/06/2026" time="11:30:06"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -650,7 +650,7 @@
                     <v>43</v>
                     <v>52</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="25"/>
+                  <_DitIndexForToolkit val="26"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -668,7 +668,7 @@
                     <v>43</v>
                     <v>52</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="26"/>
+                  <_DitIndexForToolkit val="27"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -1048,7 +1048,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="30"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -1080,7 +1079,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="31"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -1192,6 +1190,14 @@
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate FlowIsn="146">
+                  <Expression val="29"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
               </LogicLine>
               <LogicLine>
                 <CallTask FlowIsn="111">
@@ -1707,7 +1713,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="31" _last_test_id="31" id="1">
+          <FormEntry _last_isn="32" _last_test_id="32" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="845"/>
               <Height id="24" val="556"/>
@@ -1779,6 +1785,7 @@
                 <ControlName id="46" val="v_ChallanDate"/>
                 <Modifiable id="53"/>
                 <Visible id="61"/>
+                <Format id="82" valUnicode="DD/MM/YYYY"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="4" PDOD="128" _test_id="7" id="7">
@@ -2011,6 +2018,20 @@
                 <Visible id="61"/>
               </PropertyList>
             </Control>
+            <Control PDOD="128" _test_id="32" id="32">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="791"/>
+                <Y id="22" val="58"/>
+                <Width id="23" val="41"/>
+                <Height id="24" val="22"/>
+                <ControlName id="46" val="btnexit"/>
+                <Format id="82" valUnicode="Back"/>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="393"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
             <Control PDOD="128" _test_id="25" id="25">
               <PropertyList model="CTRL_WEB_CLIENT_GROUP">
                 <X id="21" val="32"/>
@@ -2084,41 +2105,37 @@
             </Control>
             <Control ISN_FATHER="29" PDOD="128" _test_id="30" id="30">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="41"/>
-                </Model>
+                <Model id="1"/>
                 <X id="21" val="552"/>
                 <Y id="22" val="495"/>
                 <Width id="23" val="96"/>
                 <Height id="24" val="26"/>
-                <Data FieldID="41" id="43"/>
+                <Data id="43"/>
                 <ControlName id="46" val="Proceed"/>
                 <Visible id="61"/>
                 <Format id="82" valUnicode="Proceed"/>
                 <ImageFile id="88" val="Button"/>
                 <RaiseEvent id="234">
-                  <EventType val="I"/>
-                  <InternalEventID val="34"/>
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="1"/>
                 </RaiseEvent>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="29" PDOD="128" _test_id="31" id="31">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="43"/>
-                </Model>
+                <Model id="1"/>
                 <X id="21" val="662"/>
                 <Y id="22" val="495"/>
                 <Width id="23" val="96"/>
                 <Height id="24" val="26"/>
-                <Data FieldID="43" id="43"/>
+                <Data id="43"/>
                 <ControlName id="46" val="Exit"/>
                 <Visible id="61"/>
                 <Format id="82" valUnicode="Exit"/>
                 <ImageFile id="88" val="Button"/>
                 <RaiseEvent id="234">
                   <EventType val="I"/>
-                  <InternalEventID val="34"/>
+                  <InternalEventID val="393"/>
                 </RaiseEvent>
               </PropertyList>
             </Control>
@@ -2205,10 +2222,6 @@
             <ExpSyntax val="{0,8}='FALSE'LOG AND LastClicked ()&lt;>'Exit'"/>
             <ExpAttribute val="B"/>
           </Expression>
-          <Expression id="21">
-            <ExpSyntax val="'TRUE'LOG"/>
-            <ExpAttribute val="B"/>
-          </Expression>
           <Expression id="22">
             <ExpSyntax val="Trim({32768,3025})"/>
             <ExpAttribute val="A"/>
@@ -2237,7 +2250,16 @@
             <ExpSyntax val="'002'"/>
             <ExpAttribute val="A"/>
           </Expression>
+          <Expression id="29">
+            <ExpSyntax val="DbDel ('{76,-1}'DSOURCE,'CKD_CASE_TransferTEMP')"/>
+            <ExpAttribute val="B"/>
+          </Expression>
         </Expressions>
+        <EVNT DESC="Task_Proceed" FORCE_EXIT="N" id="1">
+          <Event>
+            <EventType val="N"/>
+          </Event>
+        </EVNT>
         <Task MainProgram="N">
           <Header Description="RemoveTempData" ISN_2="35" LastIsn="35" id="317">
             <LastModified _date="739749" _time="54469" date="13/05/2026" time="15:07:49"/>
@@ -2372,7 +2394,7 @@
           </TaskForms>
         </Task>
         <Task MainProgram="N">
-          <Header Description="StockTransferDetails" ISN_2="24" LastIsn="32" id="317">
+          <Header Description="StockTransferDetails" ISN_2="24" LastIsn="35" id="317">
             <LastModified _date="739749" _time="62181" date="13/05/2026" time="17:16:21"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
@@ -3077,7 +3099,7 @@
           </TaskForms>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Commit Data into Real Database" ISN_2="25" LastIsn="32" id="317">
+          <Header Description="Commit Data into Real Database" ISN_2="25" LastIsn="35" id="317">
             <LastModified _date="739749" _time="54469" date="13/05/2026" time="15:07:49"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
@@ -3365,7 +3387,7 @@
             </Expression>
           </Expressions>
           <Task MainProgram="N">
-            <Header Description="Update ChallanHDR" ISN_2="26" LastIsn="32" id="317">
+            <Header Description="Update ChallanHDR" ISN_2="26" LastIsn="35" id="317">
               <LastModified _date="739749" _time="54469" date="13/05/2026" time="15:07:49"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -3841,7 +3863,7 @@
             </Expressions>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Update Challan Details" ISN_2="27" LastIsn="32" id="317">
+            <Header Description="Update Challan Details" ISN_2="27" LastIsn="35" id="317">
               <LastModified _date="739749" _time="54469" date="13/05/2026" time="15:07:49"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -4671,7 +4693,7 @@
             </Expressions>
           </Task>
           <Task MainProgram="N">
-            <Header Description="UpdateStatusPCS_Data" ISN_2="28" LastIsn="32" id="317">
+            <Header Description="UpdateStatusPCS_Data" ISN_2="28" LastIsn="35" id="317">
               <LastModified _date="739749" _time="54469" date="13/05/2026" time="15:07:49"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -4945,7 +4967,7 @@
           </Task>
         </Task>
         <Task MainProgram="N">
-          <Header Description="StatusMessage" ISN_2="29" LastIsn="32" id="317">
+          <Header Description="StatusMessage" ISN_2="29" LastIsn="35" id="317">
             <LastModified _date="739749" _time="55088" date="13/05/2026" time="15:18:08"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
@@ -5248,7 +5270,7 @@
           </Expressions>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Transporter" ISN_2="30" LastIsn="32" id="317">
+          <Header Description="Transporter" ISN_2="30" LastIsn="35" id="317">
             <LastModified _date="739749" _time="55092" date="13/05/2026" time="15:18:12"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
@@ -5585,7 +5607,7 @@
           </Expressions>
         </Task>
         <Task MainProgram="N">
-          <Header Description="PC_HelpList" ISN_2="31" LastIsn="32" id="317">
+          <Header Description="PC_HelpList" ISN_2="31" LastIsn="35" id="317">
             <LastModified _date="739749" _time="55097" date="13/05/2026" time="15:18:17"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
