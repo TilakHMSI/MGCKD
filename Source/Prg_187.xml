@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDPARTSMASTERView" ISN_2="16" LastIsn="39" id="187">
-          <LastModified _date="739764" _time="45248" date="28/05/2026" time="12:34:08"/>
+          <LastModified _date="739789" _time="53158" date="22/06/2026" time="14:45:58"/>
           <Public val="Prg_76_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -1523,7 +1523,7 @@
           </Expressions>
           <Task MainProgram="N">
             <Header Description="CKDPARTSMASTER_CM" ISN_2="37" LastIsn="39" id="187">
-              <LastModified _date="739754" _time="53704" date="18/05/2026" time="14:55:04"/>
+              <LastModified _date="739789" _time="53158" date="22/06/2026" time="14:45:58"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -2251,6 +2251,30 @@
                 <ExecuteOn_ val="O"/>
                 <LogicLines>
                   <LogicLine>
+                    <CallTask FlowIsn="54">
+                      <OperationType val="P"/>
+                      <Event>
+                        <EventType val="N"/>
+                      </Event>
+                      <TaskID comp="-1" obj="88"/>
+                      <Lock val="N"/>
+                      <Arguments>
+                        <Argument>
+                          <Variable val="18"/>
+                          <Skip val="N"/>
+                        </Argument>
+                      </Arguments>
+                      <Wait val="Y"/>
+                      <SyncData val="N"/>
+                      <IsRoute val="N"/>
+                      <RetainFocus val="N"/>
+                      <Disabled val="1"/>
+                      <Condition val="Y"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </CallTask>
+                  </LogicLine>
+                  <LogicLine>
                     <RaiseEvent FlowIsn="41">
                       <Event>
                         <EventType val="I"/>
@@ -2275,32 +2299,8 @@
                   <EventType val="S"/>
                 </Event>
                 <TXT val="HW_YN"/>
+                <Disabled val="1"/>
                 <ExecuteOn_ val="O"/>
-                <LogicLines>
-                  <LogicLine>
-                    <CallTask FlowIsn="54">
-                      <OperationType val="P"/>
-                      <Event>
-                        <EventType val="N"/>
-                      </Event>
-                      <TaskID comp="-1" obj="88"/>
-                      <Lock val="N"/>
-                      <Arguments>
-                        <Argument>
-                          <Variable val="18"/>
-                          <Skip val="N"/>
-                        </Argument>
-                      </Arguments>
-                      <Wait val="Y"/>
-                      <SyncData val="N"/>
-                      <IsRoute val="N"/>
-                      <RetainFocus val="N"/>
-                      <Condition val="Y"/>
-                      <Modifier val="B"/>
-                      <Direction val="C"/>
-                    </CallTask>
-                  </LogicLine>
-                </LogicLines>
               </LogicUnit>
             </TaskLogic>
             <TaskForms>
