@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0020LotNoPackingData" ISN_2="1" LastIsn="51" id="225">
-          <LastModified _date="739761" _time="47295" date="25/05/2026" time="13:08:15"/>
+          <LastModified _date="739791" _time="64279" date="24/06/2026" time="17:51:19"/>
           <Public val="Prg_44_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -1677,6 +1677,26 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
+                <BLOCK EndBlock="295" EndBlockSegment="296" FlowIsn="294" Type="I">
+                  <Condition Exp="85"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="295" EndBlockSegment="295" FlowIsn="296" Type="E">
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="297">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
                 <Update FlowIsn="192">
                   <FieldID val="66"/>
                   <WithValue val="61"/>
@@ -2095,6 +2115,9 @@
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </STP>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="295"/>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -3086,6 +3109,10 @@
           <Expression id="84">
             <ExpSyntax val="'Packing Data has been deleted for this Purchase Contract.'"/>
             <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="85">
+            <ExpSyntax val="LastClicked()='btnexit'"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
         <Task MainProgram="N">

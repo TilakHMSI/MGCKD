@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDPARTSMASTERView" ISN_2="16" LastIsn="39" id="187">
-          <LastModified _date="739791" _time="50920" date="24/06/2026" time="14:08:40"/>
+          <LastModified _date="739791" _time="60967" date="24/06/2026" time="16:56:07"/>
           <Public val="Prg_76_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -1523,7 +1523,7 @@
           </Expressions>
           <Task MainProgram="N">
             <Header Description="CKDPARTSMASTER_CM" ISN_2="37" LastIsn="39" id="187">
-              <LastModified _date="739791" _time="50915" date="24/06/2026" time="14:08:35"/>
+              <LastModified _date="739791" _time="60967" date="24/06/2026" time="16:56:07"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -2404,7 +2404,7 @@
               <LogicUnit id="10" propagate="89">
                 <Level val="H"/>
                 <Type val="U"/>
-                <Scope val="S"/>
+                <Scope val="T"/>
                 <EngineDirective val="S"/>
                 <ShowMessage val="Y"/>
                 <Condition val="89"/>
