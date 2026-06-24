@@ -13,8 +13,8 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="SelectdistinctParts" ISN_2="26" LastIsn="34" id="292">
-          <LastModified _date="739789" _time="47970" date="22/06/2026" time="13:19:30"/>
+        <Header Description="SelectdistinctParts" ISN_2="26" LastIsn="33" id="292">
+          <LastModified _date="739791" _time="38484" date="24/06/2026" time="10:41:24"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -443,6 +443,20 @@
                   <Direction val="C"/>
                 </Update>
               </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="9" FlowIsn="53" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="52">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
             </LogicLines>
           </LogicUnit>
           <LogicUnit id="4" propagate="78">
@@ -680,9 +694,13 @@
             <ExpSyntax val="'Distinct Parts List'"/>
             <ExpAttribute val="A"/>
           </Expression>
+          <Expression id="9">
+            <ExpSyntax val="'Plant'&amp;''&amp;{0,15}"/>
+            <ExpAttribute val="A"/>
+          </Expression>
         </Expressions>
         <Task MainProgram="N">
-          <Header Description="List" ISN_2="33" LastIsn="34" id="292">
+          <Header Description="List" ISN_2="33" LastIsn="33" id="292">
             <LastModified _date="739789" _time="47892" date="22/06/2026" time="13:18:12"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
