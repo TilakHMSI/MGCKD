@@ -13,8 +13,8 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="Y">
-        <Header Description="Main Program" ISN_2="1" LastIsn="20" id="1">
-          <LastModified _date="739756" _time="57847" date="20/05/2026" time="16:04:07"/>
+        <Header Description="Main Program" ISN_2="1" LastIsn="28" id="1">
+          <LastModified _date="739791" _time="50678" date="24/06/2026" time="14:04:38"/>
           <Resident val="N"/>
           <SQL val="N"/>
           <ReturnValue>
@@ -30,7 +30,7 @@
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
         </Header>
-        <ItemIsn val="9834"/>
+        <ItemIsn val="9835"/>
         <Resource>
           <Columns>
             <Column id="52" name="Not In Use">
@@ -412,6 +412,15 @@
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_LOGICAL" id="1"/>
                 <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="61" name="gERRORMESSAGE">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="250"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="250"/>
+                <_Flip id="194"/>
               </PropertyList>
             </Column>
           </Columns>
@@ -1208,6 +1217,18 @@
                   <Direction val="C"/>
                 </Select>
               </LogicLine>
+              <LogicLine>
+                <Select FieldID="9835" FlowIsn="119" id="9835">
+                  <Column val="61"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
             </LogicLines>
           </LogicUnit>
           <LogicUnit id="2" propagate="78">
@@ -1329,6 +1350,10 @@
           </Expression>
           <Expression id="6">
             <ExpSyntax val="'2'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="7">
+            <ExpSyntax val="Trim(Str(ErrDbmsCode(),''))&amp; ' : '&amp;Trim(ErrDbmsMessage())"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
