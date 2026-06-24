@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0130PackingMasterError" ISN_2="1" LastIsn="4" id="202">
-          <LastModified _date="739763" _time="62735" date="27/05/2026" time="17:25:35"/>
+          <LastModified _date="739791" _time="62439" date="24/06/2026" time="17:20:39"/>
           <Public val="Prg_61_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -632,6 +632,7 @@
               <LogicLine>
                 <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="89" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Ok" TitleTxt="Warning" VR_DISP="B">
                   <AppendToErrorLog val="N"/>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
