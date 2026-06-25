@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDPartsMappingMaintenance" ISN_2="18" LastIsn="47" id="192">
-          <LastModified _date="739791" _time="53164" date="24/06/2026" time="14:46:04"/>
+          <LastModified _date="739792" _time="39230" date="25/06/2026" time="10:53:50"/>
           <Public val="Prg_107_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -534,7 +534,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="PartsMappingMaintList" ISN_2="37" LastIsn="47" id="192">
-            <LastModified _date="739791" _time="39463" date="24/06/2026" time="10:57:43"/>
+            <LastModified _date="739792" _time="39230" date="25/06/2026" time="10:53:50"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -605,7 +605,7 @@
               <TransactionMode val="O"/>
               <TransactionBegin val="N"/>
               <PreloadView val="N"/>
-              <AllowEmptyDataview val="N"/>
+              <AllowEmptyDataview val="Y"/>
               <KeepCreatedContext val="N"/>
             </TaskProperties>
             <SIDE_WIN>
@@ -869,17 +869,6 @@
                   </Select>
                 </LogicLine>
               </LogicLines>
-            </LogicUnit>
-            <LogicUnit id="3" propagate="78">
-              <Level val="K"/>
-              <Scope val="S"/>
-              <EngineDirective val="S"/>
-              <ShowMessage val="Y"/>
-              <Condition val="89"/>
-              <Event>
-                <EventType val="S"/>
-              </Event>
-              <ExecuteOn_ val="O"/>
             </LogicUnit>
             <LogicUnit id="6" propagate="78">
               <Level val="H"/>
@@ -1384,7 +1373,7 @@
             </Expression>
           </Expressions>
           <Task MainProgram="N">
-            <Header Description="LOG DETAILS" ISN_2="46" LastIsn="46" id="192">
+            <Header Description="LOG DETAILS" ISN_2="46" LastIsn="47" id="192">
               <LastModified _date="739754" _time="59280" date="18/05/2026" time="16:28:00"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -1964,8 +1953,8 @@
             </Expressions>
           </Task>
           <Task MainProgram="N">
-            <Header Description="CKDPARTSMASTERCM" ISN_2="39" LastIsn="46" id="192">
-              <LastModified _date="739791" _time="53164" date="24/06/2026" time="14:46:04"/>
+            <Header Description="CKDPARTSMASTERCM" ISN_2="39" LastIsn="47" id="192">
+              <LastModified _date="739792" _time="38674" date="25/06/2026" time="10:44:34"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -2345,7 +2334,6 @@
                       <IsParameter val="Y"/>
                       <INT_DIT_INFO>
                         <v>3</v>
-                        <v>7</v>
                       </INT_DIT_INFO>
                       <DIFF_UPDATE val="T"/>
                       <PartOfDataview val="N"/>
@@ -3664,7 +3652,7 @@
                     <Data FieldID="4" id="43"/>
                     <ControlName id="46" val="PART_COLOR_0001"/>
                     <Visible id="61"/>
-                    <Enabled Exp="23" id="62"/>
+                    <Enabled id="62"/>
                     <ShowZoomButton id="718" val="Y"/>
                   </PropertyList>
                 </Control>
@@ -3915,7 +3903,7 @@
             <VarRangeInfo Mode="E" VarRangeVeeIsn="13" id="4"/>
           </Task>
           <Task MainProgram="N">
-            <Header Description="CKDPARTSMASTERModify" ISN_2="40" LastIsn="46" id="192">
+            <Header Description="CKDPARTSMASTERModify" ISN_2="40" LastIsn="47" id="192">
               <LastModified _date="739743" _time="63099" date="07/05/2026" time="17:31:39"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -5319,7 +5307,7 @@
             <VarRangeInfo Mode="E" VarRangeVeeIsn="25" id="3"/>
           </Task>
           <Task MainProgram="N">
-            <Header Description="CKDPARTSMASTERDELETE" ISN_2="41" LastIsn="46" id="192">
+            <Header Description="CKDPARTSMASTERDELETE" ISN_2="41" LastIsn="47" id="192">
               <LastModified _date="739789" _time="49075" date="22/06/2026" time="13:37:55"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -6199,7 +6187,7 @@
               </Expression>
             </Expressions>
             <Task MainProgram="N">
-              <Header Description="LOG DETAILS" ISN_2="42" LastIsn="46" id="192">
+              <Header Description="LOG DETAILS" ISN_2="42" LastIsn="47" id="192">
                 <LastModified _date="739743" _time="42221" date="07/05/2026" time="11:43:41"/>
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>

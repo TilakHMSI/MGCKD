@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDPARTSMASTERView" ISN_2="16" LastIsn="39" id="187">
-          <LastModified _date="739791" _time="60967" date="24/06/2026" time="16:56:07"/>
+          <LastModified _date="739792" _time="37848" date="25/06/2026" time="10:30:48"/>
           <Public val="Prg_76_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -1522,8 +1522,8 @@
             </Expression>
           </Expressions>
           <Task MainProgram="N">
-            <Header Description="CKDPARTSMASTER_CM" ISN_2="37" LastIsn="39" id="187">
-              <LastModified _date="739791" _time="60967" date="24/06/2026" time="16:56:07"/>
+            <Header Description="CKDPARTSMASTER_CM" ISN_2="37" LastIsn="37" id="187">
+              <LastModified _date="739792" _time="37848" date="25/06/2026" time="10:30:48"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -1797,6 +1797,9 @@
                       <Type val="V"/>
                       <ExposedToRoute val="N"/>
                       <IsParameter val="Y"/>
+                      <INT_DIT_INFO>
+                        <v>3</v>
+                      </INT_DIT_INFO>
                       <DIFF_UPDATE val="T"/>
                       <PartOfDataview val="N"/>
                       <Condition val="Y"/>
@@ -2648,6 +2651,7 @@
                     <Data FieldID="1" id="43"/>
                     <ControlName id="46" val="PART_NO"/>
                     <Visible id="61"/>
+                    <Enabled Exp="17" id="62"/>
                     <ShowZoomButton id="718" val="Y"/>
                   </PropertyList>
                 </Control>
@@ -2937,6 +2941,10 @@
               </Expression>
               <Expression id="16">
                 <ExpSyntax val="Trim({0,26})&lt;>''"/>
+                <ExpAttribute val="B"/>
+              </Expression>
+              <Expression id="17">
+                <ExpSyntax val="{0,19}='C'"/>
                 <ExpAttribute val="B"/>
               </Expression>
             </Expressions>

@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="SelectdistinctParts" ISN_2="26" LastIsn="34" id="292">
-          <LastModified _date="739791" _time="55502" date="24/06/2026" time="15:25:02"/>
+          <LastModified _date="739792" _time="38787" date="25/06/2026" time="10:46:27"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -433,6 +433,17 @@
                 </Update>
               </LogicLine>
               <LogicLine>
+                <Update FlowIsn="59">
+                  <FieldID val="4"/>
+                  <WithValue val="10"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
                 <Update FlowIsn="13">
                   <FieldID val="5"/>
                   <WithValue val="6"/>
@@ -697,6 +708,10 @@
           </Expression>
           <Expression id="9">
             <ExpSyntax val="'Plant'&amp;''&amp;{0,15}"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="10">
+            <ExpSyntax val="Trim({0,10})"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>

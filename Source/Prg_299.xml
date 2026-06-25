@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDPM010LotMaster" ISN_2="2" LastIsn="19" id="299">
-          <LastModified _date="739755" _time="47401" date="19/05/2026" time="13:10:01"/>
+          <LastModified _date="739792" _time="40649" date="25/06/2026" time="11:17:29"/>
           <Public val="Prg_36_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -534,7 +534,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="LotMasterList" ISN_2="14" LastIsn="19" id="299">
-            <LastModified _date="739755" _time="47401" date="19/05/2026" time="13:10:01"/>
+            <LastModified _date="739792" _time="40649" date="25/06/2026" time="11:17:29"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -910,7 +910,7 @@
                   <RaiseEvent FlowIsn="19">
                     <Event>
                       <EventType val="I"/>
-                      <InternalEventID val="295"/>
+                      <InternalEventID val="294"/>
                     </Event>
                     <Wait val="78"/>
                     <Condition val="Y"/>
@@ -1870,7 +1870,7 @@
           </Task>
           <Task MainProgram="N">
             <Header Description="LotMasterCM" ISN_2="16" LastIsn="19" id="299">
-              <LastModified _date="739743" _time="70007" date="07/05/2026" time="19:26:47"/>
+              <LastModified _date="739792" _time="39531" date="25/06/2026" time="10:58:51"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -1959,7 +1959,7 @@
               <EndTaskCondition val="N"/>
               <SkipLockedRecords val="N"/>
               <EvaluateEndCondition val="B"/>
-              <InitialMode val="M"/>
+              <InitialMode Exp="31"/>
               <Locate Direction="A"/>
               <Range Direction="A"/>
               <VarRange LastIsn="2"/>
@@ -2692,6 +2692,10 @@
             <Expressions>
               <Expression id="1">
                 <ExpSyntax val="{14,2}"/>
+                <ExpAttribute val="A"/>
+              </Expression>
+              <Expression id="31">
+                <ExpSyntax val="{0,18}"/>
                 <ExpAttribute val="A"/>
               </Expression>
               <Expression id="2">
