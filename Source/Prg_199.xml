@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDPM020PartsPackingMaster" ISN_2="1" LastIsn="19" id="199">
-          <LastModified _date="739792" _time="50945" date="25/06/2026" time="14:09:05"/>
+          <LastModified _date="739792" _time="56169" date="25/06/2026" time="15:36:09"/>
           <Public val="Prg_37_RIA_C_Web_Incomplete"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -5671,7 +5671,7 @@
             <VarRangeInfo Mode="T" VarRangeVeeIsn="2" id="4"/>
             <Task MainProgram="N">
               <Header Description="CartonDetails" ISN_2="5" LastIsn="19" id="199">
-                <LastModified _date="739792" _time="46292" date="25/06/2026" time="12:51:32"/>
+                <LastModified _date="739792" _time="56169" date="25/06/2026" time="15:36:09"/>
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -8148,7 +8148,7 @@
                   <ExpAttribute val="B"/>
                 </Expression>
                 <Expression id="23">
-                  <ExpSyntax val="'C&amp;opy Carton'"/>
+                  <ExpSyntax val="'Copy Carton'"/>
                   <ExpAttribute val="A"/>
                 </Expression>
                 <Expression id="24">
