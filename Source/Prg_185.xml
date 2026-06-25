@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDM0030PackingMatMaster" ISN_2="14" LastIsn="48" id="185">
-          <LastModified _date="739791" _time="53496" date="24/06/2026" time="14:51:36"/>
+          <LastModified _date="739792" _time="57250" date="25/06/2026" time="15:54:10"/>
           <Public val="Prg_79_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -534,7 +534,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="List" ISN_2="45" LastIsn="48" id="185">
-            <LastModified _date="739764" _time="44126" date="28/05/2026" time="12:15:26"/>
+            <LastModified _date="739792" _time="57250" date="25/06/2026" time="15:54:10"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -679,7 +679,7 @@
               <TransactionMode val="O"/>
               <TransactionBegin val="N"/>
               <PreloadView val="N"/>
-              <AllowEmptyDataview val="N"/>
+              <AllowEmptyDataview val="Y"/>
               <KeepCreatedContext val="N"/>
             </TaskProperties>
             <SIDE_WIN>
