@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDPM010LotMaster" ISN_2="2" LastIsn="19" id="299">
-          <LastModified _date="739792" _time="40649" date="25/06/2026" time="11:17:29"/>
+          <LastModified _date="739793" _time="38029" date="26/06/2026" time="10:33:49"/>
           <Public val="Prg_36_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -1870,7 +1870,7 @@
           </Task>
           <Task MainProgram="N">
             <Header Description="LotMasterCM" ISN_2="16" LastIsn="19" id="299">
-              <LastModified _date="739792" _time="39531" date="25/06/2026" time="10:58:51"/>
+              <LastModified _date="739793" _time="38029" date="26/06/2026" time="10:33:49"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -2498,6 +2498,86 @@
                   </LogicLine>
                 </LogicLines>
               </LogicUnit>
+              <LogicUnit id="12" propagate="78">
+                <Level val="H"/>
+                <Type val="U"/>
+                <Scope val="T"/>
+                <EngineDirective val="S"/>
+                <ShowMessage val="Y"/>
+                <Condition val="89"/>
+                <Event>
+                  <EventType val="U"/>
+                  <Parent val="32768"/>
+                  <PublicObject comp="-1" obj="1"/>
+                </Event>
+                <TXT val="LOT_MDCD"/>
+                <ExecuteOn_ val="O"/>
+                <LogicLines>
+                  <LogicLine>
+                    <CallTask FlowIsn="176">
+                      <OperationType val="P"/>
+                      <Event>
+                        <EventType val="N"/>
+                      </Event>
+                      <TaskID comp="-1" obj="197"/>
+                      <Lock val="N"/>
+                      <Arguments>
+                        <Argument>
+                          <Variable val="6"/>
+                          <Skip val="N"/>
+                        </Argument>
+                      </Arguments>
+                      <Wait val="Y"/>
+                      <SyncData val="N"/>
+                      <IsRoute val="N"/>
+                      <RetainFocus val="N"/>
+                      <Condition val="Y"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </CallTask>
+                  </LogicLine>
+                </LogicLines>
+              </LogicUnit>
+              <LogicUnit id="13" propagate="78">
+                <Level val="H"/>
+                <Type val="U"/>
+                <Scope val="S"/>
+                <EngineDirective val="S"/>
+                <ShowMessage val="Y"/>
+                <Condition val="89"/>
+                <Event>
+                  <EventType val="U"/>
+                  <Parent val="32768"/>
+                  <PublicObject comp="-1" obj="11"/>
+                </Event>
+                <ExecuteOn_ val="O"/>
+                <LogicLines>
+                  <LogicLine>
+                    <RaiseEvent FlowIsn="177">
+                      <Event>
+                        <EventType val="I"/>
+                        <InternalEventID val="33"/>
+                      </Event>
+                      <Wait val="78"/>
+                      <Condition val="Y"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </RaiseEvent>
+                  </LogicLine>
+                  <LogicLine>
+                    <RaiseEvent FlowIsn="178">
+                      <Event>
+                        <EventType val="I"/>
+                        <InternalEventID val="13"/>
+                      </Event>
+                      <Wait val="78"/>
+                      <Condition val="Y"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </RaiseEvent>
+                  </LogicLine>
+                </LogicLines>
+              </LogicUnit>
             </TaskLogic>
             <TaskForms>
               <FormEntry _last_isn="21" _last_test_id="21" id="1">
@@ -2590,8 +2670,9 @@
                     <Format id="82" valUnicode="Back"/>
                     <ImageFile id="88" val="Button"/>
                     <RaiseEvent id="234">
-                      <EventType val="I"/>
-                      <InternalEventID val="14"/>
+                      <EventType val="U"/>
+                      <Parent val="32768"/>
+                      <PublicObject comp="-1" obj="11"/>
                     </RaiseEvent>
                   </PropertyList>
                 </Control>
