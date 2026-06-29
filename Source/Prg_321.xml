@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDZ007BrowseBomParts" ISN_2="30" LastIsn="43" id="321">
-          <LastModified _date="739793" _time="44297" date="26/06/2026" time="12:18:17"/>
+          <LastModified _date="739796" _time="46814" date="29/06/2026" time="13:00:14"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -1038,7 +1038,7 @@
         </Task>
         <Task MainProgram="N">
           <Header Description="BomPartsList" ISN_2="37" LastIsn="43" id="321">
-            <LastModified _date="739793" _time="44275" date="26/06/2026" time="12:17:55"/>
+            <LastModified _date="739796" _time="46814" date="29/06/2026" time="13:00:14"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="Y"/>
@@ -1194,7 +1194,7 @@
               <TransactionMode val="D"/>
               <TransactionBegin val="P"/>
               <PreloadView val="N"/>
-              <AllowEmptyDataview val="N"/>
+              <AllowEmptyDataview val="Y"/>
               <KeepCreatedContext val="N"/>
             </TaskProperties>
             <SIDE_WIN>
