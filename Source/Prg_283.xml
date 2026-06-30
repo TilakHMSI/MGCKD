@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="ChangeUserPassword" ISN_2="1" LastIsn="10" id="283">
-          <LastModified _date="739796" _time="56073" date="29/06/2026" time="15:34:33"/>
+          <LastModified _date="739797" _time="58644" date="30/06/2026" time="16:17:24"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -2850,7 +2850,7 @@
         </Task>
         <Task MainProgram="N">
           <Header Description="WriteChangedPassword" ISN_2="2" LastIsn="10" id="283">
-            <LastModified _date="739796" _time="40866" date="29/06/2026" time="11:21:06"/>
+            <LastModified _date="739797" _time="58644" date="30/06/2026" time="16:17:24"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -2867,7 +2867,7 @@
             <FormType val="M"/>
             <DotNetObjectExists val="N"/>
           </Header>
-          <ItemIsn val="10"/>
+          <ItemIsn val="11"/>
           <Resource>
             <DB id="1">
               <DataObject comp="-1" obj="130"/>
@@ -2988,7 +2988,7 @@
                   </Remark>
                 </LogicLine>
                 <LogicLine>
-                  <LNK Direction="A" EVL_CND="R" FlowIsn="5" Key="1" Mode="W" SortType="12" VIEW="2" VIEWS="7">
+                  <LNK Direction="A" EVL_CND="R" FlowIsn="5" Key="1" Mode="W" SortType="12" VIEW="2" VIEWS="8">
                     <DB comp="-1" obj="130"/>
                     <Condition val="Y"/>
                   </LNK>
@@ -3070,6 +3070,18 @@
                 <LogicLine>
                   <Select FieldID="5" FlowIsn="9" id="5">
                     <Column val="16"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="11" FlowIsn="32" id="11">
+                    <Column val="19"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
@@ -3164,6 +3176,17 @@
                     <Direction val="C"/>
                   </Update>
                 </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="33">
+                    <FieldID val="11"/>
+                    <WithValue val="9"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
               </LogicLines>
             </LogicUnit>
           </TaskLogic>
@@ -3199,6 +3222,10 @@
             <Expression id="8">
               <ExpSyntax val="{32768,3023}"/>
               <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="9">
+              <ExpSyntax val="'TRUE'LOG"/>
+              <ExpAttribute val="B"/>
             </Expression>
           </Expressions>
         </Task>
