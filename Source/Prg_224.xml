@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0010LotNoCreate" ISN_2="1" LastIsn="24" id="224">
-          <LastModified _date="739770" _time="64769" date="03/06/2026" time="17:59:29"/>
+          <LastModified _date="739797" _time="42698" date="30/06/2026" time="11:51:38"/>
           <Public val="Prg_43_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -4936,7 +4936,7 @@
         </Task>
         <Task MainProgram="N">
           <Header Description="LotTypeEntry" ISN_2="9" LastIsn="24" id="224">
-            <LastModified _date="739770" _time="64769" date="03/06/2026" time="17:59:29"/>
+            <LastModified _date="739797" _time="42519" date="30/06/2026" time="11:48:39"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -5493,15 +5493,8 @@
                 <Parent val="32768"/>
                 <PublicObject comp="-1" obj="6"/>
               </Event>
-              <Disabled val="1"/>
               <ExecuteOn_ val="O"/>
               <LogicLines>
-                <LogicLine>
-                  <Remark FlowIsn="89">
-                    <Type val="2"/>
-                    <Text val=" "/>
-                  </Remark>
-                </LogicLine>
                 <LogicLine>
                   <CallTask FlowIsn="53">
                     <OperationType val="T"/>
@@ -5528,7 +5521,6 @@
                     <SyncData val="N"/>
                     <IsRoute val="N"/>
                     <RetainFocus val="N"/>
-                    <Disabled val="1"/>
                     <Condition val="Y"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
@@ -5551,7 +5543,6 @@
                         <Skip val="N"/>
                       </Argument>
                     </Arguments>
-                    <Disabled val="1"/>
                     <Condition Exp="22"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
@@ -5667,7 +5658,7 @@
                   <RaiseEvent FlowIsn="56">
                     <Event>
                       <EventType val="I"/>
-                      <InternalEventID val="295"/>
+                      <InternalEventID val="294"/>
                     </Event>
                     <Wait val="78"/>
                     <Condition val="Y"/>
@@ -5715,7 +5706,6 @@
                   <Width id="23" val="61"/>
                   <Height id="24" val="23"/>
                   <ControlName id="46" val="btnAdd"/>
-                  <Visible Exp="21" id="61"/>
                   <Format id="82" valUnicode="Add"/>
                   <ImageFile id="88" val="Button"/>
                   <RaiseEvent id="234">
@@ -5896,10 +5886,6 @@
               <ExpSyntax val="{0,1}"/>
               <ExpAttribute val="A"/>
             </Expression>
-            <Expression id="2">
-              <ExpSyntax val="NOT ({0,5})"/>
-              <ExpAttribute val="B"/>
-            </Expression>
             <Expression id="3">
               <ExpSyntax val="{1,4}"/>
               <ExpAttribute val="A"/>
@@ -5924,25 +5910,9 @@
               <ExpSyntax val="{0,3}"/>
               <ExpAttribute val="A"/>
             </Expression>
-            <Expression id="9">
-              <ExpSyntax val="{0,22}&lt;>{0,7}&amp;{0,8}&amp;{0,9}"/>
-              <ExpAttribute val="B"/>
-            </Expression>
-            <Expression id="10">
-              <ExpSyntax val="{0,10}&lt;{0,4}"/>
-              <ExpAttribute val="B"/>
-            </Expression>
-            <Expression id="11">
-              <ExpSyntax val="{0,10} MOD {0,4}&lt;>0"/>
-              <ExpAttribute val="B"/>
-            </Expression>
             <Expression id="12">
               <ExpSyntax val="'C&amp;reate'"/>
               <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="13">
-              <ExpSyntax val="'TRUE'LOG"/>
-              <ExpAttribute val="B"/>
             </Expression>
             <Expression id="14">
               <ExpSyntax val="'&amp;Cancel'"/>
@@ -5963,18 +5933,6 @@
             <Expression id="18">
               <ExpSyntax val="'M'"/>
               <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="19">
-              <ExpSyntax val="'Are you sure to Delete?'"/>
-              <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="20">
-              <ExpSyntax val="???"/>
-              <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="21">
-              <ExpSyntax val="{1,3}='A'"/>
-              <ExpAttribute val="B"/>
             </Expression>
             <Expression id="22">
               <ExpSyntax val="NOT ({1,39}) AND {1,40}"/>
@@ -7755,7 +7713,7 @@
           </Task>
           <Task MainProgram="N">
             <Header Description="LotTypeCM" ISN_2="15" LastIsn="24" id="224">
-              <LastModified _date="739770" _time="57575" date="03/06/2026" time="15:59:35"/>
+              <LastModified _date="739797" _time="42698" date="30/06/2026" time="11:51:38"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -7898,7 +7856,7 @@
                 <AllowOptions val="Y"/>
                 <AllowQuery val="Y"/>
                 <AllowModify val="Y"/>
-                <AllowCreate val="N"/>
+                <AllowCreate val="Y"/>
                 <AllowDelete val="N"/>
                 <AllowLocate val="Y"/>
                 <AllowRange val="Y"/>
@@ -7948,9 +7906,6 @@
                       <Type val="V"/>
                       <ExposedToRoute val="N"/>
                       <IsParameter val="Y"/>
-                      <INT_RCMP_INFO>
-                        <v>12</v>
-                      </INT_RCMP_INFO>
                       <DIFF_UPDATE val="T"/>
                       <PartOfDataview val="N"/>
                       <Condition val="Y"/>
@@ -7990,7 +7945,7 @@
                       <Type val="R"/>
                       <ExposedToRoute val="N"/>
                       <IsParameter val="N"/>
-                      <Range MAX="15" MIN="15"/>
+                      <REAL_VNAME_TXT val="KDPM_LOT_ID*"/>
                       <INT_RCMP_INFO>
                         <v>5</v>
                       </INT_RCMP_INFO>
@@ -8035,6 +7990,7 @@
                       <INT_RCMP_INFO>
                         <v>29</v>
                       </INT_RCMP_INFO>
+                      <_DitIndexForToolkit val="14"/>
                       <DIFF_UPDATE val="T"/>
                       <Condition val="Y"/>
                       <Modifier val="S"/>
@@ -8047,6 +8003,10 @@
                       <Type val="R"/>
                       <ExposedToRoute val="N"/>
                       <IsParameter val="N"/>
+                      <INT_DIT_INFO>
+                        <v>26</v>
+                      </INT_DIT_INFO>
+                      <_DitIndexForToolkit val="17"/>
                       <DIFF_UPDATE val="T"/>
                       <Condition val="Y"/>
                       <Modifier val="S"/>
@@ -8076,7 +8036,6 @@
                   </LogicLine>
                   <LogicLine>
                     <Select FieldID="6" FlowIsn="12" id="6">
-                      <ASS val="3"/>
                       <Column val="12"/>
                       <Type val="R"/>
                       <ExposedToRoute val="N"/>
@@ -8551,9 +8510,49 @@
                   </LogicLine>
                 </LogicLines>
               </LogicUnit>
+              <LogicUnit id="6" propagate="78">
+                <Level val="H"/>
+                <Type val="U"/>
+                <Scope val="T"/>
+                <EngineDirective val="S"/>
+                <ShowMessage val="Y"/>
+                <Condition val="89"/>
+                <Event>
+                  <EventType val="U"/>
+                  <Parent val="32768"/>
+                  <PublicObject comp="-1" obj="11"/>
+                </Event>
+                <ExecuteOn_ val="O"/>
+                <LogicLines>
+                  <LogicLine>
+                    <RaiseEvent FlowIsn="116">
+                      <Event>
+                        <EventType val="I"/>
+                        <InternalEventID val="33"/>
+                      </Event>
+                      <Wait val="78"/>
+                      <Condition val="Y"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </RaiseEvent>
+                  </LogicLine>
+                  <LogicLine>
+                    <RaiseEvent FlowIsn="117">
+                      <Event>
+                        <EventType val="I"/>
+                        <InternalEventID val="13"/>
+                      </Event>
+                      <Wait val="78"/>
+                      <Condition val="Y"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </RaiseEvent>
+                  </LogicLine>
+                </LogicLines>
+              </LogicUnit>
             </TaskLogic>
             <TaskForms>
-              <FormEntry _last_isn="25" _last_test_id="25" id="1">
+              <FormEntry _last_isn="31" _last_test_id="31" id="1">
                 <PropertyList model="FORM_WEB_CLIENT">
                   <X id="21"/>
                   <Y id="22"/>
@@ -8577,8 +8576,9 @@
                     <ControlName id="46" val="btnexit"/>
                     <Format id="82" valUnicode="Back"/>
                     <RaiseEvent id="234">
-                      <EventType val="I"/>
-                      <InternalEventID val="14"/>
+                      <EventType val="U"/>
+                      <Parent val="32768"/>
+                      <PublicObject comp="-1" obj="11"/>
                     </RaiseEvent>
                   </PropertyList>
                 </Control>
@@ -8700,10 +8700,69 @@
                     <ControlName id="46" val="Label22"/>
                   </PropertyList>
                 </Control>
+                <Control _test_id="26" id="26">
+                  <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                    <X id="21" val="419"/>
+                    <Y id="22" val="150"/>
+                    <Width id="23" val="48"/>
+                    <Height id="24" val="20"/>
+                    <Data Exp="25" id="43"/>
+                    <ControlName id="46" val="LOT_MQTY"/>
+                    <MultiLineEdit id="71"/>
+                    <Format id="82" valUnicode="30"/>
+                    <Attribute id="83" val="85"/>
+                  </PropertyList>
+                </Control>
+                <Control _test_id="28" id="28">
+                  <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                    <Model ID="MODEL_WEB_CLIENT" id="1">
+                      <Var FieldID="3"/>
+                    </Model>
+                    <X id="21" val="150"/>
+                    <Y id="22" val="164"/>
+                    <Width id="23" val="83"/>
+                    <Height id="24" val="20"/>
+                    <Data FieldID="3" id="43"/>
+                    <ControlName id="46" val="LOT_MAST_LOT_MDCD"/>
+                  </PropertyList>
+                </Control>
+                <Control _test_id="29" id="29">
+                  <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                    <Text id="19" valUnicode="LOT_MDCD"/>
+                    <X id="21" val="88"/>
+                    <Y id="22" val="169"/>
+                    <Width id="23" val="61"/>
+                    <Height id="24" val="15"/>
+                    <ControlName id="46" val="L_LOT_MDCD"/>
+                  </PropertyList>
+                </Control>
+                <Control _test_id="31" id="31">
+                  <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                    <Text id="19" valUnicode="LOT_MQTY"/>
+                    <X id="21" val="89"/>
+                    <Y id="22" val="206"/>
+                    <Width id="23" val="60"/>
+                    <Height id="24" val="15"/>
+                    <ControlName id="46" val="L_LOT_MQTY"/>
+                  </PropertyList>
+                </Control>
+                <Control PDOD="1" _test_id="30" id="30">
+                  <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                    <Model ID="MODEL_WEB_CLIENT" id="1">
+                      <Var FieldID="4"/>
+                    </Model>
+                    <X id="21" val="150"/>
+                    <Y id="22" val="206"/>
+                    <Width id="23" val="48"/>
+                    <Height id="24" val="20"/>
+                    <Data FieldID="4" id="43"/>
+                    <ControlName id="46" val="LOT_MAST_LOT_MQTY"/>
+                  </PropertyList>
+                </Control>
                 <Control PDOD="128" _test_id="15" id="15">
                   <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                    <X id="21" val="134"/>
-                    <Y id="22" val="176"/>
+                    <X id="21" val="66"/>
+                    <Y id="22" val="246"/>
                     <Width id="23" val="61"/>
                     <Height id="24" val="23"/>
                     <Data id="43"/>
@@ -8722,7 +8781,7 @@
             </TaskForms>
             <Expressions>
               <Expression id="1">
-                <ExpSyntax val="{0,1}"/>
+                <ExpSyntax val="Trim({0,1})"/>
                 <ExpAttribute val="A"/>
               </Expression>
               <Expression id="24">
@@ -8732,10 +8791,6 @@
               <Expression id="2">
                 <ExpSyntax val="NOT ({0,5})"/>
                 <ExpAttribute val="B"/>
-              </Expression>
-              <Expression id="3">
-                <ExpSyntax val="{0,25}"/>
-                <ExpAttribute val="A"/>
               </Expression>
               <Expression id="4">
                 <ExpSyntax val="'A'"/>
@@ -8758,24 +8813,20 @@
                 <ExpAttribute val="A"/>
               </Expression>
               <Expression id="9">
-                <ExpSyntax val="{0,22}&lt;>{0,7}&amp;{0,8}&amp;{0,9}"/>
+                <ExpSyntax val="Trim({0,24})='' AND {0,22}&lt;>{0,7}&amp;{0,8}&amp;{0,9}"/>
                 <ExpAttribute val="B"/>
               </Expression>
               <Expression id="10">
-                <ExpSyntax val="{0,10}&lt;{0,4}"/>
+                <ExpSyntax val="Trim({0,24})='' AND {0,10}&lt;{0,4}"/>
                 <ExpAttribute val="B"/>
               </Expression>
               <Expression id="11">
-                <ExpSyntax val="{0,10} MOD {0,4}&lt;>0"/>
+                <ExpSyntax val="Trim({0,24})='' AND {0,10} MOD {0,4}&lt;>0"/>
                 <ExpAttribute val="B"/>
               </Expression>
               <Expression id="13">
                 <ExpSyntax val="'TRUE'LOG"/>
                 <ExpAttribute val="B"/>
-              </Expression>
-              <Expression id="15">
-                <ExpSyntax val="CndRange({0,27}&lt;>'C',{0,26})"/>
-                <ExpAttribute val="A"/>
               </Expression>
               <Expression id="16">
                 <ExpSyntax val="CndRange({0,27}&lt;>'C',{0,25})"/>
@@ -8809,9 +8860,12 @@
                 <ExpSyntax val="LastClicked()='btnexit'"/>
                 <ExpAttribute val="B"/>
               </Expression>
+              <Expression id="25">
+                <ExpSyntax val="'LOT QTY: '&amp;Trim(Str({0,4},'7'))"/>
+                <ExpAttribute val="A"/>
+              </Expression>
             </Expressions>
             <VarRangeInfo Mode="E" VarRangeVeeIsn="6" id="1"/>
-            <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="3"/>
           </Task>
         </Task>
         <Task MainProgram="N">

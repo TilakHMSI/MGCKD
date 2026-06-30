@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDPM020PartsPackingMaster" ISN_2="1" LastIsn="19" id="199">
-          <LastModified _date="739796" _time="54499" date="29/06/2026" time="15:08:19"/>
+          <LastModified _date="739797" _time="40337" date="30/06/2026" time="11:12:17"/>
           <Public val="Prg_37_RIA_C_Web_Incomplete"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -1018,7 +1018,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="ContainerDetails" ISN_2="2" LastIsn="19" id="199">
-            <LastModified _date="739796" _time="54469" date="29/06/2026" time="15:07:49"/>
+            <LastModified _date="739797" _time="36363" date="30/06/2026" time="10:06:03"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1033,7 +1033,7 @@
             <FormType val="M"/>
             <DotNetObjectExists val="N"/>
           </Header>
-          <ItemIsn val="10"/>
+          <ItemIsn val="12"/>
           <Resource>
             <DB id="1">
               <DataObject comp="-1" obj="3"/>
@@ -1092,6 +1092,13 @@
                   <CharSet id="172" val="1"/>
                   <StoredAs id="173" val="1"/>
                   <Definition id="175" val="2"/>
+                </PropertyList>
+              </Column>
+              <Column id="6" name="vDelete">
+                <PropertyList model="FIELD">
+                  <Model attr_obj="FIELD_LOGICAL" id="1"/>
+                  <_FieldStyle id="276" val="1"/>
+                  <PartOfDataview id="449"/>
                 </PropertyList>
               </Column>
             </Columns>
@@ -1337,7 +1344,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="19"/>
+                    <_DitIndexForToolkit val="20"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1351,7 +1358,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="20"/>
+                    <_DitIndexForToolkit val="21"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -2083,9 +2090,78 @@
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
+            <LogicUnit id="18" propagate="78">
+              <Level val="H"/>
+              <Type val="U"/>
+              <Scope val="T"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="U"/>
+                <Parent val="32768"/>
+                <PublicObject comp="-1" obj="10"/>
+              </Event>
+              <ExecuteOn_ val="O"/>
+              <LogicLines>
+                <LogicLine>
+                  <Select FieldID="12" FlowIsn="107" id="12">
+                    <ASS val="1"/>
+                    <Column val="6"/>
+                    <Type val="V"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <PartOfDataview val="N"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <CallTask FlowIsn="105">
+                    <OperationType val="P"/>
+                    <Event>
+                      <EventType val="N"/>
+                    </Event>
+                    <TaskID comp="-1" obj="288"/>
+                    <Lock val="N"/>
+                    <Arguments>
+                      <Argument>
+                        <Variable val="12"/>
+                        <Skip val="N"/>
+                      </Argument>
+                      <Argument>
+                        <Expression val="31"/>
+                        <Skip val="N"/>
+                      </Argument>
+                    </Arguments>
+                    <Wait val="Y"/>
+                    <SyncData val="N"/>
+                    <IsRoute val="N"/>
+                    <RetainFocus val="N"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </CallTask>
+                </LogicLine>
+                <LogicLine>
+                  <RaiseEvent FlowIsn="108">
+                    <Event>
+                      <EventType val="I"/>
+                      <InternalEventID val="36"/>
+                    </Event>
+                    <Wait val="78"/>
+                    <Condition Exp="32"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </RaiseEvent>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="21" _last_test_id="21" id="1">
+            <FormEntry _last_isn="22" _last_test_id="22" id="1">
               <PropertyList model="FORM_WEB_CLIENT">
                 <Width id="23" val="560"/>
                 <Height id="24" val="481"/>
@@ -2217,7 +2293,7 @@
                   <Visible id="61"/>
                   <LineDivider id="78" val="Y"/>
                   <TitleHeight id="79" val="20"/>
-                  <RowHeight id="80" val="104"/>
+                  <RowHeight id="80" val="130"/>
                   <Elements id="81" val="3"/>
                   <_WindowWidth id="241" val="213"/>
                   <LastDivider id="260" val="Y"/>
@@ -2338,6 +2414,21 @@
                     <EventType val="U"/>
                     <Parent val="32768"/>
                     <PublicObject comp="-1" obj="15"/>
+                  </RaiseEvent>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="8" PDOD="128" _test_id="22" id="22">
+                <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                  <X id="21" val="271"/>
+                  <Y id="22" val="217"/>
+                  <Width id="23" val="41"/>
+                  <Height id="24" val="22"/>
+                  <ControlLayer id="25" val="3"/>
+                  <ControlName id="46" val="btnDelete"/>
+                  <Format id="82" valUnicode="Delete"/>
+                  <RaiseEvent id="234">
+                    <EventType val="I"/>
+                    <InternalEventID val="36"/>
                   </RaiseEvent>
                 </PropertyList>
               </Control>
@@ -2481,6 +2572,14 @@
             <Expression id="30">
               <ExpSyntax val="VarInp (0)"/>
               <ExpAttribute val="N"/>
+            </Expression>
+            <Expression id="31">
+              <ExpSyntax val="'Are you sure to delete?'"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="32">
+              <ExpSyntax val="{0,12}"/>
+              <ExpAttribute val="B"/>
             </Expression>
           </Expressions>
           <VarRangeInfo Mode="F" VarRangeVeeIsn="1" id="1"/>
@@ -3876,7 +3975,7 @@
           </Task>
           <Task MainProgram="N">
             <Header Description="CaseDetails" ISN_2="4" LastIsn="19" id="199">
-              <LastModified _date="739796" _time="50079" date="29/06/2026" time="13:54:39"/>
+              <LastModified _date="739797" _time="36363" date="30/06/2026" time="10:06:03"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -3891,7 +3990,7 @@
               <FormType val="M"/>
               <DotNetObjectExists val="N"/>
             </Header>
-            <ItemIsn val="26"/>
+            <ItemIsn val="27"/>
             <Resource>
               <DB id="1">
                 <DataObject comp="-1" obj="4"/>
@@ -3985,6 +4084,14 @@
                     <StoredAs id="173" val="1"/>
                     <Size id="174" val="100"/>
                     <_Flip id="194"/>
+                    <PartOfDataview id="449"/>
+                  </PropertyList>
+                </Column>
+                <Column id="8" name="vDelete">
+                  <PropertyList model="FIELD">
+                    <Model attr_obj="FIELD_LOGICAL" id="1"/>
+                    <_FieldStyle id="276" val="1"/>
+                    <Instantiation id="279" val="2"/>
                     <PartOfDataview id="449"/>
                   </PropertyList>
                 </Column>
@@ -5213,9 +5320,77 @@
                   </LogicLine>
                 </LogicLines>
               </LogicUnit>
+              <LogicUnit id="14" propagate="78">
+                <Level val="H"/>
+                <Type val="U"/>
+                <Scope val="T"/>
+                <EngineDirective val="S"/>
+                <ShowMessage val="Y"/>
+                <Condition val="89"/>
+                <Event>
+                  <EventType val="U"/>
+                  <Parent val="32768"/>
+                  <PublicObject comp="-1" obj="10"/>
+                </Event>
+                <ExecuteOn_ val="O"/>
+                <LogicLines>
+                  <LogicLine>
+                    <Select FieldID="27" FlowIsn="132" id="27">
+                      <Column val="8"/>
+                      <Type val="V"/>
+                      <ExposedToRoute val="N"/>
+                      <IsParameter val="N"/>
+                      <DIFF_UPDATE val="T"/>
+                      <PartOfDataview val="N"/>
+                      <Condition val="Y"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </Select>
+                  </LogicLine>
+                  <LogicLine>
+                    <CallTask FlowIsn="133">
+                      <OperationType val="P"/>
+                      <Event>
+                        <EventType val="N"/>
+                      </Event>
+                      <TaskID comp="-1" obj="288"/>
+                      <Lock val="N"/>
+                      <Arguments>
+                        <Argument>
+                          <Variable val="27"/>
+                          <Skip val="N"/>
+                        </Argument>
+                        <Argument>
+                          <Expression val="37"/>
+                          <Skip val="N"/>
+                        </Argument>
+                      </Arguments>
+                      <Wait val="Y"/>
+                      <SyncData val="N"/>
+                      <IsRoute val="N"/>
+                      <RetainFocus val="N"/>
+                      <Condition val="Y"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </CallTask>
+                  </LogicLine>
+                  <LogicLine>
+                    <RaiseEvent FlowIsn="134">
+                      <Event>
+                        <EventType val="I"/>
+                        <InternalEventID val="36"/>
+                      </Event>
+                      <Wait val="78"/>
+                      <Condition Exp="38"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </RaiseEvent>
+                  </LogicLine>
+                </LogicLines>
+              </LogicUnit>
             </TaskLogic>
             <TaskForms>
-              <FormEntry _last_isn="31" _last_test_id="31" id="1">
+              <FormEntry _last_isn="32" _last_test_id="32" id="1">
                 <PropertyList model="FORM_WEB_CLIENT">
                   <Width id="23" val="560"/>
                   <Height id="24" val="522"/>
@@ -5370,7 +5545,7 @@
                     <Height id="24" val="213"/>
                     <ControlName id="46" val="Table22"/>
                     <TitleHeight id="79" val="19"/>
-                    <RowHeight id="80" val="104"/>
+                    <RowHeight id="80" val="130"/>
                     <Elements id="81" val="4"/>
                     <_WindowWidth id="241" val="262"/>
                   </PropertyList>
@@ -5515,6 +5690,21 @@
                       <EventType val="U"/>
                       <Parent val="32768"/>
                       <PublicObject comp="-1" obj="15"/>
+                    </RaiseEvent>
+                  </PropertyList>
+                </Control>
+                <Control ISN_FATHER="22" PDOD="128" _test_id="32" id="32">
+                  <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                    <X id="21" val="333"/>
+                    <Y id="22" val="295"/>
+                    <Width id="23" val="41"/>
+                    <Height id="24" val="22"/>
+                    <ControlLayer id="25" val="4"/>
+                    <ControlName id="46" val="btnDelete"/>
+                    <Format id="82" valUnicode="Delete"/>
+                    <RaiseEvent id="234">
+                      <EventType val="I"/>
+                      <InternalEventID val="36"/>
                     </RaiseEvent>
                   </PropertyList>
                 </Control>
@@ -5668,6 +5858,14 @@
                 <ExpSyntax val="EmptyDataview(0)"/>
                 <ExpAttribute val="B"/>
               </Expression>
+              <Expression id="37">
+                <ExpSyntax val="'Are you sure to delete?'"/>
+                <ExpAttribute val="A"/>
+              </Expression>
+              <Expression id="38">
+                <ExpSyntax val="{0,27}"/>
+                <ExpAttribute val="B"/>
+              </Expression>
             </Expressions>
             <VarRangeInfo Mode="F" VarRangeVeeIsn="1" id="1"/>
             <VarRangeInfo Mode="T" VarRangeVeeIsn="1" id="2"/>
@@ -5675,7 +5873,7 @@
             <VarRangeInfo Mode="T" VarRangeVeeIsn="2" id="4"/>
             <Task MainProgram="N">
               <Header Description="CartonDetails" ISN_2="5" LastIsn="19" id="199">
-                <LastModified _date="739796" _time="50079" date="29/06/2026" time="13:54:39"/>
+                <LastModified _date="739797" _time="36363" date="30/06/2026" time="10:06:03"/>
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -5690,7 +5888,7 @@
                 <FormType val="M"/>
                 <DotNetObjectExists val="N"/>
               </Header>
-              <ItemIsn val="35"/>
+              <ItemIsn val="36"/>
               <Resource>
                 <DB id="1">
                   <DataObject comp="-1" obj="5"/>
@@ -5834,6 +6032,14 @@
                       <StoredAs id="173" val="1"/>
                       <Size id="174" val="100"/>
                       <_Flip id="194"/>
+                      <PartOfDataview id="449"/>
+                    </PropertyList>
+                  </Column>
+                  <Column id="13" name="vDelete">
+                    <PropertyList model="FIELD">
+                      <Model attr_obj="FIELD_LOGICAL" id="1"/>
+                      <_FieldStyle id="276" val="1"/>
+                      <Instantiation id="279" val="2"/>
                       <PartOfDataview id="449"/>
                     </PropertyList>
                   </Column>
@@ -6429,7 +6635,7 @@
                         <Type val="V"/>
                         <ExposedToRoute val="N"/>
                         <IsParameter val="N"/>
-                        <_DitIndexForToolkit val="35"/>
+                        <_DitIndexForToolkit val="36"/>
                         <DIFF_UPDATE val="T"/>
                         <Condition val="Y"/>
                         <Modifier val="S"/>
@@ -7612,9 +7818,77 @@
                     </LogicLine>
                   </LogicLines>
                 </LogicUnit>
+                <LogicUnit id="20" propagate="78">
+                  <Level val="H"/>
+                  <Type val="U"/>
+                  <Scope val="T"/>
+                  <EngineDirective val="S"/>
+                  <ShowMessage val="Y"/>
+                  <Condition val="89"/>
+                  <Event>
+                    <EventType val="U"/>
+                    <Parent val="32768"/>
+                    <PublicObject comp="-1" obj="10"/>
+                  </Event>
+                  <ExecuteOn_ val="O"/>
+                  <LogicLines>
+                    <LogicLine>
+                      <Select FieldID="36" FlowIsn="199" id="36">
+                        <Column val="13"/>
+                        <Type val="V"/>
+                        <ExposedToRoute val="N"/>
+                        <IsParameter val="N"/>
+                        <DIFF_UPDATE val="T"/>
+                        <PartOfDataview val="N"/>
+                        <Condition val="Y"/>
+                        <Modifier val="B"/>
+                        <Direction val="C"/>
+                      </Select>
+                    </LogicLine>
+                    <LogicLine>
+                      <CallTask FlowIsn="200">
+                        <OperationType val="P"/>
+                        <Event>
+                          <EventType val="N"/>
+                        </Event>
+                        <TaskID comp="-1" obj="288"/>
+                        <Lock val="N"/>
+                        <Arguments>
+                          <Argument>
+                            <Variable val="36"/>
+                            <Skip val="N"/>
+                          </Argument>
+                          <Argument>
+                            <Expression val="56"/>
+                            <Skip val="N"/>
+                          </Argument>
+                        </Arguments>
+                        <Wait val="Y"/>
+                        <SyncData val="N"/>
+                        <IsRoute val="N"/>
+                        <RetainFocus val="N"/>
+                        <Condition val="Y"/>
+                        <Modifier val="B"/>
+                        <Direction val="C"/>
+                      </CallTask>
+                    </LogicLine>
+                    <LogicLine>
+                      <RaiseEvent FlowIsn="201">
+                        <Event>
+                          <EventType val="I"/>
+                          <InternalEventID val="36"/>
+                        </Event>
+                        <Wait val="78"/>
+                        <Condition Exp="57"/>
+                        <Modifier val="B"/>
+                        <Direction val="C"/>
+                      </RaiseEvent>
+                    </LogicLine>
+                  </LogicLines>
+                </LogicUnit>
               </TaskLogic>
               <TaskForms>
-                <FormEntry _last_isn="35" _last_test_id="35" id="1">
+                <FormEntry _last_isn="36" _last_test_id="36" id="1">
                   <PropertyList model="FORM_WEB_CLIENT">
                     <Width id="23" val="560"/>
                     <Height id="24" val="481"/>
@@ -7804,7 +8078,7 @@
                       <Visible id="61"/>
                       <LineDivider id="78" val="Y"/>
                       <TitleHeight id="79" val="20"/>
-                      <RowHeight id="80" val="104"/>
+                      <RowHeight id="80" val="130"/>
                       <Elements id="81" val="8"/>
                       <_WindowWidth id="241" val="509"/>
                       <LastDivider id="260" val="Y"/>
@@ -8035,6 +8309,21 @@
                         <EventType val="U"/>
                         <Parent val="32768"/>
                         <PublicObject comp="-1" obj="15"/>
+                      </RaiseEvent>
+                    </PropertyList>
+                  </Control>
+                  <Control ISN_FATHER="13" PDOD="128" _test_id="36" id="36">
+                    <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                      <X id="21" val="481"/>
+                      <Y id="22" val="208"/>
+                      <Width id="23" val="41"/>
+                      <Height id="24" val="22"/>
+                      <ControlLayer id="25" val="8"/>
+                      <ControlName id="46" val="btnDelete"/>
+                      <Format id="82" valUnicode="Delete"/>
+                      <RaiseEvent id="234">
+                        <EventType val="I"/>
+                        <InternalEventID val="36"/>
                       </RaiseEvent>
                     </PropertyList>
                   </Control>
@@ -8279,6 +8568,14 @@
                   <ExpSyntax val="EmptyDataview(0)"/>
                   <ExpAttribute val="B"/>
                 </Expression>
+                <Expression id="56">
+                  <ExpSyntax val="'Are you sure to delete?'"/>
+                  <ExpAttribute val="A"/>
+                </Expression>
+                <Expression id="57">
+                  <ExpSyntax val="{0,36}"/>
+                  <ExpAttribute val="B"/>
+                </Expression>
               </Expressions>
               <VarRangeInfo Mode="F" VarRangeVeeIsn="1" id="1"/>
               <VarRangeInfo Mode="T" VarRangeVeeIsn="1" id="2"/>
@@ -8288,7 +8585,7 @@
               <VarRangeInfo Mode="T" VarRangeVeeIsn="3" id="6"/>
               <Task MainProgram="N">
                 <Header Description="PartDetails" ISN_2="6" LastIsn="19" id="199">
-                  <LastModified _date="739796" _time="54105" date="29/06/2026" time="15:01:45"/>
+                  <LastModified _date="739797" _time="40337" date="30/06/2026" time="11:12:17"/>
                   <ExecutionRight comp="-1"/>
                   <Resident val="N"/>
                   <SQL val="N"/>
@@ -8303,7 +8600,7 @@
                   <FormType val="M"/>
                   <DotNetObjectExists val="N"/>
                 </Header>
-                <ItemIsn val="71"/>
+                <ItemIsn val="72"/>
                 <Resource>
                   <DB id="1">
                     <DataObject comp="-1" obj="8"/>
@@ -8441,6 +8738,14 @@
                         <StoredAs id="173" val="1"/>
                         <Size id="174" val="100"/>
                         <_Flip id="194"/>
+                        <PartOfDataview id="449"/>
+                      </PropertyList>
+                    </Column>
+                    <Column id="11" name="vDelete">
+                      <PropertyList model="FIELD">
+                        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+                        <_FieldStyle id="276" val="1"/>
+                        <Instantiation id="279" val="2"/>
                         <PartOfDataview id="449"/>
                       </PropertyList>
                     </Column>
@@ -10593,9 +10898,78 @@
                       </LogicLine>
                     </LogicLines>
                   </LogicUnit>
+                  <LogicUnit id="16" propagate="78">
+                    <Level val="H"/>
+                    <Type val="U"/>
+                    <Scope val="T"/>
+                    <EngineDirective val="S"/>
+                    <ShowMessage val="Y"/>
+                    <Condition val="89"/>
+                    <Event>
+                      <EventType val="U"/>
+                      <Parent val="32768"/>
+                      <PublicObject comp="-1" obj="10"/>
+                    </Event>
+                    <ExecuteOn_ val="O"/>
+                    <LogicLines>
+                      <LogicLine>
+                        <Select FieldID="72" FlowIsn="269" id="72">
+                          <Column val="11"/>
+                          <Type val="V"/>
+                          <ExposedToRoute val="N"/>
+                          <IsParameter val="N"/>
+                          <DIFF_UPDATE val="T"/>
+                          <PartOfDataview val="N"/>
+                          <Condition val="Y"/>
+                          <Modifier val="B"/>
+                          <Direction val="C"/>
+                        </Select>
+                      </LogicLine>
+                      <LogicLine>
+                        <CallTask FlowIsn="270">
+                          <OperationType val="P"/>
+                          <Event>
+                            <EventType val="N"/>
+                          </Event>
+                          <TaskID comp="-1" obj="288"/>
+                          <Lock val="N"/>
+                          <Arguments>
+                            <Argument>
+                              <Variable val="72"/>
+                              <Skip val="N"/>
+                            </Argument>
+                            <Argument>
+                              <Expression val="65"/>
+                              <Skip val="N"/>
+                            </Argument>
+                          </Arguments>
+                          <Wait val="Y"/>
+                          <SyncData val="N"/>
+                          <IsRoute val="N"/>
+                          <RetainFocus val="N"/>
+                          <Disabled val="1"/>
+                          <Condition val="Y"/>
+                          <Modifier val="B"/>
+                          <Direction val="C"/>
+                        </CallTask>
+                      </LogicLine>
+                      <LogicLine>
+                        <RaiseEvent FlowIsn="271">
+                          <Event>
+                            <EventType val="I"/>
+                            <InternalEventID val="36"/>
+                          </Event>
+                          <Wait val="78"/>
+                          <Condition val="Y"/>
+                          <Modifier val="B"/>
+                          <Direction val="C"/>
+                        </RaiseEvent>
+                      </LogicLine>
+                    </LogicLines>
+                  </LogicUnit>
                 </TaskLogic>
                 <TaskForms>
-                  <FormEntry _last_isn="42" _last_test_id="42" id="1">
+                  <FormEntry _last_isn="43" _last_test_id="43" id="1">
                     <PropertyList model="FORM_WEB_CLIENT">
                       <X id="21"/>
                       <Width id="23" val="753"/>
@@ -10840,7 +11214,7 @@
                         <Visible id="61"/>
                         <LineDivider id="78" val="Y"/>
                         <TitleHeight id="79" val="20"/>
-                        <RowHeight id="80" val="78"/>
+                        <RowHeight id="80" val="104"/>
                         <Elements id="81" val="11"/>
                         <_WindowWidth id="241" val="681"/>
                         <LastDivider id="260" val="Y"/>
@@ -11123,6 +11497,22 @@
                         </RaiseEvent>
                       </PropertyList>
                     </Control>
+                    <Control ISN_FATHER="16" PDOD="128" _test_id="43" id="43">
+                      <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                        <X id="21" val="634"/>
+                        <Y id="22" val="196"/>
+                        <Width id="23" val="41"/>
+                        <Height id="24" val="22"/>
+                        <ControlLayer id="25" val="11"/>
+                        <ControlName id="46" val="btnDelete"/>
+                        <Format id="82" valUnicode="Delete"/>
+                        <RaiseEvent id="234">
+                          <EventType val="U"/>
+                          <Parent val="32768"/>
+                          <PublicObject comp="-1" obj="10"/>
+                        </RaiseEvent>
+                      </PropertyList>
+                    </Control>
                   </FormEntry>
                 </TaskForms>
                 <Expressions>
@@ -11360,6 +11750,14 @@
                   </Expression>
                   <Expression id="64">
                     <ExpSyntax val="LastClicked()='btnexit' OR LastClicked()='CancelRowEditing'"/>
+                    <ExpAttribute val="B"/>
+                  </Expression>
+                  <Expression id="65">
+                    <ExpSyntax val="'Are you sure to delete?'"/>
+                    <ExpAttribute val="A"/>
+                  </Expression>
+                  <Expression id="66">
+                    <ExpSyntax val="{0,72}"/>
                     <ExpAttribute val="B"/>
                   </Expression>
                 </Expressions>
