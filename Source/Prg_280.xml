@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="Home" ISN_2="1" LastIsn="2" id="280">
-          <LastModified _date="739741" _time="61930" date="05/05/2026" time="17:12:10"/>
+          <LastModified _date="739796" _time="56895" date="29/06/2026" time="15:48:15"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -263,7 +263,28 @@
                       <Skip val="Y"/>
                     </Argument>
                   </Arguments>
-                  <Condition val="Y"/>
+                  <Condition Exp="7"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="12">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="594"/>
+                  </Event>
+                  <Wait val="89"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="9"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                  </Arguments>
+                  <Condition Exp="8"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </RaiseEvent>
@@ -358,6 +379,18 @@
           <Expression id="6">
             <ExpSyntax val="IsFirstRecordCycle(0)"/>
             <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="7">
+            <ExpSyntax val="{32768,9836}"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="8">
+            <ExpSyntax val="NOT {32768,9836}"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="9">
+            <ExpSyntax val="'ChangeUserPassword'"/>
+            <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
         <EVNT DESC="Req" FORCE_EXIT="N" id="1">

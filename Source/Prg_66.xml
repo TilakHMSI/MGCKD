@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDQ0011 Packing Master >> Txt" ISN_2="1" LastIsn="1" id="66">
-          <LastModified _date="739797" _time="49813" date="30/06/2026" time="13:50:13"/>
+          <LastModified _date="739797" _time="56888" date="30/06/2026" time="15:48:08"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -65,10 +65,9 @@
             <IOExpression val="9"/>
             <OpenPrintDialog val="N"/>
             <PaperSize val="68"/>
-            <Format val="P"/>
-            <Media val="G"/>
+            <Format val="L"/>
+            <Media val="S"/>
             <Access val="W"/>
-            <MACH val="PR1/Usual/Landscape"/>
             <Copies val="1"/>
             <Orientation val="P"/>
             <PrintPreview val="N"/>

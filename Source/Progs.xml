@@ -5,7 +5,7 @@
     <Version val="14120.00"/>
     <WithIsn val="Y"/>
     <Exe comp="-1"/>
-    <LastIsn val="322"/>
+    <LastIsn val="325"/>
     <LastIsnFolder val="1"/>
     <Folders>
       <Folder id="1">
@@ -304,6 +304,9 @@
       <Program id="290"/>
       <Program id="316"/>
       <Program id="317"/>
+      <Program id="323"/>
+      <Program id="324"/>
+      <Program id="325"/>
       <Program FolderIsn="1" id="271"/>
       <Program FolderIsn="1" id="272"/>
       <Program FolderIsn="1" id="273"/>

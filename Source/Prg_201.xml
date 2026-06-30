@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDQ0010PackingMasterInqury" ISN_2="1" LastIsn="5" id="201">
-          <LastModified _date="739797" _time="50200" date="30/06/2026" time="13:56:40"/>
+          <LastModified _date="739797" _time="56945" date="30/06/2026" time="15:49:05"/>
           <Public val="Prg_65_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -775,7 +775,6 @@
                   <WithValue val="21"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Disabled val="1"/>
                   <Condition Exp="8"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -787,7 +786,6 @@
                   <WithValue val="24"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Disabled val="1"/>
                   <Condition Exp="8"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -799,6 +797,7 @@
                   <WithValue val="25"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
                   <Condition Exp="8"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -810,6 +809,7 @@
                   <WithValue val="26"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
                   <Condition Exp="8"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -847,31 +847,15 @@
                 </CallTask>
               </LogicLine>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="180" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="hi" TitleTxt="Warning" VR_DISP="B">
-                  <AppendToErrorLog val="N"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </STP>
-              </LogicLine>
-              <LogicLine>
                 <Update FlowIsn="142">
                   <FieldID val="15"/>
                   <WithValue val="23"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
+                  <Condition Exp="8"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
-              </LogicLine>
-              <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="27" FlowIsn="176" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
-                  <AppendToErrorLog val="N"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </STP>
               </LogicLine>
               <LogicLine>
                 <Update FlowIsn="143">
@@ -879,18 +863,10 @@
                   <WithValue val="22"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
+                  <Condition Exp="8"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
-              </LogicLine>
-              <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="29" FlowIsn="181" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
-                  <AppendToErrorLog val="N"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </STP>
               </LogicLine>
               <LogicLine>
                 <END_BLK FlowIsn="36"/>
