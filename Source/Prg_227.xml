@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDQ0020PackingDataInquiry" ISN_2="1" LastIsn="6" id="227">
-          <LastModified _date="739770" _time="63709" date="03/06/2026" time="17:41:49"/>
+          <LastModified _date="739805" _time="44020" date="08/07/2026" time="12:13:40"/>
           <Public val="Prg_67_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -275,6 +275,9 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
+                  <INT_RCMP_INFO>
+                    <v>15</v>
+                  </INT_RCMP_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -287,6 +290,9 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
+                  <INT_RCMP_INFO>
+                    <v>37</v>
+                  </INT_RCMP_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -389,6 +395,7 @@
               </LogicLine>
               <LogicLine>
                 <Select FieldID="8" FlowIsn="15" id="8">
+                  <ASS val="18"/>
                   <Column val="4"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
@@ -603,6 +610,7 @@
               </LogicLine>
               <LogicLine>
                 <Select FieldID="20" FlowIsn="37" id="20">
+                  <ASS val="19"/>
                   <Column val="7"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
