@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDZ005BrowsePackingStation" ISN_2="10" LastIsn="40" id="208">
-          <LastModified _date="739744" _time="34031" date="08/05/2026" time="09:27:11"/>
+          <LastModified _date="739805" _time="39534" date="08/07/2026" time="10:58:54"/>
           <Public val="Prg_18_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -40,8 +40,8 @@
             <Column id="10" name="pPackingStation">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="3"/>
-                <Size id="174" val="3"/>
+                <Picture id="157" valUnicode="20"/>
+                <Size id="174" val="20"/>
                 <_Flip id="194"/>
                 <_FieldStyle id="276" val="1"/>
                 <PartOfDataview id="449"/>
@@ -560,7 +560,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="List" ISN_2="40" LastIsn="40" id="208">
-            <LastModified _date="739744" _time="34031" date="08/05/2026" time="09:27:11"/>
+            <LastModified _date="739805" _time="39534" date="08/07/2026" time="10:58:54"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -680,7 +680,6 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <Range MIN="3"/>
                     <_DitIndexForToolkit val="3"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -780,7 +779,6 @@
               <ExpAttribute val="A"/>
             </Expression>
           </Expressions>
-          <VarRangeInfo Mode="F" VarRangeVeeIsn="2" id="1"/>
         </Task>
       </Task>
     </Programs>
