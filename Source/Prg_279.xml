@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="LoginScreen" ISN_2="1" LastIsn="12" id="279">
-          <LastModified _date="739797" _time="54794" date="30/06/2026" time="15:13:14"/>
+          <LastModified _date="739799" _time="62869" date="02/07/2026" time="17:27:49"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -596,12 +596,6 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <Remark FlowIsn="27">
-                  <Type val="2"/>
-                  <Text val=" "/>
-                </Remark>
-              </LogicLine>
-              <LogicLine>
                 <CallTask FlowIsn="28">
                   <OperationType val="T"/>
                   <Event>
@@ -699,7 +693,7 @@
                   <WithValue val="15"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
+                  <Condition Exp="36"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
@@ -711,7 +705,7 @@
                   <WithValue val="16"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Condition Exp="21"/>
+                  <Condition Exp="37"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
@@ -1283,6 +1277,14 @@
           </Expression>
           <Expression id="35">
             <ExpSyntax val="{0,11}&lt;=10 AND {0,11}>0"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="36">
+            <ExpSyntax val="NOT {32768,3030}"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="37">
+            <ExpSyntax val="{32768,3030}"/>
             <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
