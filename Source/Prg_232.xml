@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0040CasePackingApproval" ISN_2="1" LastIsn="6" id="232">
-          <LastModified _date="739761" _time="64832" date="25/05/2026" time="18:00:32"/>
+          <LastModified _date="739810" _time="61570" date="13/07/2026" time="17:06:10"/>
           <Public val="Prg_47_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -1117,6 +1117,23 @@
                   <Direction val="C"/>
                 </CallTask>
               </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="158">
+                  <OperationType val="T"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
+                  <TaskID comp="-1" obj="3"/>
+                  <Lock val="Y"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
             </LogicLines>
           </LogicUnit>
           <LogicUnit id="4" propagate="78">
@@ -1718,7 +1735,7 @@
                 <Format id="82" valUnicode="Back"/>
                 <RaiseEvent id="234">
                   <EventType val="I"/>
-                  <InternalEventID val="14"/>
+                  <InternalEventID val="393"/>
                 </RaiseEvent>
               </PropertyList>
             </Control>
@@ -3139,7 +3156,7 @@
         </Task>
         <Task MainProgram="N">
           <Header Description="ScheduleApproval" ISN_2="5" LastIsn="6" id="232">
-            <LastModified _date="739761" _time="64832" date="25/05/2026" time="18:00:32"/>
+            <LastModified _date="739810" _time="43593" date="13/07/2026" time="12:06:33"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -4096,7 +4113,7 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="27" _last_test_id="27" id="1">
+            <FormEntry _last_isn="28" _last_test_id="28" id="1">
               <PropertyList model="FORM_WEB_CLIENT">
                 <Y id="22"/>
                 <Width id="23" val="616"/>
@@ -4383,7 +4400,7 @@
                   </RaiseEvent>
                 </PropertyList>
               </Control>
-              <Control _test_id="22" id="22">
+              <Control PDOD="128" _test_id="22" id="22">
                 <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                   <Model ID="MODEL_WEB_CLIENT" id="1">
                     <Var FieldID="36"/>
@@ -4395,10 +4412,26 @@
                   <Data FieldID="36" id="43"/>
                   <ControlName id="46" val="Save_Button_v1"/>
                   <Visible id="61"/>
+                  <Format id="82" valUnicode="save"/>
                   <ImageFile id="88" val="Button"/>
                   <RaiseEvent id="234">
                     <EventType val="I"/>
-                    <InternalEventID val="34"/>
+                    <InternalEventID val="13"/>
+                  </RaiseEvent>
+                </PropertyList>
+              </Control>
+              <Control PDOD="128" _test_id="28" id="28">
+                <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                  <X id="21" val="518"/>
+                  <Y id="22" val="301"/>
+                  <Width id="23" val="74"/>
+                  <Height id="24" val="23"/>
+                  <ControlName id="46" val="btn_Cancel"/>
+                  <Visible id="61"/>
+                  <ImageFile id="88" val="Button"/>
+                  <RaiseEvent id="234">
+                    <EventType val="I"/>
+                    <InternalEventID val="393"/>
                   </RaiseEvent>
                 </PropertyList>
               </Control>

@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0020LotNoPackingData" ISN_2="1" LastIsn="51" id="327">
-          <LastModified _date="739807" _time="37131" date="10/07/2026" time="10:18:51"/>
+          <LastModified _date="739810" _time="44640" date="13/07/2026" time="12:24:00"/>
           <Public val="Prg_44_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -7049,7 +7049,7 @@
         </Task>
         <Task MainProgram="N">
           <Header Description="Inputcolor" ISN_2="11" LastIsn="51" id="327">
-            <LastModified _date="739806" _time="48220" date="09/07/2026" time="13:23:40"/>
+            <LastModified _date="739810" _time="44640" date="13/07/2026" time="12:24:00"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -7354,7 +7354,6 @@
                 <EventType val="U"/>
                 <PublicObject comp="-1" obj="1"/>
               </Event>
-              <Disabled val="1"/>
               <ExecuteOn_ val="O"/>
               <LogicLines>
                 <LogicLine>
@@ -7375,11 +7374,22 @@
                     <WithValue val="8"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
-                    <Disabled val="1"/>
                     <Condition val="Y"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
+                </LogicLine>
+                <LogicLine>
+                  <RaiseEvent FlowIsn="17">
+                    <Event>
+                      <EventType val="I"/>
+                      <InternalEventID val="13"/>
+                    </Event>
+                    <Wait val="78"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </RaiseEvent>
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
@@ -7427,7 +7437,7 @@
                   <ImageFile id="88" val="Button"/>
                   <RaiseEvent id="234">
                     <EventType val="I"/>
-                    <InternalEventID val="13"/>
+                    <InternalEventID val="393"/>
                   </RaiseEvent>
                 </PropertyList>
               </Control>
