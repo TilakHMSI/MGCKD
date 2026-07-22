@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDPM020PartsPackingMaster" ISN_2="1" LastIsn="19" id="199">
-          <LastModified _date="739819" _time="42761" date="22/07/2026" time="11:52:41"/>
+          <LastModified _date="739819" _time="47439" date="22/07/2026" time="13:10:39"/>
           <Public val="Prg_37_RIA_C_Web_Incomplete"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -1018,7 +1018,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="ContainerDetails" ISN_2="2" LastIsn="19" id="199">
-            <LastModified _date="739818" _time="54995" date="21/07/2026" time="15:16:35"/>
+            <LastModified _date="739819" _time="47429" date="22/07/2026" time="13:10:29"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -2561,17 +2561,9 @@
               <ExpSyntax val="'CONTAINER CODE CANT BE BLANK'"/>
               <ExpAttribute val="A"/>
             </Expression>
-            <Expression id="28">
-              <ExpSyntax val="'B'"/>
-              <ExpAttribute val="A"/>
-            </Expression>
             <Expression id="29">
               <ExpSyntax val="EmptyDataview(0)"/>
               <ExpAttribute val="B"/>
-            </Expression>
-            <Expression id="30">
-              <ExpSyntax val="VarInp (0)"/>
-              <ExpAttribute val="N"/>
             </Expression>
             <Expression id="31">
               <ExpSyntax val="'Are you sure to delete?'"/>
@@ -3975,7 +3967,7 @@
           </Task>
           <Task MainProgram="N">
             <Header Description="CaseDetails" ISN_2="4" LastIsn="19" id="199">
-              <LastModified _date="739818" _time="54995" date="21/07/2026" time="15:16:35"/>
+              <LastModified _date="739819" _time="47439" date="22/07/2026" time="13:10:39"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -5072,10 +5064,10 @@
                     <RaiseEvent FlowIsn="116">
                       <Event>
                         <EventType val="I"/>
-                        <InternalEventID val="14"/>
+                        <InternalEventID val="295"/>
                       </Event>
                       <Wait val="78"/>
-                      <Condition val="Y"/>
+                      <Condition Exp="18"/>
                       <Modifier val="B"/>
                       <Direction val="C"/>
                     </RaiseEvent>
@@ -5873,7 +5865,7 @@
             <VarRangeInfo Mode="T" VarRangeVeeIsn="2" id="4"/>
             <Task MainProgram="N">
               <Header Description="CartonDetails" ISN_2="5" LastIsn="19" id="199">
-                <LastModified _date="739819" _time="42761" date="22/07/2026" time="11:52:41"/>
+                <LastModified _date="739819" _time="47429" date="22/07/2026" time="13:10:29"/>
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -7504,101 +7496,13 @@
                       </CallTask>
                     </LogicLine>
                     <LogicLine>
-                      <CallTask FlowIsn="203">
-                        <OperationType val="P"/>
-                        <Event>
-                          <EventType val="N"/>
-                        </Event>
-                        <TaskID comp="-1" obj="89"/>
-                        <Lock val="N"/>
-                        <Arguments>
-                          <Argument>
-                            <Variable val="25"/>
-                            <Skip val="N"/>
-                          </Argument>
-                        </Arguments>
-                        <Wait val="Y"/>
-                        <SyncData val="N"/>
-                        <IsRoute val="N"/>
-                        <RetainFocus val="N"/>
-                        <Disabled val="1"/>
-                        <Condition Exp="43"/>
-                        <Modifier val="S"/>
-                        <Direction val="B"/>
-                      </CallTask>
-                    </LogicLine>
-                    <LogicLine>
-                      <CallTask FlowIsn="202">
-                        <OperationType val="P"/>
-                        <Event>
-                          <EventType val="N"/>
-                        </Event>
-                        <TaskID comp="-1" obj="39"/>
-                        <Lock val="N"/>
-                        <Arguments>
-                          <Argument>
-                            <Expression val="29"/>
-                            <Skip val="N"/>
-                          </Argument>
-                          <Argument>
-                            <Variable val="1"/>
-                            <Skip val="N"/>
-                          </Argument>
-                          <Argument>
-                            <Variable val="2"/>
-                            <Skip val="N"/>
-                          </Argument>
-                          <Argument>
-                            <Variable val="2"/>
-                            <Skip val="N"/>
-                          </Argument>
-                          <Argument>
-                            <Variable val="3"/>
-                            <Skip val="N"/>
-                          </Argument>
-                          <Argument>
-                            <Variable val="3"/>
-                            <Skip val="N"/>
-                          </Argument>
-                          <Argument>
-                            <Expression val="30"/>
-                            <Skip val="N"/>
-                          </Argument>
-                          <Argument>
-                            <Expression val="31"/>
-                            <Skip val="N"/>
-                          </Argument>
-                        </Arguments>
-                        <Wait val="Y"/>
-                        <SyncData val="N"/>
-                        <IsRoute val="N"/>
-                        <RetainFocus val="N"/>
-                        <Disabled val="1"/>
-                        <Condition Exp="22"/>
-                        <Modifier val="S"/>
-                        <Direction val="B"/>
-                      </CallTask>
-                    </LogicLine>
-                    <LogicLine>
-                      <Update FlowIsn="204">
-                        <FieldID val="26"/>
-                        <WithValue val="8"/>
-                        <Incremental val="N"/>
-                        <ForcedUpdate val="Y"/>
-                        <Disabled val="1"/>
-                        <Condition Exp="22"/>
-                        <Modifier val="B"/>
-                        <Direction val="B"/>
-                      </Update>
-                    </LogicLine>
-                    <LogicLine>
                       <RaiseEvent FlowIsn="225">
                         <Event>
                           <EventType val="I"/>
                           <InternalEventID val="295"/>
                         </Event>
                         <Wait val="78"/>
-                        <Condition val="Y"/>
+                        <Condition Exp="27"/>
                         <Modifier val="B"/>
                         <Direction val="C"/>
                       </RaiseEvent>
@@ -7616,6 +7520,7 @@
                     <EventType val="S"/>
                   </Event>
                   <TXT val="CARTONCOPY"/>
+                  <Disabled val="1"/>
                   <ExecuteOn_ val="O"/>
                   <LogicLines>
                     <LogicLine>
@@ -7636,6 +7541,7 @@
                         <SyncData val="N"/>
                         <IsRoute val="N"/>
                         <RetainFocus val="N"/>
+                        <Disabled val="1"/>
                         <Condition Exp="43"/>
                         <Modifier val="S"/>
                         <Direction val="B"/>
@@ -7687,6 +7593,7 @@
                         <SyncData val="N"/>
                         <IsRoute val="N"/>
                         <RetainFocus val="N"/>
+                        <Disabled val="1"/>
                         <Condition Exp="22"/>
                         <Modifier val="S"/>
                         <Direction val="B"/>
@@ -7698,6 +7605,7 @@
                         <WithValue val="8"/>
                         <Incremental val="N"/>
                         <ForcedUpdate val="Y"/>
+                        <Disabled val="1"/>
                         <Condition Exp="22"/>
                         <Modifier val="B"/>
                         <Direction val="B"/>
@@ -8681,7 +8589,7 @@
               <VarRangeInfo Mode="T" VarRangeVeeIsn="3" id="6"/>
               <Task MainProgram="N">
                 <Header Description="PartDetails" ISN_2="6" LastIsn="19" id="199">
-                  <LastModified _date="739797" _time="40337" date="30/06/2026" time="11:12:17"/>
+                  <LastModified _date="739819" _time="45004" date="22/07/2026" time="12:30:04"/>
                   <ExecutionRight comp="-1"/>
                   <Resident val="N"/>
                   <SQL val="N"/>
@@ -11676,10 +11584,6 @@
                     <ExpSyntax val="'QUERY'"/>
                     <ExpAttribute val="A"/>
                   </Expression>
-                  <Expression id="17">
-                    <ExpSyntax val="Stat (0,'C'MODE)"/>
-                    <ExpAttribute val="B"/>
-                  </Expression>
                   <Expression id="18">
                     <ExpSyntax val="'CHECK'"/>
                     <ExpAttribute val="A"/>
@@ -11764,10 +11668,6 @@
                     <ExpSyntax val="Trim ({1,6})"/>
                     <ExpAttribute val="A"/>
                   </Expression>
-                  <Expression id="41">
-                    <ExpSyntax val="Stat (0,'C'MODE)"/>
-                    <ExpAttribute val="B"/>
-                  </Expression>
                   <Expression id="42">
                     <ExpSyntax val="'FALSE'LOG"/>
                     <ExpAttribute val="B"/>
@@ -11799,10 +11699,6 @@
                   <Expression id="50">
                     <ExpSyntax val="{5,25}"/>
                     <ExpAttribute val="A"/>
-                  </Expression>
-                  <Expression id="53">
-                    <ExpSyntax val="ExpCalc('17'EXP)"/>
-                    <ExpAttribute val="B"/>
                   </Expression>
                   <Expression id="54">
                     <ExpSyntax val="'ENTER QUANTITY'"/>
@@ -11851,10 +11747,6 @@
                   <Expression id="65">
                     <ExpSyntax val="'Are you sure to delete?'"/>
                     <ExpAttribute val="A"/>
-                  </Expression>
-                  <Expression id="66">
-                    <ExpSyntax val="{0,72}"/>
-                    <ExpAttribute val="B"/>
                   </Expression>
                 </Expressions>
                 <VarRangeInfo Mode="F" VarRangeVeeIsn="1" id="1"/>
@@ -12193,7 +12085,7 @@
                 </Task>
                 <Task MainProgram="N">
                   <Header Description="Count Parts" ISN_2="8" LastIsn="19" id="199">
-                    <LastModified _date="739743" _time="70392" date="07/05/2026" time="19:33:12"/>
+                    <LastModified _date="739819" _time="44430" date="22/07/2026" time="12:20:30"/>
                     <ExecutionRight comp="-1"/>
                     <Resident val="N"/>
                     <SQL val="N"/>
@@ -12957,7 +12849,7 @@
           </Task>
           <Task MainProgram="N">
             <Header Description="Work >> Master" ISN_2="11" LastIsn="19" id="199">
-              <LastModified _date="739796" _time="50600" date="29/06/2026" time="14:03:20"/>
+              <LastModified _date="739819" _time="47249" date="22/07/2026" time="13:07:29"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -14127,7 +14019,7 @@
                       <Event>
                         <EventType val="N"/>
                       </Event>
-                      <TaskID comp="-1" obj="42"/>
+                      <TaskID comp="-1" obj="328"/>
                       <Lock val="Y"/>
                       <Arguments>
                         <Argument>
@@ -14143,7 +14035,6 @@
                       <Wait val="Y"/>
                       <SyncData val="N"/>
                       <RetainFocus val="N"/>
-                      <Disabled val="1"/>
                       <Condition val="Y"/>
                       <Modifier val="B"/>
                       <Direction val="C"/>
