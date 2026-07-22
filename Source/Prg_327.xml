@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0020LotNoPackingData" ISN_2="1" LastIsn="51" id="327">
-          <LastModified _date="739814" _time="40320" date="17/07/2026" time="11:12:00"/>
+          <LastModified _date="739819" _time="38775" date="22/07/2026" time="10:46:15"/>
           <Public val="Prg_44_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -2432,6 +2432,7 @@
                   <WithValue val="65"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
                   <Condition Exp="25"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -2443,6 +2444,7 @@
                   <WithValue val="66"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
                   <Condition Exp="26"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
