@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDPartsMappingMaintenance" ISN_2="18" LastIsn="47" id="192">
-          <LastModified _date="739792" _time="39230" date="25/06/2026" time="10:53:50"/>
+          <LastModified _date="739818" _time="53361" date="21/07/2026" time="14:49:21"/>
           <Public val="Prg_107_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -534,7 +534,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="PartsMappingMaintList" ISN_2="37" LastIsn="47" id="192">
-            <LastModified _date="739792" _time="39230" date="25/06/2026" time="10:53:50"/>
+            <LastModified _date="739818" _time="53295" date="21/07/2026" time="14:48:15"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1093,15 +1093,11 @@
                         <Skip val="N"/>
                       </Argument>
                       <Argument>
-                        <Variable val="6"/>
+                        <Variable val="7"/>
                         <Skip val="N"/>
                       </Argument>
                       <Argument>
                         <Variable val="8"/>
-                        <Skip val="N"/>
-                      </Argument>
-                      <Argument>
-                        <Variable val="12"/>
                         <Skip val="N"/>
                       </Argument>
                     </Arguments>
@@ -6769,15 +6765,14 @@
           </Task>
           <Task MainProgram="N">
             <Header Description="Delete" ISN_2="47" LastIsn="47" id="192">
-              <LastModified _date="739791" _time="39433" date="24/06/2026" time="10:57:13"/>
+              <LastModified _date="739818" _time="53361" date="21/07/2026" time="14:49:21"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
               <ReturnValue>
                 <ReturnValueAttr/>
-                <TSK_PARAMS val="4"/>
+                <TSK_PARAMS val="3"/>
                 <ParametersAttributes>
-                  <Attr MgAttr="A"/>
                   <Attr MgAttr="A"/>
                   <Attr MgAttr="A"/>
                   <Attr MgAttr="A"/>
@@ -6809,12 +6804,12 @@
                     <_Flip id="194"/>
                   </PropertyList>
                 </Column>
-                <Column id="2" name="pPartName">
+                <Column id="2" name="pBASE_PART_NO">
                   <PropertyList model="FIELD">
                     <Model attr_obj="FIELD_ALPHA" id="1"/>
-                    <Picture id="157" valUnicode="100"/>
+                    <Picture id="157" valUnicode="18"/>
                     <StoredAs id="173" val="1"/>
-                    <Size id="174" val="100"/>
+                    <Size id="174" val="18"/>
                     <_Flip id="194"/>
                   </PropertyList>
                 </Column>
@@ -6825,12 +6820,6 @@
                     <StoredAs id="173" val="1"/>
                     <Size id="174" val="11"/>
                     <_Flip id="194"/>
-                  </PropertyList>
-                </Column>
-                <Column id="4" name="pLotNo">
-                  <PropertyList model="FIELD">
-                    <Model attr_obj="FIELD_ALPHA" id="1"/>
-                    <StoredAs id="173" val="1"/>
                   </PropertyList>
                 </Column>
               </Columns>
@@ -6950,18 +6939,6 @@
                     </Select>
                   </LogicLine>
                   <LogicLine>
-                    <Select FieldID="7" FlowIsn="12" id="7">
-                      <Column val="4"/>
-                      <Type val="V"/>
-                      <ExposedToRoute val="N"/>
-                      <IsParameter val="Y"/>
-                      <DIFF_UPDATE val="T"/>
-                      <Condition val="Y"/>
-                      <Modifier val="S"/>
-                      <Direction val="C"/>
-                    </Select>
-                  </LogicLine>
-                  <LogicLine>
                     <Select FieldID="1" FlowIsn="2" id="1">
                       <Column val="7"/>
                       <Type val="R"/>
@@ -6976,7 +6953,7 @@
                   </LogicLine>
                   <LogicLine>
                     <Select FieldID="2" FlowIsn="3" id="2">
-                      <Column val="8"/>
+                      <Column val="9"/>
                       <Type val="R"/>
                       <ExposedToRoute val="N"/>
                       <IsParameter val="N"/>
@@ -6994,19 +6971,6 @@
                       <ExposedToRoute val="N"/>
                       <IsParameter val="N"/>
                       <Range MAX="3" MIN="3"/>
-                      <DIFF_UPDATE val="T"/>
-                      <Condition val="Y"/>
-                      <Modifier val="S"/>
-                      <Direction val="C"/>
-                    </Select>
-                  </LogicLine>
-                  <LogicLine>
-                    <Select FieldID="9" FlowIsn="14" id="9">
-                      <Column val="17"/>
-                      <Type val="R"/>
-                      <ExposedToRoute val="N"/>
-                      <IsParameter val="N"/>
-                      <Range MAX="5" MIN="5"/>
                       <DIFF_UPDATE val="T"/>
                       <Condition val="Y"/>
                       <Modifier val="S"/>
@@ -7066,15 +7030,10 @@
                 <ExpSyntax val="'TRUE'LOG"/>
                 <ExpAttribute val="B"/>
               </Expression>
-              <Expression id="5">
-                <ExpSyntax val="{0,7}"/>
-                <ExpAttribute val="A"/>
-              </Expression>
             </Expressions>
             <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>
             <VarRangeInfo Mode="E" VarRangeVeeIsn="2" id="2"/>
             <VarRangeInfo Mode="E" VarRangeVeeIsn="3" id="3"/>
-            <VarRangeInfo Mode="E" VarRangeVeeIsn="9" id="4"/>
           </Task>
         </Task>
       </Task>
