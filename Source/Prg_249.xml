@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0070CartonLabelPrint55" ISN_2="1" LastIsn="27" id="249">
-          <LastModified _date="739758" _time="49246" date="22/05/2026" time="13:40:46"/>
+          <LastModified _date="739820" _time="62364" date="23/07/2026" time="17:19:24"/>
           <Public val="Prg_50_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -92,12 +92,16 @@
             </Column>
             <Column id="3" name="P/C No. (v)">
               <PropertyList model="FIELD">
-                <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="25"/>
-                <NullAllowed id="166" val="Y"/>
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="11"/>
+                <NullAllowed id="166"/>
                 <NullDefault id="169" val="Y"/>
                 <CharSet id="172" val="1"/>
                 <StoredAs id="173" val="1"/>
+                <Size id="174" val="11"/>
                 <Definition id="175" val="2"/>
+                <_Flip id="194"/>
+                <_FieldStyle id="276" val="1"/>
               </PropertyList>
             </Column>
             <Column id="4" name="P/C No. Found (v)">
@@ -349,6 +353,7 @@
                   </INT_RCMP_INFO>
                   <_DitIndexForToolkit val="10"/>
                   <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -1072,8 +1077,8 @@
                 <Visible id="61"/>
               </PropertyList>
             </Control>
-            <Control _test_id="11" id="11">
-              <PropertyList FLD_FLAGS="1" model="CTRL_WEB_CLIENT_EDIT">
+            <Control PDOD="128" _test_id="11" id="11">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="9"/>
                 </Model>
@@ -1084,6 +1089,7 @@
                 <Data FieldID="9" id="43"/>
                 <ControlName id="46" val="PC_No_v"/>
                 <Visible id="61"/>
+                <Format Exp="17" id="82" valUnicode="11"/>
                 <ShowZoomButton id="718" val="Y"/>
               </PropertyList>
             </Control>

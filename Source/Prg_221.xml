@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDZ008BrowsePCList" ISN_2="21" LastIsn="34" id="221">
-          <LastModified _date="739757" _time="42070" date="21/05/2026" time="11:41:10"/>
+          <LastModified _date="739820" _time="60569" date="23/07/2026" time="16:49:29"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -481,8 +481,8 @@
                 <Visible id="61"/>
               </PropertyList>
             </Control>
-            <Control _test_id="6" id="6">
-              <PropertyList FLD_FLAGS="1" model="CTRL_WEB_CLIENT_EDIT">
+            <Control PDOD="128" _test_id="6" id="6">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="4"/>
                 </Model>
@@ -493,6 +493,7 @@
                 <Data FieldID="4" id="43"/>
                 <ControlName id="46" val="vSearch"/>
                 <Visible id="61"/>
+                <Format Exp="9" id="82" valUnicode="11"/>
                 <BindingLevel id="733" val="2"/>
               </PropertyList>
             </Control>
@@ -554,6 +555,10 @@
           </Expression>
           <Expression id="8">
             <ExpSyntax val="'CKDZ008 : PC No Selection List'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="9">
+            <ExpSyntax val="'XXX-XXXX-XX'"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
