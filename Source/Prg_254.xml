@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CaseLabelPrintWithoutZeroWeight" ISN_2="1" LastIsn="24" id="254">
-          <LastModified _date="739758" _time="49355" date="22/05/2026" time="13:42:35"/>
+          <LastModified _date="739820" _time="50543" date="23/07/2026" time="14:02:23"/>
           <Public val="Prg_142_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -626,10 +626,21 @@
                 </CallTask>
               </LogicLine>
               <LogicLine>
-                <Remark FlowIsn="41">
-                  <Type val="2"/>
-                  <Text val=" "/>
-                </Remark>
+                <CallTask FlowIsn="41">
+                  <OperationType val="T"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
+                  <TaskID comp="-1" obj="3"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </CallTask>
               </LogicLine>
             </LogicLines>
           </LogicUnit>

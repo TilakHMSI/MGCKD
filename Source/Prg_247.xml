@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0110CasePackingPlan" ISN_2="1" LastIsn="25" id="247">
-          <LastModified _date="739758" _time="47346" date="22/05/2026" time="13:09:06"/>
+          <LastModified _date="739820" _time="43176" date="23/07/2026" time="11:59:36"/>
           <Public val="Prg_57_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -606,6 +606,23 @@
                   <IsRoute val="N"/>
                   <RetainFocus val="N"/>
                   <Disabled val="1"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="120">
+                  <OperationType val="T"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
+                  <TaskID comp="-1" obj="3"/>
+                  <Lock val="Y"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>

@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDR0010PMRequiredRepor" ISN_2="1" LastIsn="12" id="245">
-          <LastModified _date="739751" _time="43385" date="15/05/2026" time="12:03:05"/>
+          <LastModified _date="739820" _time="43136" date="23/07/2026" time="11:58:56"/>
           <Public val="Prg_68_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -236,6 +236,23 @@
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="52">
+                  <OperationType val="T"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
+                  <TaskID comp="-1" obj="3"/>
+                  <Lock val="Y"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
               </LogicLine>
             </LogicLines>
           </LogicUnit>

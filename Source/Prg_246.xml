@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0060PackingPlanPrint" ISN_2="1" LastIsn="22" id="246">
-          <LastModified _date="739758" _time="41678" date="22/05/2026" time="11:34:38"/>
+          <LastModified _date="739820" _time="43155" date="23/07/2026" time="11:59:15"/>
           <Public val="Prg_49_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -562,6 +562,23 @@
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="98">
+                  <OperationType val="T"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
+                  <TaskID comp="-1" obj="3"/>
+                  <Lock val="Y"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
