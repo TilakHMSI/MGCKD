@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0090CartonCaseScanning" ISN_2="1" LastIsn="53" id="256">
-          <LastModified _date="739772" _time="60323" date="05/06/2026" time="16:45:23"/>
+          <LastModified _date="739826" _time="53375" date="29/07/2026" time="14:49:35"/>
           <Comment val="13 and 18 digit validation&#xD;&#xA;6th digit - validation"/>
           <Public val="Prg_54_RIA_C_MultiTaskInSub"/>
           <ExecutionRight comp="-1"/>
@@ -32,7 +32,7 @@
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
         </Header>
-        <ItemIsn val="185"/>
+        <ItemIsn val="186"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="2"/>
@@ -557,6 +557,17 @@
                 <PartOfDataview id="449"/>
               </PropertyList>
             </Column>
+            <Column id="45" name="vWeightCheck">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="5"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="5"/>
+                <_Negative id="192"/>
+                <_FieldStyle id="276" val="1"/>
+                <PartOfDataview id="449"/>
+              </PropertyList>
+            </Column>
           </Columns>
         </Resource>
         <Information>
@@ -803,7 +814,7 @@
                     <v>30</v>
                     <v>41</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="11"/>
+                  <_DitIndexForToolkit val="12"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -834,7 +845,7 @@
                     <v>27</v>
                     <v>29</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="17"/>
+                  <_DitIndexForToolkit val="18"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -879,7 +890,7 @@
                     <v>255</v>
                     <v>273</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="23"/>
+                  <_DitIndexForToolkit val="24"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -923,7 +934,7 @@
                   <INT_DIT_INFO>
                     <v>31</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="36"/>
+                  <_DitIndexForToolkit val="37"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -989,7 +1000,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="37"/>
+                  <_DitIndexForToolkit val="38"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1108,7 +1119,7 @@
                     <v>195</v>
                     <v>273</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="25"/>
+                  <_DitIndexForToolkit val="26"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1170,7 +1181,7 @@
                   <INT_DIT_INFO>
                     <v>34</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="39"/>
+                  <_DitIndexForToolkit val="40"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1186,7 +1197,7 @@
                   <INT_RCMP_INFO>
                     <v>53</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="41"/>
+                  <_DitIndexForToolkit val="42"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1203,7 +1214,7 @@
                   <INT_RCMP_INFO>
                     <v>53</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="42"/>
+                  <_DitIndexForToolkit val="43"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1331,7 +1342,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="40"/>
+                  <_DitIndexForToolkit val="41"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1432,7 +1443,7 @@
                     <v>195</v>
                     <v>273</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="27"/>
+                  <_DitIndexForToolkit val="28"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1533,7 +1544,7 @@
                     <v>195</v>
                     <v>273</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="29"/>
+                  <_DitIndexForToolkit val="30"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1655,7 +1666,7 @@
                     <v>159</v>
                     <v>273</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="31"/>
+                  <_DitIndexForToolkit val="32"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -2792,7 +2803,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="18"/>
+                  <_DitIndexForToolkit val="19"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -2882,7 +2893,7 @@
                   <INT_RCMP_INFO>
                     <v>214</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="32"/>
+                  <_DitIndexForToolkit val="33"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -3215,7 +3226,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="34"/>
+                  <_DitIndexForToolkit val="35"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -3235,7 +3246,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="20"/>
+                  <_DitIndexForToolkit val="21"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -3371,7 +3382,7 @@
                   <INT_RCMP_INFO>
                     <v>264</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="19"/>
+                  <_DitIndexForToolkit val="20"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -3787,7 +3798,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="9"/>
+                  <_DitIndexForToolkit val="10"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="N"/>
                   <Condition val="Y"/>
@@ -3827,7 +3838,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="8"/>
+                  <_DitIndexForToolkit val="9"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="N"/>
                   <Condition val="Y"/>
@@ -3841,6 +3852,20 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="186" FlowIsn="17117" id="186">
+                  <Column val="45"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="8"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="N"/>
                   <Condition val="Y"/>
@@ -4321,6 +4346,18 @@
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </STP>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="17677">
+                  <Event>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="2"/>
+                  </Event>
+                  <Wait val="89"/>
+                  <Condition Exp="285"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
               </LogicLine>
               <LogicLine>
                 <BLOCK EndBlock="10779" EndBlockSegment="10779" FlowIsn="10768" Type="I">
@@ -7368,10 +7405,20 @@
                   <SyncData val="N"/>
                   <IsRoute val="N"/>
                   <RetainFocus val="N"/>
-                  <Condition val="N"/>
+                  <Disabled val="1"/>
+                  <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate FlowIsn="16989">
+                  <Expression val="281"/>
+                  <Disabled val="1"/>
+                  <Condition Exp="282"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
               </LogicLine>
               <LogicLine>
                 <END_BLK FlowIsn="1286"/>
@@ -9065,9 +9112,35 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
+          <LogicUnit id="78" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="2"/>
+            </Event>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <Update FlowIsn="17675">
+                  <FieldID val="186"/>
+                  <WithValue val="284"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="46" _last_test_id="46" id="1">
+          <FormEntry _last_isn="48" _last_test_id="48" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="585"/>
               <Height id="24" val="481"/>
@@ -9167,6 +9240,20 @@
                 <Arguments id="126"/>
                 <ConnectTo id="156" val="4"/>
                 <TaskNumber id="183"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="1" _test_id="47" id="47">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <Model ID="MODEL_WEB_CLIENT" id="1">
+                  <Var FieldID="186"/>
+                </Model>
+                <X id="21" val="247"/>
+                <Y id="22" val="256"/>
+                <Width id="23" val="34"/>
+                <Height id="24" val="20"/>
+                <Data FieldID="186" id="43"/>
+                <ControlName id="46" val="vWeightCheck"/>
+                <MultiLineEdit id="71"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="45" id="45">
@@ -10590,10 +10677,6 @@
             <ExpSyntax val="{0,156}&lt;>''"/>
             <ExpAttribute val="B"/>
           </Expression>
-          <Expression id="275">
-            <ExpSyntax val="'MODE V'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
           <Expression id="278">
             <ExpSyntax val="'CAN NOT CANCEL. CARTON IS PACKED IN CASE ALREADY'"/>
             <ExpAttribute val="A"/>
@@ -10606,8 +10689,29 @@
             <ExpSyntax val="{0,175}='' AND {0,9}&lt;>'' AND {0,8}&lt;>'I' AND {0,1}='CR' AND (NOT ({0,80}) OR Len (Trim ({0,9}))&lt;>9+Val (Left ({0,3},1),'#')+Val (Left ({0,4},1),'#')+Val (Left ({0,5},1),'#')+Val (Left ({0,6},1),'#') OR {0,142})"/>
             <ExpAttribute val="B"/>
           </Expression>
+          <Expression id="281">
+            <ExpSyntax val="CtrlGoto('Case__Carton_Id_v',0,0)"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="282">
+            <ExpSyntax val="{0,149}&lt;>0"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="284">
+            <ExpSyntax val="{0,186}+1"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="285">
+            <ExpSyntax val="{0,9}&lt;>'' AND {0,8}='A'"/>
+            <ExpAttribute val="B"/>
+          </Expression>
         </Expressions>
         <EVNT DESC="GProcess" FORCE_EXIT="N" id="1">
+          <Event>
+            <EventType val="N"/>
+          </Event>
+        </EVNT>
+        <EVNT DESC="CallEXE" FORCE_EXIT="N" id="2">
           <Event>
             <EventType val="N"/>
           </Event>
@@ -21461,7 +21565,7 @@
         </Task>
         <Task MainProgram="N">
           <Header Description="Cacnel Carton Packing Off" ISN_2="19" LastIsn="53" id="256">
-            <LastModified _date="739772" _time="60323" date="05/06/2026" time="16:45:23"/>
+            <LastModified _date="739826" _time="51911" date="29/07/2026" time="14:25:11"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -22257,10 +22361,6 @@
             <Expression id="15">
               <ExpSyntax val="{0,25}+1"/>
               <ExpAttribute val="N"/>
-            </Expression>
-            <Expression id="16">
-              <ExpSyntax val="IF({0,9},'1','0')"/>
-              <ExpAttribute val="A"/>
             </Expression>
           </Expressions>
           <Task MainProgram="N">
