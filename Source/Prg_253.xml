@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0080ContainerLabelPrint" ISN_2="1" LastIsn="38" id="253">
-          <LastModified _date="739832" _time="52502" date="04/08/2026" time="14:35:02"/>
+          <LastModified _date="739833" _time="56566" date="05/08/2026" time="15:42:46"/>
           <Public val="Prg_147_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -948,7 +948,7 @@
                   <Wait val="78"/>
                   <Arguments>
                     <Argument>
-                      <Expression val="22"/>
+                      <Expression val="33"/>
                       <Skip val="N"/>
                     </Argument>
                   </Arguments>
@@ -1264,9 +1264,13 @@
             <ExpSyntax val="'PURCHASE CONTRACT NOT LINKED WITH LOT'"/>
             <ExpAttribute val="A"/>
           </Expression>
+          <Expression id="33">
+            <ExpSyntax val="'Datewise_Carton_Inquiry'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
         </Expressions>
         <Task MainProgram="N">
-          <Header Description="Delete Work" ISN_2="3" LastIsn="24" id="253">
+          <Header Description="Delete Work" ISN_2="3" LastIsn="38" id="253">
             <LastModified _date="739749" _time="46727" date="13/05/2026" time="12:58:47"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
@@ -1499,7 +1503,7 @@
             </FormEntry>
           </TaskForms>
           <Task MainProgram="N">
-            <Header Description="Delete PC Work" ISN_2="4" LastIsn="24" id="253">
+            <Header Description="Delete PC Work" ISN_2="4" LastIsn="38" id="253">
               <LastModified _date="739749" _time="46727" date="13/05/2026" time="12:58:47"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -1705,7 +1709,7 @@
               </FormEntry>
             </TaskForms>
             <Task MainProgram="N">
-              <Header Description="Delete PC Lot Work" ISN_2="5" LastIsn="24" id="253">
+              <Header Description="Delete PC Lot Work" ISN_2="5" LastIsn="38" id="253">
                 <LastModified _date="739749" _time="46727" date="13/05/2026" time="12:58:47"/>
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
@@ -1876,8 +1880,8 @@
           </Task>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Case Packing Data" ISN_2="6" LastIsn="24" id="253">
-            <LastModified _date="739749" _time="46727" date="13/05/2026" time="12:58:47"/>
+          <Header Description="Case Packing Data" ISN_2="6" LastIsn="38" id="253">
+            <LastModified _date="739833" _time="54383" date="05/08/2026" time="15:06:23"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1891,7 +1895,7 @@
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
           </Header>
-          <ItemIsn val="22"/>
+          <ItemIsn val="23"/>
           <Resource>
             <DB id="1">
               <DataObject comp="-1" obj="11"/>
@@ -2219,6 +2223,7 @@
                 </LogicLine>
                 <LogicLine>
                   <Select FieldID="16" FlowIsn="20" id="16">
+                    <ASS val="9"/>
                     <Column val="12"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
@@ -2342,6 +2347,30 @@
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
+            <LogicUnit id="3" propagate="78">
+              <Level val="R"/>
+              <Type val="S"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+              </Event>
+              <LogicLines>
+                <LogicLine>
+                  <Update FlowIsn="36">
+                    <FieldID val="16"/>
+                    <WithValue val="9"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
           </TaskLogic>
           <TaskForms>
             <FormEntry _last_isn="1" _last_test_id="9" id="1">
@@ -2415,6 +2444,18 @@
               <ExpSyntax val="IF ({1,1}='L','2'INDEX,'1'INDEX)"/>
               <ExpAttribute val="N"/>
             </Expression>
+            <Expression id="9">
+              <ExpSyntax val="Counter(0)"/>
+              <ExpAttribute val="N"/>
+            </Expression>
+            <Expression id="10">
+              <ExpSyntax val="Str({0,16},'4')"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="11">
+              <ExpSyntax val="5"/>
+              <ExpAttribute val="N"/>
+            </Expression>
           </Expressions>
           <VarRangeInfo Mode="F" VarRangeVeeIsn="1" id="1"/>
           <VarRangeInfo Mode="T" VarRangeVeeIsn="1" id="2"/>
@@ -2430,7 +2471,7 @@
           <VarRangeInfo Mode="T" VarRangeVeeIsn="10" id="12"/>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Change Display Flag" ISN_2="7" LastIsn="24" id="253">
+          <Header Description="Change Display Flag" ISN_2="7" LastIsn="38" id="253">
             <LastModified _date="739749" _time="46727" date="13/05/2026" time="12:58:47"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
@@ -2869,8 +2910,8 @@
           </Expressions>
         </Task>
         <Task MainProgram="N">
-          <Header Description="DatewiseCartonInquiry" ISN_2="8" LastIsn="24" id="253">
-            <LastModified _date="739832" _time="52490" date="04/08/2026" time="14:34:50"/>
+          <Header Description="DatewiseCartonInquiry" ISN_2="8" LastIsn="38" id="253">
+            <LastModified _date="739833" _time="56566" date="05/08/2026" time="15:42:46"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -3202,9 +3243,6 @@
                       <v>24</v>
                       <v>32</v>
                     </INT_RCMP_INFO>
-                    <INT_DIT_INFO>
-                      <v>20</v>
-                    </INT_DIT_INFO>
                     <_DitIndexForToolkit val="7"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -3373,6 +3411,9 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
+                    <INT_DIT_INFO>
+                      <v>20</v>
+                    </INT_DIT_INFO>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -4257,7 +4298,7 @@
                         <Skip val="N"/>
                       </Argument>
                       <Argument>
-                        <Variable val="4"/>
+                        <Variable val="15"/>
                         <Skip val="N"/>
                       </Argument>
                       <Argument>
@@ -4306,7 +4347,7 @@
                         <Skip val="N"/>
                       </Argument>
                       <Argument>
-                        <Variable val="4"/>
+                        <Variable val="15"/>
                         <Skip val="N"/>
                       </Argument>
                       <Argument>
@@ -4407,6 +4448,9 @@
               </Control>
               <Control ISN_FATHER="2" PDOD="128" _test_id="9" id="9">
                 <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
+                    <Var FieldID="4"/>
+                  </Model>
                   <X id="21" val="277"/>
                   <Y id="22" val="31"/>
                   <Width id="23" val="25"/>
@@ -4421,6 +4465,9 @@
               </Control>
               <Control ISN_FATHER="2" _test_id="10" id="10">
                 <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
+                    <Var FieldID="8"/>
+                  </Model>
                   <X id="21" val="322"/>
                   <Y id="22" val="31"/>
                   <Width id="23" val="60"/>
@@ -4671,19 +4718,19 @@
               <ExpAttribute val="O"/>
             </Expression>
             <Expression id="27">
-              <ExpSyntax val="IF(InStr(Trim({0,50}),Trim({32768,3024})&amp;Trim(Str({0,4},'5'))&amp;Trim({32768,3024}))>0,'check.png','square.png')"/>
+              <ExpSyntax val="IF(InStr(Trim({0,50}),Trim({32768,3024})&amp;Trim(Str({0,15},'5'))&amp;Trim({32768,3024}))>0,'check.png','square.png')"/>
               <ExpAttribute val="A"/>
             </Expression>
             <Expression id="28">
-              <ExpSyntax val="InStr(Trim({0,50}),Trim({32768,3024})&amp;Trim(Str({0,4},'5'))&amp;Trim({32768,3024}))=0"/>
+              <ExpSyntax val="InStr(Trim({0,50}),Trim({32768,3024})&amp;Trim(Str({0,15},'5'))&amp;Trim({32768,3024}))=0"/>
               <ExpAttribute val="B"/>
             </Expression>
             <Expression id="29">
-              <ExpSyntax val="Trim({0,50})&amp;{32768,3024}&amp;Trim(Str({0,4},'5'))&amp;{32768,3024}&amp;','"/>
+              <ExpSyntax val="Trim({0,50})&amp;{32768,3024}&amp;Trim(Str({0,15},'5'))&amp;{32768,3024}&amp;','"/>
               <ExpAttribute val="A"/>
             </Expression>
             <Expression id="30">
-              <ExpSyntax val="RepStr(Trim({0,50}),{32768,3024}&amp;Trim(Str({0,4},'5'))&amp;{32768,3024}&amp;',','')"/>
+              <ExpSyntax val="RepStr(Trim({0,50}),{32768,3024}&amp;Trim(Str({0,15},'5'))&amp;{32768,3024}&amp;',','')"/>
               <ExpAttribute val="A"/>
             </Expression>
             <Expression id="31">
@@ -4717,7 +4764,7 @@
           </EVNT>
           <Task MainProgram="N">
             <Header Description="UpdatePCONumber" ISN_2="38" LastIsn="38" id="253">
-              <LastModified _date="739832" _time="52374" date="04/08/2026" time="14:32:54"/>
+              <LastModified _date="739833" _time="54059" date="05/08/2026" time="15:00:59"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -4793,7 +4840,7 @@
               <InitialMode val="M"/>
               <Locate Direction="A"/>
               <Range Direction="A"/>
-              <VarRange LastIsn="3"/>
+              <VarRange LastIsn="7"/>
               <TaskProperties>
                 <SelectionTable val="N"/>
                 <ConfirmUpdate CNFU="N"/>
@@ -4910,7 +4957,6 @@
                       <Type val="R"/>
                       <ExposedToRoute val="N"/>
                       <IsParameter val="N"/>
-                      <Range MAX="5" MIN="5"/>
                       <DIFF_UPDATE val="T"/>
                       <Condition val="Y"/>
                       <Modifier val="S"/>
@@ -4971,6 +5017,7 @@
                       <Type val="R"/>
                       <ExposedToRoute val="N"/>
                       <IsParameter val="N"/>
+                      <Range MAX="5" MIN="5"/>
                       <DIFF_UPDATE val="T"/>
                       <Condition val="Y"/>
                       <Modifier val="S"/>
@@ -5131,10 +5178,10 @@
               </Expression>
             </Expressions>
             <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>
-            <VarRangeInfo Mode="E" VarRangeVeeIsn="2" id="3"/>
+            <VarRangeInfo Mode="E" VarRangeVeeIsn="7" id="7"/>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Case Engine List" ISN_2="9" LastIsn="24" id="253">
+            <Header Description="Case Engine List" ISN_2="9" LastIsn="38" id="253">
               <LastModified _date="739749" _time="46727" date="13/05/2026" time="12:58:47"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -6103,7 +6150,7 @@
             <VarRangeInfo Mode="F" VarRangeVeeIsn="1" id="1"/>
             <VarRangeInfo Mode="T" VarRangeVeeIsn="1" id="2"/>
             <Task MainProgram="N">
-              <Header Description="Engine List" ISN_2="10" LastIsn="24" id="253">
+              <Header Description="Engine List" ISN_2="10" LastIsn="38" id="253">
                 <LastModified _date="739749" _time="46727" date="13/05/2026" time="12:58:47"/>
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
@@ -6819,7 +6866,7 @@
               </Expressions>
             </Task>
             <Task MainProgram="N">
-              <Header Description="Delete Work" ISN_2="11" LastIsn="24" id="253">
+              <Header Description="Delete Work" ISN_2="11" LastIsn="38" id="253">
                 <LastModified _date="739749" _time="46727" date="13/05/2026" time="12:58:47"/>
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
@@ -6952,7 +6999,7 @@
               </TaskForms>
             </Task>
             <Task MainProgram="N">
-              <Header Description="Create Work" ISN_2="12" LastIsn="24" id="253">
+              <Header Description="Create Work" ISN_2="12" LastIsn="38" id="253">
                 <LastModified _date="739749" _time="46727" date="13/05/2026" time="12:58:47"/>
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
@@ -8381,7 +8428,7 @@
               <VarRangeInfo Mode="F" VarRangeVeeIsn="4" id="7"/>
               <VarRangeInfo Mode="T" VarRangeVeeIsn="4" id="8"/>
               <Task MainProgram="N">
-                <Header Description="Create Frame Work" ISN_2="13" LastIsn="24" id="253">
+                <Header Description="Create Frame Work" ISN_2="13" LastIsn="38" id="253">
                   <LastModified _date="739749" _time="46727" date="13/05/2026" time="12:58:47"/>
                   <ExecutionRight comp="-1"/>
                   <Resident val="N"/>
@@ -9027,7 +9074,7 @@
                 <VarRangeInfo Mode="T" VarRangeVeeIsn="5" id="10"/>
               </Task>
               <Task MainProgram="N">
-                <Header Description="Create Engine Work" ISN_2="14" LastIsn="24" id="253">
+                <Header Description="Create Engine Work" ISN_2="14" LastIsn="38" id="253">
                   <LastModified _date="739749" _time="46727" date="13/05/2026" time="12:58:47"/>
                   <ExecutionRight comp="-1"/>
                   <Resident val="N"/>
@@ -9687,7 +9734,7 @@
             </Task>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Help" ISN_2="15" LastIsn="24" id="253">
+            <Header Description="Help" ISN_2="15" LastIsn="38" id="253">
               <LastModified _date="739755" _time="58424" date="19/05/2026" time="16:13:44"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -9875,8 +9922,8 @@
             </Expressions>
           </Task>
           <Task MainProgram="N">
-            <Header Description="All Select" ISN_2="16" LastIsn="24" id="253">
-              <LastModified _date="739832" _time="52490" date="04/08/2026" time="14:34:50"/>
+            <Header Description="All Select" ISN_2="16" LastIsn="38" id="253">
+              <LastModified _date="739833" _time="54227" date="05/08/2026" time="15:03:47"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -10090,27 +10137,6 @@
                   </LogicLine>
                 </LogicLines>
               </LogicUnit>
-              <LogicUnit id="3" propagate="78">
-                <Level val="T"/>
-                <Type val="S"/>
-                <Scope val="S"/>
-                <EngineDirective val="S"/>
-                <ShowMessage val="Y"/>
-                <Condition val="89"/>
-                <Event>
-                  <EventType val="S"/>
-                </Event>
-                <LogicLines>
-                  <LogicLine>
-                    <Evaluate FlowIsn="12">
-                      <Expression val="3"/>
-                      <Condition val="Y"/>
-                      <Modifier val="B"/>
-                      <Direction val="C"/>
-                    </Evaluate>
-                  </LogicLine>
-                </LogicLines>
-              </LogicUnit>
               <LogicUnit id="4" propagate="78">
                 <Level val="R"/>
                 <Type val="S"/>
@@ -10201,13 +10227,13 @@
                 <ExpAttribute val="B"/>
               </Expression>
               <Expression id="4">
-                <ExpSyntax val="Trim({8,50})&amp;Trim({32768,3024})&amp;Trim(Str({0,2},'5'))&amp;Trim({32768,3024})&amp;','"/>
+                <ExpSyntax val="Trim({8,50})&amp;Trim({32768,3024})&amp;Trim(Str({0,7},'5'))&amp;Trim({32768,3024})&amp;','"/>
                 <ExpAttribute val="A"/>
               </Expression>
             </Expressions>
           </Task>
           <Task MainProgram="N">
-            <Header Description="All Unselect" ISN_2="17" LastIsn="24" id="253">
+            <Header Description="All Unselect" ISN_2="17" LastIsn="38" id="253">
               <LastModified _date="739832" _time="52502" date="04/08/2026" time="14:35:02"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -10523,7 +10549,7 @@
             </Expressions>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Update Flag for Selected P/C" ISN_2="18" LastIsn="24" id="253">
+            <Header Description="Update Flag for Selected P/C" ISN_2="18" LastIsn="38" id="253">
               <LastModified _date="739749" _time="46727" date="13/05/2026" time="12:58:47"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -10737,7 +10763,7 @@
             <VarRangeInfo Mode="F" VarRangeVeeIsn="1" id="1"/>
             <VarRangeInfo Mode="T" VarRangeVeeIsn="1" id="2"/>
             <Task MainProgram="N">
-              <Header Description="Change Flag In Work File" ISN_2="19" LastIsn="24" id="253">
+              <Header Description="Change Flag In Work File" ISN_2="19" LastIsn="38" id="253">
                 <LastModified _date="739749" _time="46727" date="13/05/2026" time="12:58:47"/>
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
@@ -11010,7 +11036,7 @@
             </Task>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Update Flag for Selected Lot" ISN_2="20" LastIsn="24" id="253">
+            <Header Description="Update Flag for Selected Lot" ISN_2="20" LastIsn="38" id="253">
               <LastModified _date="739749" _time="46727" date="13/05/2026" time="12:58:47"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -11260,7 +11286,7 @@
             <VarRangeInfo Mode="F" VarRangeVeeIsn="1" id="1"/>
             <VarRangeInfo Mode="T" VarRangeVeeIsn="1" id="2"/>
             <Task MainProgram="N">
-              <Header Description="Change Flag In Work File" ISN_2="21" LastIsn="24" id="253">
+              <Header Description="Change Flag In Work File" ISN_2="21" LastIsn="38" id="253">
                 <LastModified _date="739749" _time="46727" date="13/05/2026" time="12:58:47"/>
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
@@ -11534,7 +11560,7 @@
             </Task>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Print Container Label" ISN_2="22" LastIsn="24" id="253">
+            <Header Description="Print Container Label" ISN_2="22" LastIsn="38" id="253">
               <LastModified _date="739758" _time="45821" date="22/05/2026" time="12:43:41"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -12646,7 +12672,7 @@
             <VarRangeInfo Mode="T" VarRangeVeeIsn="1" id="2"/>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Update Case Data" ISN_2="23" LastIsn="24" id="253">
+            <Header Description="Update Case Data" ISN_2="23" LastIsn="38" id="253">
               <LastModified _date="739749" _time="46727" date="13/05/2026" time="12:58:47"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -13066,7 +13092,7 @@
             <VarRangeInfo Mode="F" VarRangeVeeIsn="1" id="1"/>
             <VarRangeInfo Mode="T" VarRangeVeeIsn="1" id="2"/>
             <Task MainProgram="N">
-              <Header Description="Update Packing Plan Flag" ISN_2="24" LastIsn="24" id="253">
+              <Header Description="Update Packing Plan Flag" ISN_2="24" LastIsn="38" id="253">
                 <LastModified _date="739749" _time="46727" date="13/05/2026" time="12:58:47"/>
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>

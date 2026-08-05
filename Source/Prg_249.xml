@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0070CartonLabelPrint55" ISN_2="1" LastIsn="38" id="249">
-          <LastModified _date="739832" _time="54326" date="04/08/2026" time="15:05:26"/>
+          <LastModified _date="739833" _time="56907" date="05/08/2026" time="15:48:27"/>
           <Public val="Prg_50_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -605,6 +605,23 @@
                   <IsRoute val="N"/>
                   <RetainFocus val="N"/>
                   <Disabled val="1"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="109">
+                  <OperationType val="T"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
+                  <TaskID comp="-1" obj="3"/>
+                  <Lock val="Y"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
