@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0070CartonLabelPrint55" ISN_2="1" LastIsn="38" id="249">
-          <LastModified _date="739833" _time="56907" date="05/08/2026" time="15:48:27"/>
+          <LastModified _date="739841" _time="52278" date="13/08/2026" time="14:31:18"/>
           <Public val="Prg_50_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -955,7 +955,7 @@
                   <Wait val="78"/>
                   <Arguments>
                     <Argument>
-                      <Expression val="19"/>
+                      <Expression val="26"/>
                       <Skip val="N"/>
                     </Argument>
                   </Arguments>
@@ -1263,9 +1263,13 @@
             <ExpSyntax val="LastClicked()='btnexit'"/>
             <ExpAttribute val="B"/>
           </Expression>
+          <Expression id="26">
+            <ExpSyntax val="'DatewiseCartonInquiry'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
         </Expressions>
         <Task MainProgram="N">
-          <Header Description="Dummy Screen" ISN_2="2" LastIsn="38" id="249">
+          <Header Description="Dummy Screen" ISN_2="2" LastIsn="2" id="249">
             <LastModified _date="739749" _time="43648" date="13/05/2026" time="12:07:28"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
@@ -1751,7 +1755,7 @@
           </Expressions>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Delete Work" ISN_2="3" LastIsn="38" id="249">
+          <Header Description="Delete Work" ISN_2="3" LastIsn="6" id="249">
             <LastModified _date="739749" _time="43648" date="13/05/2026" time="12:07:28"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
@@ -1984,7 +1988,7 @@
             </FormEntry>
           </TaskForms>
           <Task MainProgram="N">
-            <Header Description="Delete PC Work" ISN_2="4" LastIsn="38" id="249">
+            <Header Description="Delete PC Work" ISN_2="4" LastIsn="6" id="249">
               <LastModified _date="739749" _time="43648" date="13/05/2026" time="12:07:28"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -2190,7 +2194,7 @@
               </FormEntry>
             </TaskForms>
             <Task MainProgram="N">
-              <Header Description="Delete PC Lot Work" ISN_2="5" LastIsn="38" id="249">
+              <Header Description="Delete PC Lot Work" ISN_2="5" LastIsn="6" id="249">
                 <LastModified _date="739749" _time="43648" date="13/05/2026" time="12:07:28"/>
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
@@ -2387,7 +2391,7 @@
                 </FormEntry>
               </TaskForms>
               <Task MainProgram="N">
-                <Header Description="Delete Label Part Work" ISN_2="6" LastIsn="38" id="249">
+                <Header Description="Delete Label Part Work" ISN_2="6" LastIsn="6" id="249">
                   <LastModified _date="739749" _time="43648" date="13/05/2026" time="12:07:28"/>
                   <ExecutionRight comp="-1"/>
                   <Resident val="N"/>
@@ -2766,7 +2770,7 @@
           </Task>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Case Packing Data" ISN_2="7" LastIsn="38" id="249">
+          <Header Description="Case Packing Data" ISN_2="7" LastIsn="8" id="249">
             <LastModified _date="739749" _time="43648" date="13/05/2026" time="12:07:28"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
@@ -3090,7 +3094,7 @@
           <VarRangeInfo Mode="F" VarRangeVeeIsn="9" id="9"/>
           <VarRangeInfo Mode="T" VarRangeVeeIsn="9" id="10"/>
           <Task MainProgram="N">
-            <Header Description="Carton Packing Data" ISN_2="8" LastIsn="38" id="249">
+            <Header Description="Carton Packing Data" ISN_2="8" LastIsn="8" id="249">
               <LastModified _date="739749" _time="43648" date="13/05/2026" time="12:07:28"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
@@ -3599,7 +3603,7 @@
           </Task>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Change Display Flag" ISN_2="9" LastIsn="38" id="249">
+          <Header Description="Change Display Flag" ISN_2="9" LastIsn="9" id="249">
             <LastModified _date="739749" _time="43648" date="13/05/2026" time="12:07:28"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
