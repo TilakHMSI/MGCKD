@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDPartsMappingMaintenance" ISN_2="18" LastIsn="47" id="192">
-          <LastModified _date="739842" _time="38086" date="14/08/2026" time="10:34:46"/>
+          <LastModified _date="739842" _time="41506" date="14/08/2026" time="11:31:46"/>
           <Public val="Prg_107_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -524,7 +524,7 @@
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="6">
-            <ExpSyntax val="'PART_NO like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}&amp;' OR '&amp;&#xD;&#xA;'PART_NAME like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}&amp;' OR '&amp;&#xD;&#xA;'PART_LTCD like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}"/>
+            <ExpSyntax val="'PART_NO like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}&amp;' OR '&amp;&#xD;&#xA;'PART_NAME like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}&amp;' OR '&amp;&#xD;&#xA;'BASE_PART_NO like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}&amp;' OR '&amp;&#xD;&#xA;'PART_COLOR like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}&amp;' OR '&amp;&#xD;&#xA;'PART_LTCD like '&amp;{32768,3024}&amp;'%'&amp;Trim({0,4})&amp;'%'&amp;{32768,3024}"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="8">
@@ -534,7 +534,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="PartsMappingMaintList" ISN_2="37" LastIsn="47" id="192">
-            <LastModified _date="739818" _time="53295" date="21/07/2026" time="14:48:15"/>
+            <LastModified _date="739842" _time="41344" date="14/08/2026" time="11:29:04"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1950,7 +1950,7 @@
           </Task>
           <Task MainProgram="N">
             <Header Description="CKDPARTSMASTERCM" ISN_2="39" LastIsn="47" id="192">
-              <LastModified _date="739792" _time="38674" date="25/06/2026" time="10:44:34"/>
+              <LastModified _date="739842" _time="41344" date="14/08/2026" time="11:29:04"/>
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -3177,6 +3177,17 @@
                     </Update>
                   </LogicLine>
                   <LogicLine>
+                    <Update FlowIsn="279">
+                      <FieldID val="2"/>
+                      <WithValue val="25"/>
+                      <Incremental val="N"/>
+                      <ForcedUpdate val="Y"/>
+                      <Condition val="Y"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </Update>
+                  </LogicLine>
+                  <LogicLine>
                     <BLOCK EndBlock="83" EndBlockSegment="83" FlowIsn="85" Type="E">
                       <Condition val="Y"/>
                       <Modifier val="B"/>
@@ -3594,7 +3605,8 @@
                     <Height id="24" val="16"/>
                     <Data FieldID="1" id="43"/>
                     <ControlName id="46" val="PART_NO"/>
-                    <ModifyInQuery id="60" val="Y"/>
+                    <Modifiable id="53"/>
+                    <ModifyInQuery id="60"/>
                     <Visible id="61"/>
                     <Enabled Exp="23" id="62"/>
                     <ShowZoomButton id="718" val="Y"/>
