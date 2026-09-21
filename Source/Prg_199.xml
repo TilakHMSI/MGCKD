@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDPM020PartsPackingMaster" ISN_2="1" LastIsn="19" id="199">
-          <LastModified _date="739869" _time="48493" date="10/09/2026" time="13:28:13"/>
+          <LastModified _date="739880" _time="37474" date="21/09/2026" time="10:24:34"/>
           <Public val="Prg_37_RIA_C_Web_Incomplete"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -8595,7 +8595,7 @@
               <VarRangeInfo Mode="T" VarRangeVeeIsn="3" id="6"/>
               <Task MainProgram="N">
                 <Header Description="PartDetails" ISN_2="6" LastIsn="19" id="199">
-                  <LastModified _date="739869" _time="48493" date="10/09/2026" time="13:28:13"/>
+                  <LastModified _date="739880" _time="37474" date="21/09/2026" time="10:24:34"/>
                   <ExecutionRight comp="-1"/>
                   <Resident val="N"/>
                   <SQL val="N"/>
@@ -9703,6 +9703,9 @@
                           <Type val="R"/>
                           <ExposedToRoute val="N"/>
                           <IsParameter val="N"/>
+                          <INT_DIT_INFO>
+                            <v>34</v>
+                          </INT_DIT_INFO>
                           <DIFF_UPDATE val="T"/>
                           <Condition val="Y"/>
                           <Modifier val="S"/>
@@ -11391,6 +11394,7 @@
                         <ControlLayer id="25" val="6"/>
                         <Data FieldID="54" id="43"/>
                         <ControlName id="46" val="CKD_PART_MAST_PRT_WGT"/>
+                        <Modifiable id="53"/>
                         <Visible id="61"/>
                         <MultiLineEdit id="71"/>
                       </PropertyList>
@@ -11418,6 +11422,7 @@
                         <ControlLayer id="25" val="8"/>
                         <Data FieldID="7" id="43"/>
                         <ControlName id="46" val="WRK_PART_EXPCS"/>
+                        <Modifiable Exp="66" id="53" val="Y"/>
                         <Visible id="61"/>
                         <MultiLineEdit id="71"/>
                       </PropertyList>
@@ -11753,6 +11758,10 @@
                   <Expression id="65">
                     <ExpSyntax val="'Are you sure to delete?'"/>
                     <ExpAttribute val="A"/>
+                  </Expression>
+                  <Expression id="66">
+                    <ExpSyntax val="{0,55}"/>
+                    <ExpAttribute val="B"/>
                   </Expression>
                 </Expressions>
                 <VarRangeInfo Mode="F" VarRangeVeeIsn="1" id="1"/>
