@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0020LotNoPackingData" ISN_2="1" LastIsn="51" id="327">
-          <LastModified _date="739819" _time="38775" date="22/07/2026" time="10:46:15"/>
+          <LastModified _date="739881" _time="41622" date="22/09/2026" time="11:33:42"/>
           <Public val="Prg_44_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -2284,6 +2284,7 @@
                   <SyncData val="N"/>
                   <IsRoute val="N"/>
                   <RetainFocus val="N"/>
+                  <Disabled val="1"/>
                   <Condition Exp="1"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -7049,7 +7050,7 @@
         </Task>
         <Task MainProgram="N">
           <Header Description="Inputcolor" ISN_2="11" LastIsn="51" id="327">
-            <LastModified _date="739810" _time="44640" date="13/07/2026" time="12:24:00"/>
+            <LastModified _date="739881" _time="40983" date="22/09/2026" time="11:23:03"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -7374,6 +7375,7 @@
                     <WithValue val="8"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
+                    <Disabled val="1"/>
                     <Condition val="Y"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
