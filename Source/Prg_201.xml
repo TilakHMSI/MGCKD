@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDQ0010PackingMasterInqury" ISN_2="1" LastIsn="5" id="201">
-          <LastModified _date="739797" _time="56945" date="30/06/2026" time="15:49:05"/>
+          <LastModified _date="739889" _time="46252" date="30/09/2026" time="12:50:52"/>
           <Public val="Prg_65_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -1269,14 +1269,6 @@
           </Expression>
           <Expression id="26">
             <ExpSyntax val="'PPKMAST'&amp;Trim({32768,3025})&amp;'.PDF'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="27">
-            <ExpSyntax val="'blob size : '&amp;Str(BlobSize({0,15}),'')"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="29">
-            <ExpSyntax val="'blob264 size : '&amp;Str(BlobSize({0,16}),'')"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>

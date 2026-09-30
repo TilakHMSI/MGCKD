@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDMNBangladeshScanningMenu" ISN_2="1" LastIsn="1" id="235">
-          <LastModified _date="739762" _time="46774" date="26/05/2026" time="12:59:34"/>
+          <LastModified _date="739889" _time="46454" date="30/09/2026" time="12:54:14"/>
           <Public val="Prg_100_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -1105,26 +1105,6 @@
           <Expression id="19">
             <ExpSyntax val="Trim({32768,3025})"/>
             <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="20">
-            <ExpSyntax val="IF ({0,2}=1,{0,3},18)"/>
-            <ExpAttribute val="N"/>
-          </Expression>
-          <Expression id="21">
-            <ExpSyntax val="IF ({0,2}=2,{0,3},18)"/>
-            <ExpAttribute val="N"/>
-          </Expression>
-          <Expression id="22">
-            <ExpSyntax val="IF ({0,2}=3,{0,3},18)"/>
-            <ExpAttribute val="N"/>
-          </Expression>
-          <Expression id="23">
-            <ExpSyntax val="IF ({0,2}=4,{0,3},18)"/>
-            <ExpAttribute val="N"/>
-          </Expression>
-          <Expression id="24">
-            <ExpSyntax val="IF ({0,2}=5,{0,3},18)"/>
-            <ExpAttribute val="N"/>
           </Expression>
         </Expressions>
       </Task>

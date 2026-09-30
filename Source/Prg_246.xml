@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0060PackingPlanPrint" ISN_2="1" LastIsn="40" id="246">
-          <LastModified _date="739841" _time="53418" date="13/08/2026" time="14:50:18"/>
+          <LastModified _date="739889" _time="46745" date="30/09/2026" time="12:59:05"/>
           <Public val="Prg_49_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -94,7 +94,7 @@
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="11"/>
-                <NullAllowed id="166"/>
+                <NullAllowed id="166" val="Y"/>
                 <NullDefault id="169" val="Y"/>
                 <CharSet id="172" val="1"/>
                 <StoredAs id="173" val="1"/>
@@ -1176,10 +1176,6 @@
           <Expression id="17">
             <ExpSyntax val="{0,9}&lt;>''"/>
             <ExpAttribute val="B"/>
-          </Expression>
-          <Expression id="18">
-            <ExpSyntax val="'Packing Plan Inquiry'"/>
-            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="19">
             <ExpSyntax val="''"/>

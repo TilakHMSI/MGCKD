@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="SECTIONLIST_SELECTION" ISN_2="9" LastIsn="34" id="188">
-          <LastModified _date="739743" _time="41910" date="07/05/2026" time="11:38:30"/>
+          <LastModified _date="739889" _time="46180" date="30/09/2026" time="12:49:40"/>
           <Public val="Prg_85_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -561,7 +561,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="List" ISN_2="33" LastIsn="34" id="188">
-            <LastModified _date="739743" _time="41901" date="07/05/2026" time="11:38:21"/>
+            <LastModified _date="739889" _time="46180" date="30/09/2026" time="12:49:40"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -613,8 +613,8 @@
               <LockingStrategy val="M"/>
               <CacheStrategy val="D"/>
               <ForceRecordSuffix val="N"/>
-              <TransactionMode val="N"/>
-              <TransactionBegin val="P"/>
+              <TransactionMode val="O"/>
+              <TransactionBegin val="N"/>
               <PreloadView val="N"/>
               <AllowEmptyDataview val="Y"/>
               <KeepCreatedContext val="N"/>

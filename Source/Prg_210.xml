@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0120PCEngineDetails" ISN_2="1" LastIsn="5" id="210">
-          <LastModified _date="739757" _time="61036" date="21/05/2026" time="16:57:16"/>
+          <LastModified _date="739889" _time="46286" date="30/09/2026" time="12:51:26"/>
           <Public val="Prg_60_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -1478,14 +1478,6 @@
           <Expression id="30">
             <ExpSyntax val="BlobToBase64({0,29})"/>
             <ExpAttribute val="O"/>
-          </Expression>
-          <Expression id="32">
-            <ExpSyntax val="'Blob Size - '&amp;Str(BlobSize({0,29}),'')"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="33">
-            <ExpSyntax val="'Blob Size Bas64 - '&amp;Str(BlobSize({0,30}),'')"/>
-            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="34">
             <ExpSyntax val="{0,32}>0"/>

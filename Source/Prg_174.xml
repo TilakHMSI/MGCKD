@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDMN102PackingMasterMenu" ISN_2="1" LastIsn="1" id="174">
-          <LastModified _date="739755" _time="50939" date="19/05/2026" time="14:08:59"/>
+          <LastModified _date="739889" _time="46008" date="30/09/2026" time="12:46:48"/>
           <Public val="Prg_7_RIA"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -660,6 +660,14 @@
                   </Event>
                   <TaskID comp="-1" obj="200"/>
                   <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                  </Arguments>
                   <Wait val="Y"/>
                   <SyncData val="N"/>
                   <IsRoute val="N"/>

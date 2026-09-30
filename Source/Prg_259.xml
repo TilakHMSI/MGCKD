@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0100CartonSpecialApprov" ISN_2="1" LastIsn="3" id="259">
-          <LastModified _date="739887" _time="41667" date="28/09/2026" time="11:34:27"/>
+          <LastModified _date="739889" _time="46862" date="30/09/2026" time="13:01:02"/>
           <Public val="Prg_56_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -3249,10 +3249,6 @@
             <ExpSyntax val="'FALSE'LOG"/>
             <ExpAttribute val="B"/>
           </Expression>
-          <Expression id="46">
-            <ExpSyntax val="{0,1}=''"/>
-            <ExpAttribute val="B"/>
-          </Expression>
           <Expression id="47">
             <ExpSyntax val="'&amp;Cancel'"/>
             <ExpAttribute val="A"/>
@@ -3273,33 +3269,13 @@
             <ExpSyntax val="Trim({32768,3025})"/>
             <ExpAttribute val="A"/>
           </Expression>
-          <Expression id="52">
-            <ExpSyntax val="'XXX-XXXX-XX'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
           <Expression id="53">
             <ExpSyntax val="{0,14}&lt;>''"/>
             <ExpAttribute val="B"/>
           </Expression>
-          <Expression id="54">
-            <ExpSyntax val="Trim ({0,8})"/>
-            <ExpAttribute val="A"/>
-          </Expression>
           <Expression id="55">
             <ExpSyntax val="{0,27}&lt;>''"/>
             <ExpAttribute val="B"/>
-          </Expression>
-          <Expression id="56">
-            <ExpSyntax val="Trim ({0,9})"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="57">
-            <ExpSyntax val="Trim ({0,10})"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="58">
-            <ExpSyntax val="Trim ({0,11})"/>
-            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="61">
             <ExpSyntax val="'ENTER PURCHASE CONTRACT NO.'"/>

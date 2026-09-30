@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0130PackingMasterError" ISN_2="1" LastIsn="4" id="202">
-          <LastModified _date="739805" _time="41850" date="08/07/2026" time="11:37:30"/>
+          <LastModified _date="739889" _time="46259" date="30/09/2026" time="12:50:59"/>
           <Public val="Prg_61_RIA_C"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -1269,14 +1269,6 @@
           <Expression id="29">
             <ExpSyntax val="BlobToBase64({0,24})"/>
             <ExpAttribute val="O"/>
-          </Expression>
-          <Expression id="30">
-            <ExpSyntax val="{0,23}"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="31">
-            <ExpSyntax val="{0,26}"/>
-            <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
         <Task MainProgram="N">
