@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0090CartonCaseScanning" ISN_2="1" LastIsn="63" id="256">
-          <LastModified _date="739896" _time="42786" date="07/10/2026" time="11:53:06"/>
+          <LastModified _date="739901" _time="52725" date="12/10/2026" time="14:38:45"/>
           <Comment val="13 and 18 digit validation&#xD;&#xA;6th digit - validation"/>
           <Public val="Prg_54_RIA_C_MultiTaskInSub"/>
           <ExecutionRight comp="-1"/>
@@ -846,7 +846,7 @@
                     <v>27</v>
                     <v>29</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="18"/>
+                  <_DitIndexForToolkit val="19"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -891,7 +891,7 @@
                     <v>255</v>
                     <v>273</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="24"/>
+                  <_DitIndexForToolkit val="25"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="Y"/>
                   <Condition val="Y"/>
@@ -936,7 +936,7 @@
                   <INT_DIT_INFO>
                     <v>31</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="37"/>
+                  <_DitIndexForToolkit val="38"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1002,7 +1002,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="38"/>
+                  <_DitIndexForToolkit val="39"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1121,7 +1121,7 @@
                     <v>195</v>
                     <v>273</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="26"/>
+                  <_DitIndexForToolkit val="27"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1183,7 +1183,7 @@
                   <INT_DIT_INFO>
                     <v>34</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="40"/>
+                  <_DitIndexForToolkit val="41"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1199,7 +1199,7 @@
                   <INT_RCMP_INFO>
                     <v>53</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="42"/>
+                  <_DitIndexForToolkit val="43"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1216,7 +1216,7 @@
                   <INT_RCMP_INFO>
                     <v>53</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="43"/>
+                  <_DitIndexForToolkit val="44"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1344,7 +1344,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="41"/>
+                  <_DitIndexForToolkit val="42"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1445,7 +1445,7 @@
                     <v>195</v>
                     <v>273</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="28"/>
+                  <_DitIndexForToolkit val="29"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1546,7 +1546,7 @@
                     <v>195</v>
                     <v>273</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="30"/>
+                  <_DitIndexForToolkit val="31"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -1668,7 +1668,7 @@
                     <v>159</v>
                     <v>273</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="32"/>
+                  <_DitIndexForToolkit val="33"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -2805,7 +2805,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="19"/>
+                  <_DitIndexForToolkit val="20"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -2895,7 +2895,7 @@
                   <INT_RCMP_INFO>
                     <v>214</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="22"/>
+                  <_DitIndexForToolkit val="23"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -3228,7 +3228,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="34"/>
+                  <_DitIndexForToolkit val="35"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -3248,7 +3248,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="21"/>
+                  <_DitIndexForToolkit val="22"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -3384,7 +3384,7 @@
                   <INT_RCMP_INFO>
                     <v>264</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="20"/>
+                  <_DitIndexForToolkit val="21"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -9241,12 +9241,6 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <Remark FlowIsn="18834">
-                  <Type val="2"/>
-                  <Text val=" "/>
-                </Remark>
-              </LogicLine>
-              <LogicLine>
                 <Update FlowIsn="17675">
                   <FieldID val="186"/>
                   <WithValue val="284"/>
@@ -9261,7 +9255,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="48" _last_test_id="48" id="1">
+          <FormEntry _last_isn="49" _last_test_id="49" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="585"/>
               <Height id="24" val="481"/>
@@ -9447,6 +9441,19 @@
                 <Height id="24" val="13"/>
                 <ControlName id="46" val="Label12"/>
                 <Visible Exp="41" id="61"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="49" id="49">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="521"/>
+                <Y id="22" val="358"/>
+                <Width id="23" val="41"/>
+                <Height id="24" val="22"/>
+                <ControlName id="46" val="btnCallProcess"/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="1"/>
+                </RaiseEvent>
               </PropertyList>
             </Control>
             <Control _test_id="8" id="8">
@@ -10689,6 +10696,10 @@
           <Expression id="286">
             <ExpSyntax val="{0,172}"/>
             <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="287">
+            <ExpSyntax val="Str({0,149},'')"/>
+            <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
         <EVNT DESC="GProcess" FORCE_EXIT="N" id="1">
