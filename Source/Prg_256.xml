@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="CKDP0090CartonCaseScanning" ISN_2="1" LastIsn="63" id="256">
-          <LastModified _date="739901" _time="52725" date="12/10/2026" time="14:38:45"/>
+          <LastModified _date="739901" _time="53646" date="12/10/2026" time="14:54:06"/>
           <Comment val="13 and 18 digit validation&#xD;&#xA;6th digit - validation"/>
           <Public val="Prg_54_RIA_C_MultiTaskInSub"/>
           <ExecutionRight comp="-1"/>
@@ -7582,26 +7582,8 @@
                     <PublicObject comp="-1" obj="1"/>
                   </Event>
                   <Wait val="89"/>
-                  <Condition Exp="270"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </RaiseEvent>
-              </LogicLine>
-              <LogicLine>
-                <RaiseEvent FlowIsn="3035">
-                  <Event>
-                    <EventType val="I"/>
-                    <InternalEventID val="432"/>
-                  </Event>
-                  <Wait val="78"/>
-                  <Arguments>
-                    <Argument>
-                      <Expression val="255"/>
-                      <Skip val="N"/>
-                    </Argument>
-                  </Arguments>
                   <Disabled val="1"/>
-                  <Condition val="Y"/>
+                  <Condition Exp="270"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </RaiseEvent>
